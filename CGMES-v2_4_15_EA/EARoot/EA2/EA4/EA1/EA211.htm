@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DCEquipment</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA212.png" usemap="#EA212" border="0" />
+
+<MAP NAME="EA212">
+<area shape="rect" coords="10,543,179,633" href="EA235.htm" target="_self">
+<area shape="rect" coords="972,435,1062,539" href="EA234.htm" target="_self">
+<area shape="rect" coords="965,356,1153,422" href="EA219.htm" target="_self">
+<area shape="rect" coords="842,120,1021,186" href="../EA5/EA341.htm" target="_self">
+<area shape="rect" coords="1055,13,1155,83" href="EA221.htm" target="_self">
+<area shape="rect" coords="429,12,581,82" href="EA238.htm" target="_self">
+<area shape="rect" coords="673,85,804,155" href="../EA5/EA345.htm" target="_self">
+<area shape="rect" coords="13,10,160,80" href="EA225.htm" target="_self">
+<area shape="rect" coords="723,241,873,311" href="../EA5/EA362.htm" target="_self">
+<area shape="rect" coords="636,564,752,634" href="EA240.htm" target="_self">
+<area shape="rect" coords="571,393,815,463" href="EA241.htm" target="_self">
+<area shape="rect" coords="245,338,517,478" href="EA220.htm" target="_self">
+<area shape="rect" coords="33,423,214,527" href="EA232.htm" target="_self">
+<area shape="rect" coords="377,101,642,289" href="EA218.htm" target="_self">
+<area shape="rect" coords="51,329,205,408" href="EA236.htm" target="_self">
+<area shape="rect" coords="79,294,162,322" href="EA223.htm" target="_self">
+<area shape="rect" coords="102,223,268,288" href="EA230.htm" target="_self">
+<area shape="rect" coords="146,184,245,216" href="EA228.htm" target="_self">
+<area shape="rect" coords="180,122,304,152" href="EA237.htm" target="_self">
+<area shape="rect" coords="262,186,352,214" href="EA222.htm" target="_self">
+<area shape="rect" coords="233,79,357,110" href="EA224.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">DCEquipment : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03-Oct-11 15:24:43</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">25-May-14 09:56:23</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">selaost1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{DA39A3B1-0412-434b-AC38-E2BB1EDD9383}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This diagram shows classes used to model DC equipment.</div>
+
+</div>
+ 
+</body>
+</html>

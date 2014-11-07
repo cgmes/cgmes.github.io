@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>StandardWindType1and2Interconnection</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA789.png" usemap="#EA789" border="0" />
+
+<MAP NAME="EA789">
+<area shape="rect" coords="464,511,779,612" href="EA802.htm" target="_self">
+<area shape="rect" coords="28,389,187,458" href="../EA5/EA1474.htm" target="_self">
+<area shape="rect" coords="284,517,436,587" href="../EA4/EA15/EA1439.htm" target="_self">
+<area shape="rect" coords="264,392,452,462" href="../EA4/EA15/EA1438.htm" target="_self">
+<area shape="rect" coords="516,177,781,312" href="../EA4/EA813.htm" target="_self">
+<area shape="rect" coords="557,365,731,458" href="../EA4/EA810.htm" target="_self">
+<area shape="rect" coords="41,36,156,89" href="../EA1/EA756.htm" target="_self">
+<area shape="rect" coords="25,217,233,278" href="EA807.htm" target="_self">
+<area shape="rect" coords="265,217,457,282" href="../EA4/EA2/EA910.htm" target="_self">
+<area shape="rect" coords="292,41,468,106" href="../EA2/EA762.htm" target="_self">
+<area shape="rect" coords="10,8,788,131" href="EA806.htm" target="_self">
+<area shape="rect" coords="10,149,790,621" href="EA805.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">StandardWindType1and2Interconnection : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06-Jun-12 23:48:55</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-May-14 20:17:22</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ppbr003</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{82107988-136E-4b55-A774-7F6B210A7B1C}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This diagram shows the classes necessary for wind Type 1 and Type 2 interconnection models.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Standard IEC wind turbines Type 1 and 2 interconnection models all have a single instance of an AsynchronousMachineDynamics child class and a single instance of the WindGenTurbineType1IEC class or the WindGenTurbineType2IEC class.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A valid IEC wind Type 1 interconnection model also must have an instance of the following classes (and no others):&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;WindMechIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;WindAeroConstIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;WindProtectionIEC.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A valid IEC wind Type 2 interconnection model also must have an instance of the following classes (and no others):&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;WindMechIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;WindContRotorRIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;WindProtectionIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;WindPitchContEmulIEC&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;WindDynamicsLookupTable.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

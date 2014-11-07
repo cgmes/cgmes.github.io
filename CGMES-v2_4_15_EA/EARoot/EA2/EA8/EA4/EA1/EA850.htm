@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SubtransientSalientPole</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA851.png" usemap="#EA851" border="0" />
+
+<MAP NAME="EA851">
+<area shape="rect" coords="10,0,691,462" href="EA885.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">SubtransientSalientPole : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">08-Feb-12 18:08:59</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17-Aug-13 17:50:53</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ppbr003</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{FEBAE2AD-1670-4aba-8181-17CCFCF7F1CD}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Subtransient Salient Pole Type is modelled using one of the concrete child classes of the SynchronousMachineDetailed class.&#160;&#160;&#160; If the SynchronousMachineTimeConstantReactance class is used, .modelType = subtransient and .rotorKind = salientPole.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The d-axis equivalent circuit is the same as for the Subtransient Round Rotor Type. The q-axis has only one equivalent rotor winding, which may be labelled as transient (&lt;b&gt;X&#39;q&lt;/b&gt;) or subtransient (&lt;b&gt;X&#39;&#39;q&lt;/b&gt;); &lt;b&gt;X&#39;q&lt;/b&gt; is used for the CIM description.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Ifd represents LadIfd (XadIfd) and is a voltage proportional to field current in the per unit system ( IEEE 421.5-2005, Annex B).&#160; It is equal to Efd in steady-state.&#160; &lt;/font&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/b&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;X&#39;&#39;q&lt;/b&gt; (=&lt;b&gt;X&#39;q&lt;/b&gt;) is assumed to be equal to &lt;b&gt;X&#39;&#39;d&lt;/b&gt; (no subtransient saliency).&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Saturation is modelled in the d axis only. &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;For generators, the following input parameters may be omitted with default shown: &lt;b&gt;X&#39;q&lt;/b&gt; (=&lt;b&gt;X&#39;&#39;d&lt;/b&gt;), &lt;b&gt;X&#39;&#39;q&lt;/b&gt; (=&lt;b&gt;X&#39;&#39;d&lt;/b&gt;), &lt;b&gt;T&#39;&#39;qo&lt;/b&gt;, &lt;b&gt;Ks&lt;/b&gt; (=0), &lt;b&gt;S1q&lt;/b&gt; (=0), &lt;b&gt;S12q&lt;/b&gt; (=0), &lt;b&gt;Tc&lt;/b&gt; (=0).&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;For motors, the following input parameters are not used:&#160; &lt;b&gt;X&#39;q&lt;/b&gt;, &lt;b&gt;X&#39;&#39;q&lt;/b&gt;, &lt;b&gt;T&#39;&#39;qo&lt;/b&gt;.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

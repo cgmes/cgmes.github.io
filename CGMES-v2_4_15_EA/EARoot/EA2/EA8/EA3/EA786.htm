@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>StandardAsynchronousMachineInterconnection</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA787.png" usemap="#EA787" border="0" />
+
+<MAP NAME="EA787">
+<area shape="rect" coords="583,371,848,506" href="../EA4/EA813.htm" target="_self">
+<area shape="rect" coords="253,693,427,786" href="../EA4/EA810.htm" target="_self">
+<area shape="rect" coords="95,573,265,628" href="../EA4/EA5/EA1092.htm" target="_self">
+<area shape="rect" coords="249,406,462,474" href="../EA4/EA2/EA910.htm" target="_self">
+<area shape="rect" coords="247,179,467,246" href="../EA2/EA762.htm" target="_self">
+<area shape="rect" coords="352,573,542,629" href="../EA4/EA3/EA1004.htm" target="_self">
+<area shape="rect" coords="10,10,854,321" href="EA806.htm" target="_self">
+<area shape="rect" coords="11,336,856,784" href="EA805.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">StandardAsynchronousMachineInterconnection : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">01-Jun-12 17:22:07</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-May-14 20:16:53</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ppbr003</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{FCAD2D13-5242-4a56-ADC2-4ED8A18A21DD}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This diagram shows the classes necessary for the asynchronous machine interconnection model.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A standard asynchronous machine interconnection has a single instance of an AsynchronousMachineDynamics child class.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A valid standard asynchronous machine interconnection model also reflects the following rules. It may have:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;1 instance of TurbineGovernorDynamics child class, but only if AsynchronousMachine.asynchronousMachineType = generator&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1 instance of MechanicalLoadDynamics child class, but only if AsynchronousMachine.asynchronousMachineType = motor.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

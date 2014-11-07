@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  the CSS part and the header  of this html document for a Profile comes from a similar function of CimTool -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+.attribut {font-family: courier, monospace;font-weight: bold;}
+.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+.inheritrole {font-family: courier,monospace;font-style: italic;font-weight: normal;}
+.inheritattribut {font-family: courier, monospace;font-weight: normal;}
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+p.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+p.inheritrole {font-family: courier,monospace;font-style: italic;}
+p.attribut {font-family: courier, monospace;font-weight: bold;}
+p.inheritattribut {font-family: courier, monospace;}
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+ List of stereotye to categorize subProfiles
+     ShortCircuit
+     Description
+     Operation
+     Abstract
+     Entsoe
+
+<h1> Concrete Classes (Description)</h1>
+<div id="ConnectivityNode" class="group">
+<a href="#ConnectivityNode">
+<h2 class="concrete">ConnectivityNode (Description) </h2>
+</a>
+<p class="comment">Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Description length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Energy Ident Code length restriction (optional)</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End ISO Code length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End Name TSO length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. ShortName length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End ISO Code length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End Name TSO length restriction</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="ConnectivityNode.TopologicalNode">TopologicalNode (Description) </p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The topological node to which this connectivity node is assigned.  May depend on the current state of switches in the network.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1> Concrete Classes (Entsoe)</h1>
+<h1> Concrete Classes</h1>
+<div id="TopologicalNode" class="group">
+<a href="#TopologicalNode">
+<h2 class="concrete">TopologicalNode</h2>
+</a>
+<p class="comment">For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).<br/>For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called "busses".</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Description length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Energy Ident Code length restriction (optional)</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End ISO Code length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. From End Name TSO length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. ShortName length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End ISO Code length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End Name length restriction</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. To End Name TSO length restriction</p>
+<h3>Native Members (Entsoe)</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.boundaryPoint">boundaryPoint  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Boolean">Boolean</a>
+</p>
+<td>
+<p class="comment">Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.fromEndIsoCode">fromEndIsoCode  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the ISO code of the region to which the “From” side of the Boundary point belongs to or it is connected to.<br/>The ISO code is two characters country code as defined by ISO 3166 (<a href="{???????????')"><font color="#0000ff"><u>http://www.iso.org/iso/country_codes</u></font></a>). The length of the string is 2 characters maximum.<br/>The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.fromEndName">fromEndName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:<br/><ul>	<li>if the Boundary point is <b>placed on a tie-line</b> the attribute is used for exchange of the geographical name of the <b>substation</b> to which the “From” side of the tie-line is connected to.</li>	<li>if the Boundary point is <b>placed in a substation</b> the attribute is used for exchange of the name of the <b>element</b> (e.g. PowerTransformer, ACLineSegment, Switch, etc) to which the “From” side of the Boundary point is connected to.</li></ul>The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.fromEndNameTso">fromEndNameTso  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the name of the TSO to which the “From” side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum.<br/>The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.toEndIsoCode">toEndIsoCode  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the ISO code of the region to which the “To” side of the Boundary point belongs to or it is connected to.<br/>The ISO code is two characters country code as defined by ISO 3166 (<a href="{???????????')"><font color="#0000ff"><u>http://www.iso.org/iso/country_codes</u></font></a>). The length of the string is 2 characters maximum.<br/>The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.toEndName">toEndName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:<br/><ul>	<li>if the Boundary point is <b>placed on a tie-line</b> the attribute is used for exchange of the geographical name of the <b>substation</b> to which the “To” side of the tie-line is connected to.</li>	<li>if the Boundary point is <b>placed in a substation</b> the attribute is used for exchange of the name of the <b>element</b> (e.g. PowerTransformer, ACLineSegment, Switch, etc) to which the “To” side of the Boundary point is connected to.</li></ul>The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologicalNode.toEndNameTso">toEndNameTso  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the name of the TSO to which the “To” side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum.<br/>The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. </p>
+</td>
+</tr>
+</table>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalNode.ConnectivityNodeContainer">ConnectivityNodeContainer</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#ConnectivityNodeContainer">ConnectivityNodeContainer</a></p>
+</td>
+<td>
+<p class="comment">The connectivity node container to which the toplogical node belongs.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalNode.BaseVoltage">BaseVoltage</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#BaseVoltage">BaseVoltage</a></p>
+</td>
+<td>
+<p class="comment">The base voltage of the topologocial node.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="TopologyBoundaryVersion" class="group">
+<a href="#TopologyBoundaryVersion">
+<h2 class="abstract">TopologyBoundaryVersion (Entsoe) </h2>
+</a>
+<p class="package"><a href="TopologyBoundaryProfile-v2_4_15-7Aug2014_images\TopologyBoundaryProfile_TopologyBoundaryProfile.png" target="_blanc">TopologyBoundaryProfile </a></p>
+<p class="comment">Version details.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.baseUML">baseUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a <br/>
+<p class="comment">Base UML provided by CIM model manager.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.baseURI">baseURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/61970-456/TopologyBoundary/3"><font color="#0000ff"><u>http://iec.ch/TC57/2013/61970-456/TopologyBoundary/3</u></font></a> <br/>
+<p class="comment">Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.date">date  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Date">Date</a>
+</p>
+<td>
+ ConstantValue= 2014-08-07 <br/>
+<p class="comment">Profile creation date
+<br/>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.differenceModelURI">differenceModelURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/DifferenceModel/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/DifferenceModel/1#</u></font></a> <br/>
+<p class="comment">Difference model URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.entsoeUML">entsoeUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= entsoe_v2.4.15 <br/>
+<p class="comment">UML provided by ENTSO-E.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.entsoeURI">entsoeURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/CIM/TopologyBoundary/3/1"><font color="#0000ff"><u>http://entsoe.eu/CIM/TopologyBoundary/3/1</u></font></a> <br/>
+<p class="comment">Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/TopologyBoundary/yy/zzz) indicate major and minor versions where: 
+<br/>- yy - indicates a major version;
+<br/>- zzz - indicates a minor version. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.modelDescriptionURI">modelDescriptionURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/ModelDescription/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/ModelDescription/1#</u></font></a> <br/>
+<p class="comment">Model Description URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.namespaceRDF">namespaceRDF  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><font color="#0000ff"><u>http://www.w3.org/1999/02/22-rdf-syntax-ns#</u></font></a> <br/>
+<p class="comment">RDF namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.namespaceUML">namespaceUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/CIM-schema-cim16#"><font color="#0000ff"><u>http://iec.ch/TC57/2013/CIM-schema-cim16#</u></font></a> <br/>
+<p class="comment">CIM UML namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyBoundaryVersion.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= TP_BD <br/>
+<p class="comment">The short name of the profile used in profile documentation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="BaseVoltage" class="group">
+<a href="#BaseVoltage">
+<h2 class="abstract">BaseVoltage</h2>
+</a>
+<p class="comment">Defines a system base voltage which is referenced. </p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConnectivityNodeContainer" class="group">
+<a href="#ConnectivityNodeContainer">
+<h2 class="abstract">ConnectivityNodeContainer</h2>
+</a>
+<p class="comment">A base class for all objects that may contain connectivity nodes or topological nodes.
+<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<p class="note">-IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names.
+<br/>IdentifiedObject.description is 256 characters maximum.</p>
+<h3>Native Members (Entsoe)</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.energyIdentCodeEic">energyIdentCodeEic  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code.
+<br/>References: 
+<br/><ul>
+	<li>Local issuing offices for EIC: <a href="{???????????????????????????}???')"><font color="#0000ff"><u>https://www.entsoe.eu/publications/edi-library/links-to-eic-websites/</u></font></a> </li>
+	<li>EIC description: <a href="{????????????????? ')"><font color="#0000ff"><u>https://www.entsoe.eu/index.php?id=73&amp;libCat=eic</u></font></a> .</li>
+</ul></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum.</p>
+</td>
+</tr>
+</table>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.description">description  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.mRID">mRID  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.
+<br/>For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.name">name  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.
+<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<h1>Compound types</h1>
+<h1>Datatypes</h1>
+</body>
+</html>

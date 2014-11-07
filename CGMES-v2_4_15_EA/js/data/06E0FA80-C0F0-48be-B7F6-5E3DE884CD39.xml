@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.2.6.3:1", "", "DC", "EARoot/EA2/EA6/EA3/EA632.htm", "175.png", "7624", "0", "", "Logical diagram0","{26B14FBA-092A-4ca6-A818-EE84E71E3A2D}");
+tocTab[tocTab.length] = new Array("0.2.6.3:2", "", "ACDCConverter", "EARoot/EA2/EA6/EA3/EA637.htm", "5.png", "E26055", "0", "", "Class0","{21A8FEF4-E572-4491-B86A-A285903FD8EB}");
+tocTab[tocTab.length] = new Array("0.2.6.3:3", "", "«Description» ACDCConverterDCTerminal", "EARoot/EA2/EA6/EA3/EA638.htm", "5.png", "E26056", "0", "", "Class0","{9FB809F7-9A69-42cd-A848-E6F214D5045D}");
+tocTab[tocTab.length] = new Array("0.2.6.3:4", "", "«Description» CsConverter", "EARoot/EA2/EA6/EA3/EA639.htm", "5.png", "E26057", "0", "", "Class0","{0E14C22C-2132-4dec-99DB-7044B50CDBE5}");
+tocTab[tocTab.length] = new Array("0.2.6.3:5", "", "«enumeration» CsOperatingModeKind", "EARoot/EA2/EA6/EA3/EA640.htm", "5.png", "E26058", "0", "", "Class0","{5AE4C0EA-336D-4b36-8162-3F733001C3D6}");
+tocTab[tocTab.length] = new Array("0.2.6.3:6", "", "«enumeration» CsPpccControlKind", "EARoot/EA2/EA6/EA3/EA641.htm", "5.png", "E26059", "0", "", "Class0","{D3AC8739-5472-473a-9148-B5A53EE1E979}");
+tocTab[tocTab.length] = new Array("0.2.6.3:7", "", "DCBaseTerminal", "EARoot/EA2/EA6/EA3/EA642.htm", "5.png", "E26060", "0", "", "Class0","{6558AFA2-7F0E-4384-803B-DD5FF6389A78}");
+tocTab[tocTab.length] = new Array("0.2.6.3:8", "", "«Description» DCTerminal", "EARoot/EA2/EA6/EA3/EA643.htm", "5.png", "E26061", "0", "", "Class0","{3819D6D1-0CA0-41f1-A5C5-108489B8BE3E}");
+tocTab[tocTab.length] = new Array("0.2.6.3:9", "", "«Description» VsConverter", "EARoot/EA2/EA6/EA3/EA644.htm", "5.png", "E26062", "0", "", "Class0","{79A7F9E5-D93A-4577-9CFC-B4A3AFC11F04}");
+tocTab[tocTab.length] = new Array("0.2.6.3:10", "", "«enumeration» VsPpccControlKind", "EARoot/EA2/EA6/EA3/EA645.htm", "5.png", "E26063", "0", "", "Class0","{F111546F-AD75-4ad5-B1E2-8029A127DBE8}");
+tocTab[tocTab.length] = new Array("0.2.6.3:11", "", "«enumeration» VsQpccControlKind", "EARoot/EA2/EA6/EA3/EA646.htm", "5.png", "E26064", "0", "", "Class0","{F92B2B9F-9730-47e5-8B63-CE44B400F28A}");

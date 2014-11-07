@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2.2:1", "", "EquipmentBoundaryProfile", "EARoot/EA2/EA2/EA129.htm", "175.png", "7591", "0", "", "Logical diagram0","{07BC02B2-E79D-44e7-A98F-FDA19B6422AA}");
+tocTab[tocTab.length] = new Array("0.2.2:2", "", "«Entsoe» EquipmentBoundaryVersion", "EARoot/EA2/EA2/EA138.htm", "5.png", "E25648", "0", "", "Class0","{1276D1B7-39F5-4d0d-A05B-783A82DB1EB9}");
+tocTab[tocTab.length] = new Array("0.2.2.1", "1", "Core", "EARoot/EA2/EA2/EA1/EA139.htm", "4.png", "", "", "{23C68F91-7FF6-46ff-9AAD-E38C7F71D05C}", "Package");
+tocTab[tocTab.length] = new Array("0.2.2.2", "1", "Wires", "EARoot/EA2/EA2/EA2/EA151.htm", "4.png", "", "", "{4F7849FF-7AAB-4332-BC3D-B6DC7961E219}", "Package");

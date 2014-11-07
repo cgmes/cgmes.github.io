@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SubtransientRoundRotorSimplifiedDirectAxis</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA861.png" usemap="#EA861" border="0" />
+
+<MAP NAME="EA861">
+<area shape="rect" coords="10,0,599,957" href="EA866.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">SubtransientRoundRotorSimplifiedDirectAxis : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">30-Mar-12 22:19:58</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17-Aug-13 17:53:33</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ppbr003</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{8EB31DA6-AA99-4bc5-BCBD-AA7BD445A6C7}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Subtransient Round Rotor Simplified Direct Axis Type is modelled using one of the concrete child classes of the SynchronousMachineDetailed class. If the SynchronousMachineTimeConstantReactance class is used, .modelType = subtransientSimplifiedDirectAxis and .rotorKind = roundRotor.&#160; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;It is a simplified version of a Subtransient Round Rotor Type with no damper circuit on d-axis. This simplification contributes to a reduction in computational effort by reducing the order of the differential equation system. The q-axis has two equivalent rotor windings. Magnetic coupling between the direct and quadrature axes is ignored.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;The effects of speed variation are neglected. &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;No armature resistance.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;No saturation effects.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;No subtransient saliency.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Direct Axis with field circuit only, no equivalent damper circuit. Approximation: &lt;b&gt;X&#39;d&lt;/b&gt; = &lt;b&gt;X&#39;&#39;d&lt;/b&gt;.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Quadrature Axis with two equivalent damper circuit, &lt;b&gt;X&#39;&#39;q&lt;/b&gt; not = &lt;b&gt;X&#39;q&lt;/b&gt;.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;For generators and motors the following input parameters are needed: &lt;b&gt;Xd&lt;/b&gt;, &lt;b&gt;X&#39;d&lt;/b&gt;, &lt;b&gt;T&#39;do &lt;/b&gt;and&lt;b&gt; Xq&lt;/b&gt;, &lt;b&gt;X&#39;q&lt;/b&gt;, &lt;b&gt;X&#39;&#39;q&lt;/b&gt;, &lt;b&gt;T&#39;qo&lt;/b&gt;, &lt;b&gt;T&#39;&#39;qo&lt;/b&gt;.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

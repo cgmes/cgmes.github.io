@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.8.4.2:1", "", "AsynchronousGeneratorInterconnectionAndVariables", "EARoot/EA2/EA8/EA4/EA2/EA892.htm", "188.png", "7663", "0", "", "Custom diagram0","{0C270A92-52BC-4ac9-BD73-270518BD4FA7}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:2", "", "AsynchronousMotorInterconnectionAndVariables", "EARoot/EA2/EA8/EA4/EA2/EA894.htm", "188.png", "7664", "0", "", "Custom diagram0","{1CF9B1CC-0C3B-4e08-96BC-AF99C757018E}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:3", "", "AsynchronousMachineDynamics", "EARoot/EA2/EA8/EA4/EA2/EA896.htm", "175.png", "7666", "0", "", "Logical diagram0","{A3FAD61F-2D1E-4545-B26A-E21CDFA8F30D}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:4", "", "AsynchronousGeneratorMechanicalEquation", "EARoot/EA2/EA8/EA4/EA2/EA898.htm", "188.png", "7665", "0", "", "Custom diagram0","{B6238C13-E08D-4e61-96F6-251D9D390156}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:5", "", "AsynchronousMotorMechanicalEquation", "EARoot/EA2/EA8/EA4/EA2/EA900.htm", "188.png", "7667", "0", "", "Custom diagram0","{7D3426FF-8F24-4d9a-8EE3-28BFC5433180}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:7", "", "«abstract» AsynchronousMachineDynamics", "EARoot/EA2/EA8/EA4/EA2/EA910.htm", "5.png", "E26208", "0", "", "Class0","{208504D0-10C7-4bb5-A202-2E50CE6DA210}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:8", "", "AsynchronousMachineTimeConstantReactance", "EARoot/EA2/EA8/EA4/EA2/EA911.htm", "5.png", "E26209", "0", "", "Class0","{E2A59FE4-F652-4b7a-A86D-C87AD01BAF89}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:9", "", "AsynchronousMachineEquivalentCircuit", "EARoot/EA2/EA8/EA4/EA2/EA912.htm", "5.png", "E26210", "0", "", "Class0","{183B8467-A04F-4782-AAA6-9DBF125C6449}");
+tocTab[tocTab.length] = new Array("0.2.8.4.2:6", "", "AsynchronousEquivalentCircuit", "EARoot/EA2/EA8/EA4/EA2/EA902.htm", "188.png", "7668", "E26210", "", "Custom diagram0","{EE37C324-D411-4e77-A625-62AE13BA3A3E}");

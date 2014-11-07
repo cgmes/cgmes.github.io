@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.2.8.4.14:1", "", "VoltageCompensatorInterconnectionAndVariables", "EARoot/EA2/EA8/EA4/EA14/EA1397.htm", "188.png", "7786", "0", "", "Custom diagram0","{C7F1E86C-297C-4619-9CB5-848065695F16}");
+tocTab[tocTab.length] = new Array("0.2.8.4.14:2", "", "VoltageCompensatorDynamics", "EARoot/EA2/EA8/EA4/EA14/EA1399.htm", "175.png", "7785", "0", "", "Logical diagram0","{2B9F57B2-4A61-4160-8A85-2A8CBD6B192D}");
+tocTab[tocTab.length] = new Array("0.2.8.4.14:3", "", "«abstract» VoltageCompensatorDynamics", "EARoot/EA2/EA8/EA4/EA14/EA1403.htm", "5.png", "E26469", "0", "", "Class0","{F7A13C56-0828-4f6d-95E7-FD08F522949B}");
+tocTab[tocTab.length] = new Array("0.2.8.4.14:4", "", "VCompIEEEType1", "EARoot/EA2/EA8/EA4/EA14/EA1404.htm", "5.png", "E26470", "0", "", "Class0","{E6F9EACB-D999-487b-957D-63E829211CD1}");
+tocTab[tocTab.length] = new Array("0.2.8.4.14:5", "", "VCompIEEEType2", "EARoot/EA2/EA8/EA4/EA14/EA1405.htm", "5.png", "E26471", "0", "", "Class0","{A093C3B9-9398-42f3-A093-C005F71D012E}");
+tocTab[tocTab.length] = new Array("0.2.8.4.14:6", "", "GenICompensationForGenJ", "EARoot/EA2/EA8/EA4/EA14/EA1406.htm", "5.png", "E26472", "0", "", "Class0","{2D8D8748-A8A9-4e25-B81F-6A1B695211FB}");

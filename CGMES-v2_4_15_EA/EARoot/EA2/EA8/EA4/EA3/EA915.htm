@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GovCT2</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA916.png" usemap="#EA916" border="0" />
+
+<MAP NAME="EA916">
+<area shape="rect" coords="10,0,817,531" href="EA1043.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">GovCT2 : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">30-Mar-12 10:47:02</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">18-May-14 21:59:08</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{0D05A9A5-E507-4da3-B343-3E43D37D5A17}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;The frequency-dependent limit reduces the &lt;b&gt;Vmax&lt;/b&gt; limit on fuel flow signal (&lt;b&gt;fsr&lt;/b&gt;). For normal operation, the limiter performs no action. When frequency (generator speed) drops below &lt;b&gt;Flim1&lt;/b&gt;, the highest frequency data point, the desired value for the power limit (&lt;b&gt;Plim&lt;/b&gt;) is determined by linear interpolation between associated data pairs. The maximum value of the limiter (&lt;b&gt;Vmax&lt;/b&gt;) will ramp to the &lt;b&gt;fsr&lt;/b&gt; value corresponding to &lt;b&gt;Plim&lt;/b&gt; (&lt;b&gt;Plim&lt;/b&gt; / &lt;b&gt;Kturb&lt;/b&gt; + &lt;b&gt;Wfnl&lt;/b&gt;) at the &lt;b&gt;Prate&lt;/b&gt; ramp rate. &lt;b&gt;Plim&lt;/b&gt; will be updated as frequency changes. If frequency subsequently rises back above &lt;b&gt;Flim1&lt;/b&gt;, the value of the limit will ramp up at the rate &lt;b&gt;Prate&lt;/b&gt; back to the normal value of &lt;b&gt;Vmax&lt;/b&gt;.&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The frequency-dependent limit is defined by a set of up to 10 pairs of points relating frequency (generator speed in Hz.) and power. The points must be monotonically decreasing in both the magnitude of frequency and power. If fewer than 10 points are needed to define the relationship, values of zero must be entered for the remaining frequencies and power limits. The value of the last non-zero data pair are used as a lower limit, that is, the last two values are not extrapolated to calculate lower power limits. If there is only one set of frequency and power limit, those values will be used as a single limit of power applied at that frequency and below.&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Refer to GovCT1 model for other notes. Aside from the frequency-dependent limt, GovCT2 is identical to GovCT1, except that the temperature fuel command &lt;b&gt;fsrt&lt;/b&gt; does not track fsr when it is not in control. Instead, it stays at its upper limit (1.).&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The &lt;b&gt;Kpgov&lt;/b&gt;/&lt;b&gt;Kigov&lt;/b&gt; and &lt;b&gt;Kpload&lt;/b&gt;/&lt;b&gt;Kiload&lt;/b&gt; controllers include tracking logic to ensure smooth transfer between active controllers.&#160; This logic is not shown on the GovCT2 diagram.&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;b&gt;Pmwset&lt;/b&gt; equals Pe, initial generated power.&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

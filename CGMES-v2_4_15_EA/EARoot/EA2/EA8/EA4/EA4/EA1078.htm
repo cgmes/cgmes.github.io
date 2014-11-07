@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TurbLCFB1</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1079.png" border="0" />
+
+	<div class="ObjectTitle">TurbLCFB1 : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">09-Apr-12 11:08:48</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-Feb-13 18:33:29</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{A2C61345-1ADC-4973-9B66-475AE165502E}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;The load reference of this supervisory load control loop is accessible as the parameter, &lt;b&gt;Pmwset&lt;/b&gt;. &lt;b&gt;Pmwset&lt;/b&gt; is given a value automatically when the model is initialized. This value overwrites any value entered prior to initialization. &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The controller acts by applying a bias to the turbine-governor speed load reference, &lt;b&gt;Pref&lt;/b&gt;. This reference is initialized in the normal manner by the turbine-governor model. &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The output of the controller is limited to plus or minus &lt;b&gt;Irmax&lt;/b&gt;. To prevent the controller from adjusting the turbine power excessively, &lt;b&gt;Irmax&lt;/b&gt; should not exceed approximately one half of the governor droop or approximately 0.025 per unit.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The error limit, &lt;b&gt;Emax&lt;/b&gt;, is intended to set a maximum rate of change of turbine power. If limitation of load change rate is desired, &lt;b&gt;Emax&lt;/b&gt; should be set such that &lt;b&gt;Emax&lt;/b&gt; = (max rate, PU sec)*(droop of governor in PU)/(&lt;b&gt;Ki&lt;/b&gt; of TurbLCFB1). Note that governor droop used in this calculation must be in per unit relative to the base power, &lt;b&gt;MWbase&lt;/b&gt;, of the turbine. Note, also, that some governor models (such as GovSteamIEEE1) have their droop specified by the value of a gain whose value is the reciprocal of the droop. For example, in GovSteamIEEE1 the droop is specified by the gain, &lt;b&gt;K&lt;/b&gt;, whose typical value is 1/0.04 = 25.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;This model recognizes the two alternative ways of specifying the turbine-governor load reference. In models such as GovCT1 and GovHydro1, the reference is a speed setpoint. In other models such as GovSteamIEEE1 the reference is a per unit load value. The references are generally as follows: 1) speed reference (1 + [initial power or valve position]*[droop]), 2) load reference (0 + [initial power or valve position]). The parameters of TurbLCFB1, other than &lt;b&gt;Type&lt;/b&gt;, must always be set on the basis of a governor speed reference.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

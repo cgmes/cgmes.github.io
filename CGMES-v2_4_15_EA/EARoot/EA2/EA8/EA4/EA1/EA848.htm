@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SubtransientRoundRotor</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA849.png" usemap="#EA849" border="0" />
+
+<MAP NAME="EA849">
+<area shape="rect" coords="10,10,687,656" href="EA891.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">SubtransientRoundRotor : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">08-Feb-12 18:07:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17-Aug-13 17:50:17</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">ppbr003</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{19F44882-8B8A-44f3-A661-5792FA2B19C3}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Subtransient Round Rotor Type is modelled using one of the concrete child classes of the SynchronousMachineDetailed class.&#160;&#160;&#160; If the SynchronousMachineTimeConstantReactance class is used, .modelType = subtransient and .rotorType = roundRotor.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The complete equivalent circuit is used with two rotor windings in each axis. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Ifd represents LadIfd (XadIfd) and is a voltage proportional to field current in the per unit system ( IEEE 421.5-2005, Annex B).&#160; It is equal to Efd in steady-state.&#160; &lt;/font&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;b&gt;X&#39;&#39;q&lt;/b&gt; may be assumed to be equal to &lt;b&gt;X&#39;&#39;d&lt;/b&gt; (no subtransient saliency).&lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Saturation is modeled in both the d and q axes.&lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;For generators, the following parameters may be omitted with defaults shown: &lt;b&gt;X&#39;&#39;q&lt;/b&gt; (=&lt;b&gt;X&#39;&#39;d&lt;/b&gt;), &lt;b&gt;Ks&lt;/b&gt; (=0), &lt;b&gt;S1q&lt;/b&gt; (=&lt;b&gt;S1&lt;/b&gt;), &lt;b&gt;S12q&lt;/b&gt; (=&lt;b&gt;S12&lt;/b&gt;), &lt;b&gt;Tc&lt;/b&gt; (=0).&lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;For motors, the following parameter is not used: &lt;b&gt;X&#39;&#39;q&lt;/b&gt;. &lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

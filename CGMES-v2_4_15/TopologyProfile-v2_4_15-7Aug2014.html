@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  the CSS part and the header  of this html document for a Profile comes from a similar function of CimTool -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+.attribut {font-family: courier, monospace;font-weight: bold;}
+.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+.inheritrole {font-family: courier,monospace;font-style: italic;font-weight: normal;}
+.inheritattribut {font-family: courier, monospace;font-weight: normal;}
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+p.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+p.inheritrole {font-family: courier,monospace;font-style: italic;}
+p.attribut {font-family: courier, monospace;font-weight: bold;}
+p.inheritattribut {font-family: courier, monospace;}
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+ List of stereotye to categorize subProfiles
+     ShortCircuit
+     Description
+     Operation
+     Abstract
+     Entsoe
+
+<h1> Concrete Classes (Description)</h1>
+<div id="ACDCConverterDCTerminal" class="group">
+<a href="#ACDCConverterDCTerminal">
+<h2 class="concrete">ACDCConverterDCTerminal (Description) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">A DC electrical connection point at the AC/DC converter. The AC/DC converter is electrically connected also to the AC side. The AC connection is inherited from the AC conducting equipment in the same way as any other AC equipment. The AC/DC converter DC terminal is separate from generic DC terminal to restrict the connection with the AC side to AC/DC converter and so that no other DC conducting equipment can be connected to the AC side.</p>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->DCBaseTerminal->ACDCTerminal->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritrole" id="DCBaseTerminal.DCTopologicalNode">DCTopologicalNode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#DCTopologicalNode">DCTopologicalNode</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DCBaseTerminal">DCBaseTerminal</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConnectivityNode" class="group">
+<a href="#ConnectivityNode">
+<h2 class="concrete">ConnectivityNode (Description) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="ConnectivityNode.TopologicalNode">TopologicalNode (Description) </p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The connectivity nodes combine together to form this topological node.  May depend on the current state of switches in the network.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DCNode" class="group">
+<a href="#DCNode">
+<h2 class="concrete">DCNode (Description) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">DC nodes are points where terminals of DC conducting equipment are connected together with zero impedance.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DCNode.DCTopologicalNode">DCTopologicalNode (Description) </p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#DCTopologicalNode">DCTopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">See association end TopologicalNode.ConnectivityNodes.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DCTerminal" class="group">
+<a href="#DCTerminal">
+<h2 class="concrete">DCTerminal (Description) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">An electrical connection point to generic DC conducting equipment.</p>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->DCBaseTerminal->ACDCTerminal->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritrole" id="DCBaseTerminal.DCTopologicalNode">DCTopologicalNode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#DCTopologicalNode">DCTopologicalNode</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DCBaseTerminal">DCBaseTerminal</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Terminal" class="group">
+<a href="#Terminal">
+<h2 class="concrete">Terminal (Description) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="Terminal.TopologicalNode">TopologicalNode (Description) </p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The terminals associated with the topological node.   This can be used as an alternative to the connectivity node path to terminal, thus making it unneccesary to model connectivity nodes in some cases.   Note that if connectivity nodes are in the model, this association would probably not be used as an input specification.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ACDCTerminal->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1> Concrete Classes (Entsoe)</h1>
+<h1> Concrete Classes</h1>
+<div id="DCTopologicalNode" class="group">
+<a href="#DCTopologicalNode">
+<h2 class="concrete">DCTopologicalNode</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">DC bus.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DCTopologicalNode.DCEquipmentContainer">DCEquipmentContainer</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#DCEquipmentContainer">DCEquipmentContainer</a></p>
+</td>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TopologicalNode" class="group">
+<a href="#TopologicalNode">
+<h2 class="concrete">TopologicalNode</h2>
+</a>
+<p class="comment">For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).<br/>For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called "busses".</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalNode.ReportingGroup">ReportingGroup</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#ReportingGroup">ReportingGroup</a></p>
+</td>
+<td>
+<p class="comment">The topological nodes that belong to the reporting group.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalNode.ConnectivityNodeContainer">ConnectivityNodeContainer</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#ConnectivityNodeContainer">ConnectivityNodeContainer</a></p>
+</td>
+<td>
+<p class="comment">The connectivity node container to which the toplogical node belongs.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalNode.BaseVoltage">BaseVoltage</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#BaseVoltage">BaseVoltage</a></p>
+</td>
+<td>
+<p class="comment">The base voltage of the topologocial node.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="TopologyVersion" class="group">
+<a href="#TopologyVersion">
+<h2 class="abstract">TopologyVersion (Entsoe) </h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\TopologyProfile_TopologyProfileNotes.png" target="_blanc">TopologyProfile </a></p>
+<p class="comment">Version details.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.baseUML">baseUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a <br/>
+<p class="comment">Base UML provided by CIM model manager.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.baseURI">baseURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/61970-456/Topology/4"><font color="#0000ff"><u>http://iec.ch/TC57/2013/61970-456/Topology/4</u></font></a> <br/>
+<p class="comment">Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.date">date  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Date">Date</a>
+</p>
+<td>
+ ConstantValue= 2014-08-07 <br/>
+<p class="comment">Profile creation date
+<br/>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.differenceModelURI">differenceModelURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/DifferenceModel/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/DifferenceModel/1#</u></font></a> <br/>
+<p class="comment">Difference model URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.entsoeUML">entsoeUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= entsoe_v2.4.15 <br/>
+<p class="comment">UML provided by ENTSO-E.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.entsoeURI">entsoeURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/CIM/Topology/4/1"><font color="#0000ff"><u>http://entsoe.eu/CIM/Topology/4/1</u></font></a> <br/>
+<p class="comment">Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/Topology/yy/zzz) indicate major and minor versions where: 
+<br/>- yy - indicates a major version;
+<br/>- zzz - indicates a minor version. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.modelDescriptionURI">modelDescriptionURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/ModelDescription/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/ModelDescription/1#</u></font></a> <br/>
+<p class="comment">Model Description URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.namespaceRDF">namespaceRDF  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><font color="#0000ff"><u>http://www.w3.org/1999/02/22-rdf-syntax-ns#</u></font></a> <br/>
+<p class="comment">RDF namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.namespaceUML">namespaceUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/CIM-schema-cim16#"><font color="#0000ff"><u>http://iec.ch/TC57/2013/CIM-schema-cim16#</u></font></a> <br/>
+<p class="comment">CIM UML namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="TopologyVersion.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= TP <br/>
+<p class="comment">The short name of the profile used in profile documentation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACDCTerminal" class="group">
+<a href="#ACDCTerminal">
+<h2 class="abstract">ACDCTerminal</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="BaseVoltage" class="group">
+<a href="#BaseVoltage">
+<h2 class="abstract">BaseVoltage</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">Defines a system base voltage which is referenced. </p>
+<p class="note">-BaseVoltage is an abstract class. It is used here to generate the TopologicalNode.BaseVoltage association that is a pointer to BaseVoltage concrete class in the Equipment Profile
+<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="ConnectivityNodeContainer" class="group">
+<a href="#ConnectivityNodeContainer">
+<h2 class="abstract">ConnectivityNodeContainer</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">A base class for all objects that may contain connectivity nodes or topological nodes.
+<br/></p>
+<p class="note">-ConnectivityodeContainer is an abstract class. It is used here to generate the TopologicalNode.ConnectivityNodeContainer association that is a pointer to ConnectivityNodeContainer concrete subclasses in the Equipment Profile
+<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="DCBaseTerminal" class="group">
+<a href="#DCBaseTerminal">
+<h2 class="abstract">DCBaseTerminal</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">An electrical connection point at a piece of DC conducting equipment. DC terminals are connected at one physical DC node that may have multiple DC terminals connected. A DC node is similar to an AC connectivity node. The model enforces that DC connections are distinct from AC connections. </p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DCBaseTerminal.DCTopologicalNode">DCTopologicalNode</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#DCTopologicalNode">DCTopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">See association end TopologicalNode.Terminal.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ACDCTerminal->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DCEquipmentContainer" class="group">
+<a href="#DCEquipmentContainer">
+<h2 class="abstract">DCEquipmentContainer</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">A modeling construct to provide a root class for containment of DC as well as AC equipment. The class differ from the EquipmentContaner for AC in that it may also contain DCNodes. Hence it can contain both AC and DC equipment.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Description length restriction (optional).</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Energy Ident Code length restriction (optional).</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction.</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. ShortName length restriction (optional).</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.13. Name is required for all classes excepted ACDCTerminal.</p>
+<p class="note">-IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names.
+<br/>IdentifiedObject.description is 256 characters maximum.</p>
+<p class="note">-The attribute &ldquo;name&rdquo; inherited by many classes from the abstract class IdentifiedObject is not required to be unique. Software developers should not count on this to link the power system model.
+<br/></p>
+<h3>Native Members (Entsoe)</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.energyIdentCodeEic">energyIdentCodeEic  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of the EIC code (Energy identification Code). The length of the string is 16 characters as defined by the EIC code.
+<br/>References: 
+<br/><ul>
+	<li>Local issuing offices for EIC: <a href="{???????????????????????????}???')"><font color="#0000ff"><u>https://www.entsoe.eu/publications/edi-library/links-to-eic-websites/</u></font></a> </li>
+	<li>EIC description: <a href="{????????????????? ')"><font color="#0000ff"><u>https://www.entsoe.eu/index.php?id=73&amp;libCat=eic</u></font></a> .</li>
+</ul></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum.</p>
+</td>
+</tr>
+</table>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.description">description  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.mRID">mRID  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.
+<br/>For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.name">name  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.
+<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ReportingGroup" class="group">
+<a href="#ReportingGroup">
+<h2 class="abstract">ReportingGroup</h2>
+</a>
+<p class="package"><a href="TopologyProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">A reporting group is used for various ad-hoc groupings used for reporting.
+<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">description </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">energyIdentCodeEic (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">shortName (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<h1>Compound types</h1>
+<h1>Datatypes</h1>
+</body>
+</html>

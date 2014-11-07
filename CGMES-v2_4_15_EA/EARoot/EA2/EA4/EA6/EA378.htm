@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("", " : "))</script>  : Public   Note</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">18-May-11 13:22:33</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">23-Jul-13 19:08:56</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Jean-Luc</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{361A4217-9B8C-422e-9FDA-AAD2533394B0}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA374.htm">OperationalLimitsNotes</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">ENTSO-E branches may have up to &quot;N&quot; OperationalLimits in an OperationalLimitSet associated with branch terminals. The term &quot;operational&quot; is a CIM definition and it is not the same as ENTSO-E definitions. Any limits for operational, planning or other purposes can be exchanged using this object.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;ENTSO-E voltage limits must be specified as an OperationalLimitSet associated with the terminal of a conducting equipment instance and containing one &quot;HighVoltage&quot; VoltageLimit and one &quot;LowVoltage&quot; VoltageLimit.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Since the terminal assignment is always explicitly exchanged as OperationalLimitSet.Terminal and given that the exchange of a Terminal.sequenceNumber is not necessary.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The OperationalLimitType.direction is absolute value (OperationalLimitDirectionKind.absoluteValue) for all OperatonalLimitType objects except the high (OperationalLimitDirectionKind.high) and low (OperationalLimitDirectionKind.low) voltage limits.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;To further explain the above statements, the following should be noted:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;·&nbsp;&nbsp;&nbsp;&nbsp;At least one of the limit types must be provided (this is the minimum requirement)&lt;br /&gt;&lt;/p&gt;&lt;p&gt;·&nbsp;&nbsp;&nbsp;&nbsp;The PATL limits must be specified for all Transformers and at both ends of the ACLineSegment&lt;br /&gt;&lt;/p&gt;&lt;p&gt;·&nbsp;&nbsp;&nbsp;&nbsp;All types of limits are exchanged (at the same time) if required by the specific exchange process, which could change depending on the business use for the exchanged files.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Parties involved in the exchange shall define what limit types will be included in the exchange.&lt;br /&gt;&lt;/p&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

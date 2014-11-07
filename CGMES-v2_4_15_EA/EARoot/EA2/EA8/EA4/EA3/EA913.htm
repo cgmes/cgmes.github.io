@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GovCT1</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA914.png" usemap="#EA914" border="0" />
+
+<MAP NAME="EA914">
+<area shape="rect" coords="10,10,818,628" href="EA1042.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">GovCT1 : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">30-Mar-12 09:30:24</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">18-May-14 22:00:10</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{F9809894-AAB2-4416-A048-0DA2CE5552CD}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;Per unit parameters are on base of &lt;b&gt;MWbase&lt;/b&gt;, which is normally the MW capability of the turbine.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The range of fuel valve travel and of fuel flow is unity. Thus the largest possible value of &lt;b&gt;Vmax&lt;/b&gt; is 1.0 and the smallest possible value of &lt;b&gt;Vmin&lt;/b&gt; is zero. &lt;b&gt;Vmax&lt;/b&gt; may, however, be reduced below unity to represent a loading limit that may be imposed by the operator or a supervisory control system. For gas turbines &lt;b&gt;Vmin&lt;/b&gt; should normally be greater than zero and less than &lt;b&gt;Wfnl&lt;/b&gt; to represent a minimum firing limit. The value of the fuel flow at maximum output must be less than, or equal to unity, depending on the value of &lt;b&gt;Kturb&lt;/b&gt;.&#160;&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The load limiter module may be used to impose a maximum output limit such as an exhaust temperature limit.&#160; To do this the time constant &lt;b&gt;Tfload&lt;/b&gt; should be set to represent the time constant in the measurement of temperature (or other signal), and the gains of the limiter, &lt;b&gt;Kpload&lt;/b&gt;, &lt;b&gt;Kiload&lt;/b&gt;, should be set to give prompt stable control when on limit.&#160; The load limit can be deactivated by setting the parameter &lt;b&gt;Ldref&lt;/b&gt; to a high value.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;This model includes a simple representation of a supervisory load controller. This controller is active if the parameter &lt;b&gt;Kimw&lt;/b&gt; is non-zero. The load controller is a slow acting reset loop that adjusts the speed/load reference of the turbine governor to hold the electrical power output of the unit at its initial condition value. This value is stored in the parameter &lt;b&gt;Pmwset&lt;/b&gt; (which equals Pe, initial generated power) when the model is initialized, and can be changed thereafter.&#160; The load controller must be adjusted to respond gently relative to the speed governor.&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The parameters &lt;b&gt;Aset&lt;/b&gt;, &lt;b&gt;Ka&lt;/b&gt;, and &lt;b&gt;Ta&lt;/b&gt; describe an acceleration limiter. &lt;b&gt;Ta&lt;/b&gt; must be non-zero, but the acceleration limiter can be disabled by setting &lt;b&gt;Aset&lt;/b&gt; to a large value, such as 1.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The parameters &lt;b&gt;Tsa &lt;/b&gt;and &lt;b&gt;Tsb&lt;/b&gt;, are provided to augment the exhaust gas temperature measurement subsystem in gas turbines.&#160; For example, they may be set to values such as 4., 5., to represent the &#8216;radiation shield&#8217; element of large gas turbines.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The parameters &lt;b&gt;Rup&lt;/b&gt; and &lt;b&gt;Rdown&lt;/b&gt; specify the maximum rate of increase and decrease of the output of the load limit controller (&lt;b&gt;Kpload&lt;/b&gt;/&lt;b&gt;Kiload&lt;/b&gt;). These parameters should normally be set, or defaulted to 99/-99, but may be given particular values to represent the temperature limit controls of some GE heavy-duty engine controls.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The fuel flow command &lt;b&gt;fsr&lt;/b&gt; is determined by whichever is lowest of &lt;b&gt;fsrt&lt;/b&gt;, &lt;b&gt;fsra&lt;/b&gt;, and &lt;b&gt;fsrn&lt;/b&gt;.&#160; Although not explicitly shown in the GovCT1 diagram, the signals that are not in control track &lt;b&gt;fsr&lt;/b&gt; so that they do not &#8220;windup&#8221; beyond that value. This represents GE gas turbine control practice but may not be true for other controller designs.&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;As shown in the GovCT1 diagram, when &lt;b&gt;Kpgov&lt;/b&gt; is non-zero, the governor PI control is implemented to &#8220;track&#8221; &lt;b&gt;fsr&lt;/b&gt; to prevent windup when &lt;b&gt;fsr&lt;/b&gt; is limited by another signal (&lt;b&gt;fsrt&lt;/b&gt;, &lt;b&gt;fsra&lt;/b&gt;) or &lt;b&gt;Vmax&lt;/b&gt;/&lt;b&gt;Vmin&lt;/b&gt;.&#160; If &lt;b&gt;Kpgov&lt;/b&gt; is zero, the integral path is implemented directly.&#160; The same applies to the load limiter PI control with regard to &lt;b&gt;Kpload&lt;/b&gt;.&#160;&#160;&#160;&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

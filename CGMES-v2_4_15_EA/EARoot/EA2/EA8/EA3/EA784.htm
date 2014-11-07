@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>StandardSynchronousMachineInterconnection</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA785.png" usemap="#EA785" border="0" />
+
+<MAP NAME="EA785">
+<area shape="rect" coords="159,52,345,129" href="../EA1/EA752.htm" target="_self">
+<area shape="rect" coords="450,49,613,119" href="../EA2/EA765.htm" target="_self">
+<area shape="rect" coords="676,112,847,182" href="../EA2/EA766.htm" target="_self">
+<area shape="rect" coords="878,762,1075,816" href="../EA4/EA4/EA1081.htm" target="_self">
+<area shape="rect" coords="1119,361,1408,497" href="../EA4/EA813.htm" target="_self">
+<area shape="rect" coords="1057,635,1214,689" href="../EA4/EA5/EA1092.htm" target="_self">
+<area shape="rect" coords="410,1048,799,1127" href="../EA4/EA810.htm" target="_self">
+<area shape="rect" coords="44,363,373,425" href="EA807.htm" target="_self">
+<area shape="rect" coords="69,1068,239,1125" href="../EA4/EA12/EA1385.htm" target="_self">
+<area shape="rect" coords="63,939,259,993" href="../EA4/EA11/EA1379.htm" target="_self">
+<area shape="rect" coords="481,957,699,1010" href="../EA4/EA7/EA1278.htm" target="_self">
+<area shape="rect" coords="604,555,805,646" href="../EA4/EA14/EA1406.htm" target="_self">
+<area shape="rect" coords="486,397,686,462" href="../EA4/EA14/EA1405.htm" target="_self">
+<area shape="rect" coords="183,736,391,793" href="../EA4/EA9/EA1336.htm" target="_self">
+<area shape="rect" coords="273,640,546,693" href="../EA4/EA10/EA1372.htm" target="_self">
+<area shape="rect" coords="727,904,924,962" href="../EA4/EA13/EA1392.htm" target="_self">
+<area shape="rect" coords="122,847,342,899" href="../EA4/EA8/EA1297.htm" target="_self">
+<area shape="rect" coords="841,394,1050,462" href="../EA4/EA1/EA877.htm" target="_self">
+<area shape="rect" coords="850,633,1029,686" href="../EA4/EA3/EA1004.htm" target="_self">
+<area shape="rect" coords="626,786,805,843" href="../EA4/EA6/EA1176.htm" target="_self">
+<area shape="rect" coords="339,512,539,570" href="../EA4/EA14/EA1403.htm" target="_self">
+<area shape="rect" coords="851,205,1062,250" href="../EA2/EA767.htm" target="_self">
+<area shape="rect" coords="348,188,518,264" href="../EA1/EA756.htm" target="_self">
+<area shape="rect" coords="10,10,1395,322" href="EA806.htm" target="_self">
+<area shape="rect" coords="27,339,1414,1133" href="EA805.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">StandardSynchronousMachineInterconnection : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">09-Dec-08 15:13:53</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-May-14 20:14:05</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">kdd</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{CA5BD105-D451-48c5-B1D2-57EE995C93A4}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This diagram shows the classes necessary for both of the two types of synchronous machine interconnection models:&#160; standard synchronous machine and standard synchronous generator cross-compound.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A standard synchronous machine interconnection has a single instance of a SynchronousMachineDynamics child class whereas a generator cross-compound connection has multiple instances of SynchronousMachineDynamics child classes related by a single instance of a TurbineGovernorDynamics child class.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A valid standard synchronous machine interconnection model reflects the following rules.&#160; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;It may have:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;1 instance of TurbineGovernorDynamics child class, but only if SynchronousMachine.operatingMode = generator&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1 instance of MechanicalLoadDynamics child class, but only if SynchronousMachine.operatingMode = motor or SynchronousMachine.operatingMode = condenser&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;It may not have&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;any instance of GenICompensationForGenJ&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;A generator cross-compound interconnection model reflects the following rules.&#160; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;It may have:&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;multiple instances of SynchronousMachineDynamics child classes, each of which has its related SynchronousMachine.operatingMode = generator&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1 instance of TurbineGovernorDynamics child class&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;It must have&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;2 or more instances of GenICompensationForGenJ associated with each instance of a SynchronousMachineDynamics child class.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

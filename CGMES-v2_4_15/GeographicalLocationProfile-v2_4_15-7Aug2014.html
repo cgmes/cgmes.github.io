@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  the CSS part and the header  of this html document for a Profile comes from a similar function of CimTool -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+.attribut {font-family: courier, monospace;font-weight: bold;}
+.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+.inheritrole {font-family: courier,monospace;font-style: italic;font-weight: normal;}
+.inheritattribut {font-family: courier, monospace;font-weight: normal;}
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+p.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+p.inheritrole {font-family: courier,monospace;font-style: italic;}
+p.attribut {font-family: courier, monospace;font-weight: bold;}
+p.inheritattribut {font-family: courier, monospace;}
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+ List of stereotye to categorize subProfiles
+     ShortCircuit
+     Description
+     Operation
+     Abstract
+     Entsoe
+
+<h1> Concrete Classes (Entsoe)</h1>
+<h1> Concrete Classes</h1>
+<div id="CoordinateSystem" class="group">
+<a href="#CoordinateSystem">
+<h2 class="concrete">CoordinateSystem</h2>
+</a>
+<p class="comment">Coordinate reference system.<br/></p>
+<p class="note">-The CoordinateSystem.crsUrn uses WGS84 (latitude, longitude), i.e. urn:ogc:def:crs:EPSG::4326 if not specified otherwise in an EU Network code or another ENTSO-E document defining TSOs' data exchange processes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="CoordinateSystem.crsUrn">crsUrn  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">A Uniform Resource Name (URN) for the coordinate reference system (crs) used to define 'Location.PositionPoints'.<br/>An example would be the European Petroleum Survey Group (EPSG) code for a coordinate reference system, defined in URN under the Open Geospatial Consortium (OGC) namespace as: urn:ogc:def:uom:EPSG::XXXX, where XXXX is an EPSG code (a full list of codes can be found at the EPSG Registry web site http://www.epsg-registry.org/). To define the coordinate system as being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would be urn:ogc:def:uom:EPSG::4236.<br/>A profile should limit this code to a set of allowed URNs agreed to by all sending and receiving parties.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Location" class="group">
+<a href="#Location">
+<h2 class="concrete">Location</h2>
+</a>
+<p class="comment">The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more postition points (coordinates) in a given coordinate system.<br/></p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="Location.PowerSystemResources">PowerSystemResources</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#PowerSystemResource">PowerSystemResource</a></p>
+</td>
+<td>
+<p class="comment">All power system resources at this location.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="Location.CoordinateSystem">CoordinateSystem</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#CoordinateSystem">CoordinateSystem</a></p>
+</td>
+<td>
+<p class="comment">Coordinate system used to describe position points of this location.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PositionPoint" class="group">
+<a href="#PositionPoint">
+<h2 class="concrete">PositionPoint</h2>
+</a>
+<p class="comment">Set of spatial coordinates that determine a point, defined in the coordinate system specified in 'Location.CoordinateSystem'. Use a single position point instance to desribe a point-oriented location. Use a sequence of position points to describe a line-oriented object (physical location of non-point oriented objects like cables or lines), or area of an object (like a substation or a geographical zone - in this case, have first and last position point with the same values).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="PositionPoint.sequenceNumber">sequenceNumber  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Integer">Integer</a>
+</p>
+<td>
+<p class="comment">Zero-relative sequence number of this point within a series of points.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="PositionPoint.xPosition">xPosition  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">X axis position.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="PositionPoint.yPosition">yPosition  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Y axis position.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="PositionPoint.zPosition">zPosition  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">(if applicable) Z axis position.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="PositionPoint.Location">Location</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#Location">Location</a></p>
+</td>
+<td>
+<p class="comment">Location described by this position point.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="GeographicalLocationVersion" class="group">
+<a href="#GeographicalLocationVersion">
+<h2 class="abstract">GeographicalLocationVersion (Entsoe) </h2>
+</a>
+<p class="package"><a href="GeographicalLocationProfile-v2_4_15-7Aug2014_images\GeographicalLocationProfile_GeographicalLocationProfile.png" target="_blanc">GeographicalLocationProfile </a></p>
+<p class="comment">Version details.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.baseUML">baseUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a <br/>
+<p class="comment">Base UML provided by CIM model manager.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.baseURI">baseURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/Secretariat/2013/Geographical/2"><font color="#0000ff"><u>http://entsoe.eu/Secretariat/2013/Geographical/2</u></font></a> <br/>
+<p class="comment">Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.date">date  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Date">Date</a>
+</p>
+<td>
+ ConstantValue= 2014-08-07 <br/>
+<p class="comment">Profile creation date
+<br/>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.differenceModelURI">differenceModelURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/DifferenceModel/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/DifferenceModel/1#</u></font></a> <br/>
+<p class="comment">Difference model URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.entsoeUML">entsoeUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= entsoe_v2.4.15 <br/>
+<p class="comment">UML provided by ENTSO-E.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.entsoeURI">entsoeURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/CIM/GeographicalLocation/2/1"><font color="#0000ff"><u>http://entsoe.eu/CIM/GeographicalLocation/2/1</u></font></a> <br/>
+<p class="comment">Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/GeographicalLocation/yy/zzz) indicate major and minor versions where: 
+<br/>- yy - indicates a major version;
+<br/>- zzz - indicates a minor version. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.modelDescriptionURI">modelDescriptionURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/ModelDescription/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/ModelDescription/1#</u></font></a> <br/>
+<p class="comment">Model Description URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.namespaceRDF">namespaceRDF  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><font color="#0000ff"><u>http://www.w3.org/1999/02/22-rdf-syntax-ns#</u></font></a> <br/>
+<p class="comment">RDF namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.namespaceUML">namespaceUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/CIM-schema-cim16#"><font color="#0000ff"><u>http://iec.ch/TC57/2013/CIM-schema-cim16#</u></font></a> <br/>
+<p class="comment">CIM UML namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="GeographicalLocationVersion.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= GL <br/>
+<p class="comment">The short name of the profile used in profile documentation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package"><a href="GeographicalLocationProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.mRID">mRID  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.
+<br/>For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.name">name  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.
+<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PowerSystemResource" class="group">
+<a href="#PowerSystemResource">
+<h2 class="abstract">PowerSystemResource</h2>
+</a>
+<p class="package"><a href="GeographicalLocationProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.
+<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<h1>Compound types</h1>
+<h1>Datatypes</h1>
+</body>
+</html>

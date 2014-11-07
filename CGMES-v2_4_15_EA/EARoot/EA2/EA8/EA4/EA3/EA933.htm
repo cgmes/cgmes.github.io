@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GovHydroDD</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA934.png" usemap="#EA934" border="0" />
+
+<MAP NAME="EA934">
+<area shape="rect" coords="10,0,617,364" href="EA1057.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">GovHydroDD : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04-Apr-12 11:31:46</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">12-Sep-12 15:13:18</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{8523632A-E161-42d1-85CC-DE7DF73C83A0}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;Td&lt;/b&gt;, &lt;b&gt;Tp&lt;/b&gt;, &lt;b&gt;Tt&lt;/b&gt;, and &lt;b&gt;Tturb&lt;/b&gt; may be zero to bypass the corresponding transfer function blocks. If &lt;b&gt;Tf&lt;/b&gt; is input as zero, but &lt;b&gt;K1&lt;/b&gt; or &lt;b&gt;K2&lt;/b&gt; is not zero, &lt;b&gt;Tf&lt;/b&gt; is set to a small value (4 times integration time step). If &lt;b&gt;Bturb&lt;/b&gt;*&lt;b&gt;Tturb&lt;/b&gt; is less than 4 times integration time step, &lt;b&gt;Tturb&lt;/b&gt; is set to zero to bypass the block. &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The nonlinear gain between gate position and power may be input with up to 6 points. The (0.,0.) and (1.,1.) points are assumed and need not be exchanged. The output is not allowed to go beyond 0. and 1. However, if &lt;b&gt;Pmax&lt;/b&gt; #gt; 1., the input and output are scaled by &lt;b&gt;Pmax&lt;/b&gt;. If &lt;b&gt;Gv1&lt;/b&gt; is a negative number, the default hydro curve&#160; will be used. If all zero values are provided, a straight line is used.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;For a hydro turbine, set &lt;b&gt;Tturb&lt;/b&gt; = &lt;b&gt;Tw&lt;/b&gt; (water starting time), set &lt;b&gt;Aturb&lt;/b&gt; = -1. and &lt;b&gt;Bturb&lt;/b&gt; = 0.5. For a diesel engine or two-shaft gas turbine, set &lt;b&gt;Aturb&lt;/b&gt; = 0.8 and &lt;b&gt;Bturb&lt;/b&gt; = 1.0 and &lt;b&gt;Tturb&lt;/b&gt; = 1 second. For a small steam turbine with a non-reheat steam supply or a single- shaft gas turbine, set &lt;b&gt;Aturb&lt;/b&gt; = 0. and &lt;b&gt;Bturb&lt;/b&gt; = 1.0 and &lt;b&gt;Tturb&lt;/b&gt; = 0.2 second.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GovSteam1</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA976.png" usemap="#EA976" border="0" />
+
+<MAP NAME="EA976">
+<area shape="rect" coords="10,0,848,258" href="EA1067.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">GovSteam1 : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">04-Apr-12 10:08:56</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">05-Aug-12 10:35:47</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{511331F7-881C-4197-ACF0-FA61FC1BF92D}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;Per unit parameters are on base of &lt;b&gt;MWbase&lt;/b&gt;, which is normally the MW capability of the turbine.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;b&gt;T3&lt;/b&gt; must be greater than zero.&#160; All other time constants may be zero.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;For a tandem-compound turbine the parameters &lt;b&gt;K2&lt;/b&gt;, &lt;b&gt;K4&lt;/b&gt;, &lt;b&gt;K6&lt;/b&gt;, and &lt;b&gt;K8&lt;/b&gt; are ignored. For a cross-compound turbine, two generators are connected to this turbine-governor model.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Each generator must be represented in the load flow by data on its own MVA base.&#160; The values of &lt;b&gt;K1&lt;/b&gt;, &lt;b&gt;K3&lt;/b&gt;, &lt;b&gt;K5&lt;/b&gt;, &lt;b&gt;K7&lt;/b&gt; must be specified to describe the proportionate development of power on the first turbine shaft.&#160; &lt;b&gt;K2&lt;/b&gt;, &lt;b&gt;K4&lt;/b&gt;, &lt;b&gt;K6&lt;/b&gt;, &lt;b&gt;K8&lt;/b&gt; must describe the second turbine shaft. Normally &lt;b&gt;K1&lt;/b&gt; + &lt;b&gt;K3&lt;/b&gt; + &lt;b&gt;K5&lt;/b&gt; + &lt;b&gt;K7&lt;/b&gt; = 1.0 and &lt;b&gt;K2&lt;/b&gt; + &lt;b&gt;K4&lt;/b&gt; + &lt;b&gt;K6&lt;/b&gt; + &lt;b&gt;K8&lt;/b&gt; = 1.0&#160; (if second generator is present).&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The division of power between the two shafts is in proportion to the values of MVA bases of the two generators.&#160; The initial condition load flow should, therefore, have the two generators loaded to the same fraction of each one&#8217;s MVA base.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;The intentional input speed deadband follows the relationship shown in the GovSteamIEEE1InputSpeedDeadband diagram.&lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;The unintentional deadband can be used to represent backlash hysteresis in the control components by the relationship shown in the GovSteamIEEE1BacklashHysteresis diagram.&lt;/font&gt;&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The nonlinear gain between gate position and power is represented with up to 6 points.&#160; The (0.,0.) and (1.,1.) points are assumed and need not be exchanged.&#160; The output is not allowed to go beyond 0. and 1. However, if &lt;b&gt;Pmax&lt;/b&gt; #gt; 1., the input and output are scaled by &lt;b&gt;Pmax&lt;/b&gt;.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;If &lt;b&gt;GV1&lt;/b&gt; is a negative number, the default full-arc steam valve curve shown in the default will be used.&#160; If all zero values are provided, a straight line is used.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

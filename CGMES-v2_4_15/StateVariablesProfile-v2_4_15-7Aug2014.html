@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  the CSS part and the header  of this html document for a Profile comes from a similar function of CimTool -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+.attribut {font-family: courier, monospace;font-weight: bold;}
+.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+.inheritrole {font-family: courier,monospace;font-style: italic;font-weight: normal;}
+.inheritattribut {font-family: courier, monospace;font-weight: normal;}
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+p.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+p.inheritrole {font-family: courier,monospace;font-style: italic;}
+p.attribut {font-family: courier, monospace;font-weight: bold;}
+p.inheritattribut {font-family: courier, monospace;}
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+ List of stereotye to categorize subProfiles
+     ShortCircuit
+     Description
+     Operation
+     Abstract
+     Entsoe
+
+<h1> Concrete Classes (Description)</h1>
+<div id="CsConverter" class="group">
+<a href="#CsConverter">
+<h2 class="concrete">CsConverter (Description) </h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">DC side of the current source converter (CSC).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="CsConverter.alpha">alpha  (Description)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+<td>
+<p class="comment">Firing angle, typical value between 10 and 18 degrees for a rectifier. CSC state variable, result from power flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="CsConverter.gamma">gamma  (Description)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+<td>
+<p class="comment">Extinction angle. CSC state variable, result from power flow.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ACDCConverter->ConductingEquipment</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">idc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#CurrentFlow">CurrentFlow</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">poleLossP </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">uc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">udc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="VsConverter" class="group">
+<a href="#VsConverter">
+<h2 class="concrete">VsConverter (Description) </h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">DC side of the voltage source converter (VSC).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="VsConverter.delta">delta  (Description)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+<td>
+<p class="comment">Angle between uf and uc. Converter state variable used in power flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="VsConverter.uf">uf  (Description)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+<td>
+<p class="comment">Filter bus voltage. Converter state variable, result from power flow.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ACDCConverter->ConductingEquipment</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">idc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#CurrentFlow">CurrentFlow</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">poleLossP </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">uc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">udc </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#ACDCConverter">ACDCConverter</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1> Concrete Classes (Operation)</h1>
+<div id="SvStatus" class="group">
+<a href="#SvStatus">
+<h2 class="concrete">SvStatus (Operation) </h2>
+</a>
+<p class="comment">State variable for status.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvStatus.inService">inService  (Operation)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Boolean">Boolean</a>
+</p>
+<td>
+<p class="comment">The in service status as a result of topology processing.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvStatus.ConductingEquipment">ConductingEquipment (Operation) </p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#ConductingEquipment">ConductingEquipment</a></p>
+</td>
+<td>
+<p class="comment">The conducting equipment associated with the status state variable.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1> Concrete Classes (Entsoe)</h1>
+<h1> Concrete Classes</h1>
+<div id="DCTopologicalIsland" class="group">
+<a href="#DCTopologicalIsland">
+<h2 class="concrete">DCTopologicalIsland</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">An electrically connected subset of the network. DC topological islands can change as the current network state changes: e.g. due to <br/>- disconnect switches or breakers change state in a SCADA/EMS<br/>- manual creation, change or deletion of topological nodes in a planning tool.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DCTopologicalIsland.DCTopologicalNodes">DCTopologicalNodes</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..*]</p>
+</td>
+<td>
+<p><a href="#DCTopologicalNode">DCTopologicalNode</a></p>
+</td>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvInjection" class="group">
+<a href="#SvInjection">
+<h2 class="concrete">SvInjection</h2>
+</a>
+<p class="comment">The SvInjection is reporting the calculated bus injection minus the sum of the terminal flows. The terminal flow is positive out from the bus (load sign convention) and bus injection has positive flow into the bus. SvInjection may have the remainder after state estimation or slack after power flow calculation.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvInjection.pInjection">pInjection  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+<td>
+<p class="comment">The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="SvInjection.qInjection">qInjection  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactivePower">ReactivePower</a>
+</p>
+<td>
+<p class="comment">The reactive power injected into the bus in addition to injections from equipment terminals. Positive sign means injection into the TopologicalNode (bus).</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvInjection.TopologicalNode">TopologicalNode</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The injection flows state variables associated with the topological node.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvPowerFlow" class="group">
+<a href="#SvPowerFlow">
+<h2 class="concrete">SvPowerFlow</h2>
+</a>
+<p class="comment">State variable for power flow. Load convention is used for flow direction. This means flow out from the TopologicalNode into the equipment is positive.</p>
+<p class="note"><b>OCL constraint:</b>The active power flow into the ConductingEquipment. If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.p should be zero.</p>
+<p class="note"><b>OCL constraint:</b>The reactive power flow into the ConductingEquipment. If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.q should be zero.</p>
+<p class="note">-SvPowerFlow class is required to be instantiated for the following classes: subclasses of the RotatingMachine, subclasses of the EnergyConsumer, EquivalentInjection, ShuntCompensator, StaticVarCompensator and EnergySource.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvPowerFlow.p">p  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+<td>
+<p class="comment">The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="SvPowerFlow.q">q  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactivePower">ReactivePower</a>
+</p>
+<td>
+<p class="comment">The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvPowerFlow.Terminal">Terminal</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#Terminal">Terminal</a></p>
+</td>
+<td>
+<p class="comment">The terminal associated with the power flow state variable.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvShuntCompensatorSections" class="group">
+<a href="#SvShuntCompensatorSections">
+<h2 class="concrete">SvShuntCompensatorSections</h2>
+</a>
+<p class="comment">State variable for the number of sections in service for a shunt compensator.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvShuntCompensatorSections.sections">sections  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The number of sections in service as a continous variable. To get integer value scale with ShuntCompensator.bPerSection.<br/></p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvShuntCompensatorSections.ShuntCompensator">ShuntCompensator</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#ShuntCompensator">ShuntCompensator</a></p>
+</td>
+<td>
+<p class="comment">The shunt compensator for which the state applies.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvTapStep" class="group">
+<a href="#SvTapStep">
+<h2 class="concrete">SvTapStep</h2>
+</a>
+<p class="comment">State variable for transformer tap step.     This class is to be used for taps of LTC (load tap changing) transformers, not fixed tap transformers.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvTapStep.position">position  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvTapStep.TapChanger">TapChanger</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#TapChanger">TapChanger</a></p>
+</td>
+<td>
+<p class="comment">The tap changer associated with the tap step state.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvVoltage" class="group">
+<a href="#SvVoltage">
+<h2 class="concrete">SvVoltage</h2>
+</a>
+<p class="comment">State variable for voltage.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="SvVoltage.angle">angle  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+<td>
+<p class="comment">The voltage angle of the topological node complex voltage with respect to system reference.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="SvVoltage.v">v  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+<td>
+<p class="comment">The voltage magnitude of the topological node.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="SvVoltage.TopologicalNode">TopologicalNode</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The state voltage associated with the topological node.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TopologicalIsland" class="group">
+<a href="#TopologicalIsland">
+<h2 class="concrete">TopologicalIsland</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Topology_Topology.png" target="_blanc">Topology </a></p>
+<p class="comment">An electrically connected subset of the network. Topological islands can change as the current network state changes: e.g. due to <br/>- disconnect switches or breakers change state in a SCADA/EMS<br/>- manual creation, change or deletion of topological nodes in a planning tool.<br/></p>
+<p class="note">-The angle reference node is the TopologicalNode to which a synchronous machine is connected and referenced from TopologicalIsland.AngleRefTopologicalNode.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalIsland.AngleRefTopologicalNode">AngleRefTopologicalNode</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="TopologicalIsland.TopologicalNodes">TopologicalNodes</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..*]</p>
+</td>
+<td>
+<p><a href="#TopologicalNode">TopologicalNode</a></p>
+</td>
+<td>
+<p class="comment">A topological node belongs to a topological island.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="StateVariablesVersion" class="group">
+<a href="#StateVariablesVersion">
+<h2 class="abstract">StateVariablesVersion (Entsoe) </h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\StateVariablesProfile_StateVariablesProfile.png" target="_blanc">StateVariablesProfile </a></p>
+<p class="comment">Version details.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.baseUML">baseUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a <br/>
+<p class="comment">Base UML provided by CIM model manager.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.baseURI">baseURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/61970-456/StateVariables/4"><font color="#0000ff"><u>http://iec.ch/TC57/2013/61970-456/StateVariables/4</u></font></a> <br/>
+<p class="comment">Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.date">date  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Date">Date</a>
+</p>
+<td>
+ ConstantValue= 2014-08-07 <br/>
+<p class="comment">Profile creation date
+<br/>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.differenceModelURI">differenceModelURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/DifferenceModel/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/DifferenceModel/1#</u></font></a> <br/>
+<p class="comment">Difference model URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.entsoeUML">entsoeUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= entsoe_v2.4.15 <br/>
+<p class="comment">UML provided by ENTSO-E.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.entsoeURI">entsoeURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/CIM/StateVariables/4/1"><font color="#0000ff"><u>http://entsoe.eu/CIM/StateVariables/4/1</u></font></a> <br/>
+<p class="comment">Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/StateVariables/yy/zzz) indicate major and minor versions where: 
+<br/>- yy - indicates a major version;
+<br/>- zzz - indicates a minor version. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.modelDescriptionURI">modelDescriptionURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/ModelDescription/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/ModelDescription/1#</u></font></a> <br/>
+<p class="comment">Model Description URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.namespaceRDF">namespaceRDF  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><font color="#0000ff"><u>http://www.w3.org/1999/02/22-rdf-syntax-ns#</u></font></a> <br/>
+<p class="comment">RDF namespace.  </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.namespaceUML">namespaceUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/CIM-schema-cim16#"><font color="#0000ff"><u>http://iec.ch/TC57/2013/CIM-schema-cim16#</u></font></a> <br/>
+<p class="comment">CIM UML namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="StateVariablesVersion.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= SV <br/>
+<p class="comment">The short name of the profile used in profile documentation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACDCConverter" class="group">
+<a href="#ACDCConverter">
+<h2 class="abstract">ACDCConverter</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DC_DC.png" target="_blanc">DC </a></p>
+<p class="comment">A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="ACDCConverter.idc">idc  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#CurrentFlow">CurrentFlow</a>
+</p>
+<td>
+<p class="comment">Converter DC current, also called Id. Converter state variable, result from power flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ACDCConverter.poleLossP">poleLossP  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+<td>
+<p class="comment">The active power loss at a DC Pole 
+<br/>= idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2
+<br/>For lossless operation Pdc=Pac
+<br/>For rectifier operation with losses Pdc=Pac-lossP
+<br/>For inverter operation with losses Pdc=Pac+lossP
+<br/>Converter state variable used in power flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ACDCConverter.uc">uc  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+<td>
+<p class="comment">Converter voltage, the voltage at the AC side of the bridge. Converter state variable, result from power flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ACDCConverter.udc">udc  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+<td>
+<p class="comment">Converter voltage at the DC side, also called Ud. Converter state variable, result from power flow.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ConductingEquipment</h4>
+<table>
+</table>
+</div>
+<div id="ACDCTerminal" class="group">
+<a href="#ACDCTerminal">
+<h2 class="abstract">ACDCTerminal</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConductingEquipment" class="group">
+<a href="#ConductingEquipment">
+<h2 class="abstract">ConductingEquipment</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.</p>
+<h3>Native Members (Operation)</h3>
+<table>
+</table>
+</div>
+<div id="DCTopologicalNode" class="group">
+<a href="#DCTopologicalNode">
+<h2 class="abstract">DCTopologicalNode</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Topology_Topology.png" target="_blanc">Topology </a></p>
+<p class="comment">DC bus.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction</p>
+<p class="note">-IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names.</p>
+<p class="note">-The attribute &ldquo;name&rdquo; inherited by many classes from the abstract class IdentifiedObject is not required to be unique. Software developers should not count on this to link the power system model.
+<br/></p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.mRID">mRID  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.
+<br/>For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.name">name  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.
+<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ShuntCompensator" class="group">
+<a href="#ShuntCompensator">
+<h2 class="abstract">ShuntCompensator</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="comment">A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor.  A negative value for reactivePerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="TapChanger" class="group">
+<a href="#TapChanger">
+<h2 class="abstract">TapChanger</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="comment">Mechanism for changing transformer winding tap positions.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="Terminal" class="group">
+<a href="#Terminal">
+<h2 class="abstract">Terminal</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="comment">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->ACDCTerminal->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TopologicalNode" class="group">
+<a href="#TopologicalNode">
+<h2 class="abstract">TopologicalNode</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\Topology_Topology.png" target="_blanc">Topology </a></p>
+<p class="comment">For a detailed substation model a topological node is a set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes change as the current network state changes (i.e., switches, breakers, etc. change state).
+<br/>For a planning model, switch statuses are not used to form topological nodes. Instead they are manually created or deleted in a model builder tool. Topological nodes maintained this way are also called "busses".</p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<h1>Enumerations</h1>
+<div id="UnitSymbol" class="group">
+<a href="#UnitSymbol">
+<h2 class="enumerated">UnitSymbol</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">The units defined for usage in the CIM.</p>
+<table>
+<tr>
+<th>
+<p class="name">VA</p>
+</th>
+<td>
+<p class="comment">Apparent power in volt ampere.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">W</p>
+</th>
+<td>
+<p class="comment">Active power in watt.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VAr</p>
+</th>
+<td>
+<p class="comment">Reactive power in volt ampere reactive.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VAh</p>
+</th>
+<td>
+<p class="comment">Apparent energy in volt ampere hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Wh</p>
+</th>
+<td>
+<p class="comment">Real energy in what hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VArh</p>
+</th>
+<td>
+<p class="comment">Reactive energy in volt ampere reactive hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">V</p>
+</th>
+<td>
+<p class="comment">Voltage in volt.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">ohm</p>
+</th>
+<td>
+<p class="comment">Resistance in ohm.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">A</p>
+</th>
+<td>
+<p class="comment">Current in ampere.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">F</p>
+</th>
+<td>
+<p class="comment">Capacitance in farad.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">H</p>
+</th>
+<td>
+<p class="comment">Inductance in henry.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">degC</p>
+</th>
+<td>
+<p class="comment">Relative temperature in degrees Celsius. In the SI unit system the symbol is ºC. Electric charge is measured in coulomb that has the unit symbol C. To distinguish degree Celsius form coulomb the symbol used in the UML is degC. Reason for not using ºC is the special character º is difficult to manage in software.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">s</p>
+</th>
+<td>
+<p class="comment">Time in seconds.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">min</p>
+</th>
+<td>
+<p class="comment">Time in minutes.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">h</p>
+</th>
+<td>
+<p class="comment">Time in hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">deg</p>
+</th>
+<td>
+<p class="comment">Plane angle in degrees.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">rad</p>
+</th>
+<td>
+<p class="comment">Plane angle in radians.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">J</p>
+</th>
+<td>
+<p class="comment">Energy in joule.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">N</p>
+</th>
+<td>
+<p class="comment">Force in newton.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">S</p>
+</th>
+<td>
+<p class="comment">Conductance in siemens.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">none</p>
+</th>
+<td>
+<p class="comment">Dimension less quantity, e.g. count, per unit, etc.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Hz</p>
+</th>
+<td>
+<p class="comment">Frequency in hertz.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">g</p>
+</th>
+<td>
+<p class="comment">Mass in gram.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Pa</p>
+</th>
+<td>
+<p class="comment">Pressure in pascal (n/m2).<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m</p>
+</th>
+<td>
+<p class="comment">Length in meter.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m2</p>
+</th>
+<td>
+<p class="comment">Area in square meters.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m3</p>
+</th>
+<td>
+<p class="comment">Volume in cubic meters.<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="UnitMultiplier" class="group">
+<a href="#UnitMultiplier">
+<h2 class="enumerated">UnitMultiplier</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">The unit multipliers defined for the CIM.<br/></p>
+<table>
+<tr>
+<th>
+<p class="name">p</p>
+</th>
+<td>
+<p class="comment">Pico 10**-12.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">n</p>
+</th>
+<td>
+<p class="comment">Nano 10**-9.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">micro</p>
+</th>
+<td>
+<p class="comment">Micro 10**-6.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m</p>
+</th>
+<td>
+<p class="comment">Milli 10**-3.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">c</p>
+</th>
+<td>
+<p class="comment">Centi 10**-2.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">d</p>
+</th>
+<td>
+<p class="comment">Deci 10**-1.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">k</p>
+</th>
+<td>
+<p class="comment">Kilo 10**3.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">M</p>
+</th>
+<td>
+<p class="comment">Mega 10**6.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">G</p>
+</th>
+<td>
+<p class="comment">Giga 10**9.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">T</p>
+</th>
+<td>
+<p class="comment">Tera 10**12.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">none</p>
+</th>
+<td>
+<p class="comment">No multiplier or equivalently multiply by 1.<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Compound types</h1>
+<h1>Datatypes</h1>
+<div id="AngleDegrees" class="group">
+<a href="#AngleDegrees">
+<h2 class="datatype">AngleDegrees</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Measurement of angle in degrees.<br/></p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= deg <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= none <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Voltage" class="group">
+<a href="#Voltage">
+<h2 class="datatype">Voltage</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Electrical voltage, can be both AC and DC.</p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="Voltage.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Voltage.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= V <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Voltage.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= k <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="CurrentFlow" class="group">
+<a href="#CurrentFlow">
+<h2 class="datatype">CurrentFlow</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Electrical current with sign convention: positive flow is out of the conducting equipment into the connectivity node. Can be both AC and DC.</p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="CurrentFlow.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="CurrentFlow.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= A <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="CurrentFlow.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= none <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ActivePower" class="group">
+<a href="#ActivePower">
+<h2 class="datatype">ActivePower</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Product of RMS value of the voltage and the RMS value of the in-phase component of the current.<br/></p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="ActivePower.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ActivePower.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= W <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ActivePower.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= M <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ReactivePower" class="group">
+<a href="#ReactivePower">
+<h2 class="datatype">ReactivePower</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Product of RMS value of the voltage and the RMS value of the quadrature component of the current.<br/></p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="ReactivePower.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ReactivePower.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= VAr <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="ReactivePower.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= M <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Simple_Float" class="group">
+<a href="#Simple_Float">
+<h2 class="datatype">Simple_Float</h2>
+</a>
+<p class="package"><a href="StateVariablesProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">A floating point number. The range is unspecified and not limited.<br/></p>
+<p class="note">-In ENTSO-E profile, Simple_Float range is the IEEE754 simple precision floating point one. It correspond to xs:float datatype</p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="Simple_Float.value">value  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

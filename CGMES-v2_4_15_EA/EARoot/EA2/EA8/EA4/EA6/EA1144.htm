@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ExcREXS</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1145.png" usemap="#EA1145" border="0" />
+
+<MAP NAME="EA1145">
+<area shape="rect" coords="10,0,640,622" href="EA1256.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">ExcREXS : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">03-Feb-12 12:48:32</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">04-Mar-13 21:39:18</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{687197C6-7B01-4454-B4AC-1C155F8EA74E}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;The rotating exciter may be of either DC or Brushless AC type. To model a DC exciter, set Kc = Kd = 0&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;An AC exciter can be modeled either by setting Kc and Kd to non- zero values to represent the armature reaction of the exciter and the regulation of the rotating rectifier, respectively, or by specifying the saturation factors, Se1, Se2 to represent the excitation-output-voltage curve of the exciter as loaded by the field resistance of the main generator. It is preferable to use the first approach (Kd = 0) since the later approach does not represent the effect of armature reaction in the exciter on its field current and hence invalidates the model when field current is sensed by the voltage regulator.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;When this model is used to represent a separately-excited exciter, the value of Ke should normally be close to unity. A shunt-excited DC exciter can be modeled by setting Ke to the appropriate small negative value needed represent the relationship between the exciter&#39;s air gap line and field resistance line. Note though, that this model does not determine the value of Ke automatically when a shunt field DC exciter is being represented&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The voltage regulator may be of proportional or proportional-plus-integral form. Either Kvp or Kvi, but not both, may be zero.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Te must be non-zero. If Tr, Ta, Tb1, Tb2, or Tf2 is zero, the corresponding blocks are bypassed. If Tf is zero, the feedback path is not used.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The voltage regulator output may be either the field voltage applied directly to the exciter or the input to an exciter field current regulator by choice of values of Kip, Kii, and Kh. Either or both of Kip and Kii must be non-zero. If Kii is non-zero, Kh should normally be non-zero.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The voltage regulator reference is modified by a volts-per-hertz limiter when shaft speed falls below Nvphz. When the shaft speed is below Nvphz the regulator reference is reduced as follows: effective vref = vref (1. &#8211; kvphz (speed - nvphz)) The volts-per-hertz limiter can be disabled by setting Nvphz = 0 or Kvphz = 0.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Saturation parameters are given by the IEEE saturation factor definition using the open circuit magnetization of the exciter. Either point [E1, S(E1) or E2, S(E2)] may be the higher value and the other the lower.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;If Ks is set to 1 the output (Efd) is multiplyed by generator speed.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The voltage regulator output limits, Vrmax, Vrmin must be stated as multiples of the value of exciter field current needed to maintain the exciter output at its base value. The field current limit, Vlr, must be stated as a multiple of the exciter field current needed to maintain the exciter output at its base value. That is, Vrmax, Vrmin must be stated in terms of the per unit exciter output voltage to which they correspond in the steady state.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The regulator output limit flag indicates whether the control power supply for the voltage regulator is a transformer at the generator terminals or an independent source such as a permanent magnet generator. Set Flimf as follows:&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;ul&gt;&lt;li&gt;Flimf = 0 the limits on regulator output are Vrmax, Vrmin, Vfmax and Vfmin&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;Flimf = 1 the limits on regulator output are (Vrmax*Vterm), (Vrmin*Vterm), (Vfmax*Vterm), and (Vfmin*Vterm).&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;12.&#160; Feedback signal selector uses ExcREXSFeedbackSignalKind&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;0 (AVR Output Signal) = ExcREXSFeedbackSignalKind.fieldVoltage&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1 (Exciter Field Current) = ExcREXSFeedbackSignalKind.fieldCurent&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;2 (Exciter Output Voltage) = ExcREXSFeedbackSignalKind.outputVoltage.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

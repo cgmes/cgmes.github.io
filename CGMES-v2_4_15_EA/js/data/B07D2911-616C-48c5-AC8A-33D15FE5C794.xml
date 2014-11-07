@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.2.8.2:1", "", "Wires", "EARoot/EA2/EA8/EA2/EA759.htm", "175.png", "7631", "0", "", "Logical diagram0","{0DC0FE49-B7DA-480f-97ED-DA12FC3D413A}");
+tocTab[tocTab.length] = new Array("0.2.8.2:2", "", "«abstract» AsynchronousMachine", "EARoot/EA2/EA8/EA2/EA762.htm", "5.png", "E26155", "0", "", "Class0","{00C77BDF-A74E-499b-862A-2E41C9397939}");
+tocTab[tocTab.length] = new Array("0.2.8.2:3", "", "«abstract» EnergyConsumer", "EARoot/EA2/EA8/EA2/EA763.htm", "5.png", "E26156", "0", "", "Class0","{44EAC591-4591-4b74-AF9D-5DAD79B7DB79}");
+tocTab[tocTab.length] = new Array("0.2.8.2:4", "", "«abstract» EnergySource", "EARoot/EA2/EA8/EA2/EA764.htm", "5.png", "E26157", "0", "", "Class0","{8888E854-A4AE-4190-9D2E-DF9C98E3F7DD}");
+tocTab[tocTab.length] = new Array("0.2.8.2:5", "", "«abstract» RegulatingCondEq", "EARoot/EA2/EA8/EA2/EA765.htm", "5.png", "E26158", "0", "", "Class0","{50FD59A6-8B48-4f77-9139-A5C5733AF504}");
+tocTab[tocTab.length] = new Array("0.2.8.2:6", "", "«abstract» RotatingMachine", "EARoot/EA2/EA8/EA2/EA766.htm", "5.png", "E26159", "0", "", "Class0","{4B1EF9D9-2D7F-4026-B2E9-5F7FA3CB83F1}");
+tocTab[tocTab.length] = new Array("0.2.8.2:7", "", "«abstract» SynchronousMachine", "EARoot/EA2/EA8/EA2/EA767.htm", "5.png", "E26160", "0", "", "Class0","{2B5FFA2F-D244-489a-AA05-863822A653EA}");

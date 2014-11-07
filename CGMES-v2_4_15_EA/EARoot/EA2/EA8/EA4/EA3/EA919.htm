@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GovGAST1</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA920.png" usemap="#EA920" border="0" />
+
+<MAP NAME="EA920">
+<area shape="rect" coords="10,0,726,294" href="EA1045.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">GovGAST1 : Documentation diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">06-Apr-12 09:55:49</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-Feb-13 18:20:50</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">pcha006</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{DC4C7CBF-2422-49e7-A58B-BAD907051AAD}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;b&gt;Parameter Notes:&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;T1&lt;/b&gt;, &lt;b&gt;T2&lt;/b&gt;, &lt;b&gt;T3&lt;/b&gt;, &lt;b&gt;Tltr&lt;/b&gt;, &lt;b&gt;R&lt;/b&gt;, and &lt;b&gt;b&lt;/b&gt; must be greater than zero.&#160; &lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;&lt;b&gt;Rmax&lt;/b&gt;, &lt;b&gt;Linc&lt;/b&gt;, &lt;b&gt;Tltr&lt;/b&gt;, &lt;b&gt;Ltrate&lt;/b&gt; represent a loading rate limit subsystem. For small excursions about a steady load the fuel valve can open at a rate of &lt;b&gt;Rmax&lt;/b&gt; PU/sec. The time constant, &lt;b&gt;Tltr&lt;/b&gt;, is used to obtain a long term average valve position. When a large output increase is called for, the fuel valve is allowed to open at the full rate only until the valve opening has moved ahead of the long term average position by &lt;b&gt;Linc&lt;/b&gt; PU. After this the valve is permitted to open only at the rate, &lt;b&gt;Ltrat&lt;/b&gt;, until the long term average position catches up.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;The nonlinear gain on the output may be input with up to 6 points. The (0.,0.) and (1.,1.) points are assumed and need not be exchanged. The output is not allowed to go beyond 0. and 1. However, if &lt;b&gt;Vmax&lt;/b&gt; #gt; 1., the input and output are scaled by this value. If the values are set to zero, a straight line is used.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;li&gt;If &lt;b&gt;T5&lt;/b&gt; is zero, the entire gain and lead-lag block is bypassed.&lt;/li&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/ol&gt;&lt;br /&gt;&lt;/p&gt;</div>
+
+</div>
+ 
+</body>
+</html>

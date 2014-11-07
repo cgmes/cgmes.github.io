@@ -1,0 +1,1560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  the CSS part and the header  of this html document for a Profile comes from a similar function of CimTool -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+.attribut {font-family: courier, monospace;font-weight: bold;}
+.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+.inheritrole {font-family: courier,monospace;font-style: italic;font-weight: normal;}
+.inheritattribut {font-family: courier, monospace;font-weight: normal;}
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+p.role {font-family: courier, monospace ;font-style: italic; font-weight: bold;}
+p.inheritrole {font-family: courier,monospace;font-style: italic;}
+p.attribut {font-family: courier, monospace;font-weight: bold;}
+p.inheritattribut {font-family: courier, monospace;}
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+ List of stereotye to categorize subProfiles
+     ShortCircuit
+     Description
+     Operation
+     Abstract
+     Entsoe
+
+<h1> Concrete Classes (Entsoe)</h1>
+<h1> Concrete Classes</h1>
+<div id="Diagram" class="group">
+<a href="#Diagram">
+<h2 class="concrete">Diagram</h2>
+</a>
+<p class="comment">The diagram being exchanged.  The coordinate system is a standard Cartesian coordinate system and the orientation attribute defines the orientation.<br/></p>
+<p class="note">-Coordinate units used in the exchange are mm (millimetres).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="Diagram.orientation">orientation  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OrientationKind">OrientationKind</a>
+</p>
+<td>
+<p class="comment">Coordinate system orientation of the diagram.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Diagram.x1InitialView">x1InitialView  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">X coordinate of the first corner of the initial view.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Diagram.x2InitialView">x2InitialView  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">X coordinate of the second corner of the initial view.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Diagram.y1InitialView">y1InitialView  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">Y coordinate of the first corner of the initial view.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="Diagram.y2InitialView">y2InitialView  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">Y coordinate of the second corner of the initial view.<br/></p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="Diagram.DiagramStyle">DiagramStyle</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#DiagramStyle">DiagramStyle</a></p>
+</td>
+<td>
+<p class="comment">A Diagram may have a DiagramStyle.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DiagramObject" class="group">
+<a href="#DiagramObject">
+<h2 class="concrete">DiagramObject</h2>
+</a>
+<p class="comment">An object that defines one or more points in a given space. This object can be associated with anything that specializes IdentifiedObject. For single line diagrams such objects typically include such items as analog values, breakers, disconnectors, power transformers, and transmission lines.</p>
+<p class="note">-<ul>	<li>DiagramObject.rotation=0 has the following meaning: The connection point of an element which has one terminal is pointing to the top side of the diagram. The connection point "From side" of an element which has more than one terminal is pointing to the top side of the diagram. </li>	<li>DiagramObject.rotation=90 has the following meaning: The connection point of an element which has one terminal is pointing to the right hand side of the diagram. The connection point "From side" of an element which has more than one terminal is pointing to the right hand side of the diagram.</li></ul></p>
+<p class="note">-The DiagramObject should link to SynchronousMachine and not GeneratingUnit.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="DiagramObject.drawingOrder">drawingOrder  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Integer">Integer</a>
+</p>
+<td>
+<p class="comment">The drawing order of this element. The higher the number, the later the element is drawn in sequence. This is used to ensure that elements that overlap are rendered in the correct order.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObject.isPolygon">isPolygon  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Boolean">Boolean</a>
+</p>
+<td>
+<p class="comment">Defines whether or not the diagram objects points define the boundaries of a polygon or the routing of a polyline. If this value is true then a receiving application should consider the first and last points to be connected.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObject.offsetX">offsetX  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The offset in the X direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).<br/><br/>The offset is in per-unit with 0 indicating there is no offset from the horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the left and 0.5 indicates an offset of 50% to the right.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObject.offsetY">offsetY  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The offset in the Y direction. This is used for defining the offset from centre for rendering an icon (the default is that a single point specifies the centre of the icon).<br/><br/>The offset is in per-unit with 0 indicating there is no offset from the vertical centre of the icon.  The offset direction is dependent on the orientation of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the vertical axis.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObject.rotation">rotation  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+<td>
+<p class="comment">Sets the angle of rotation of the diagram object.  Zero degrees is pointing to the top of the diagram.  Rotation is clockwise.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DiagramObject.IdentifiedObject">IdentifiedObject</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#IdentifiedObject">IdentifiedObject</a></p>
+</td>
+<td>
+<p class="comment">The diagram objects that are associated with the domain object.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DiagramObject.DiagramObjectStyle">DiagramObjectStyle</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#DiagramObjectStyle">DiagramObjectStyle</a></p>
+</td>
+<td>
+<p class="comment">A diagram object has a style associated that provides a reference for the style used in the originating system.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DiagramObject.Diagram">Diagram</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#Diagram">Diagram</a></p>
+</td>
+<td>
+<p class="comment">A diagram object is part of a diagram.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DiagramObjectGluePoint" class="group">
+<a href="#DiagramObjectGluePoint">
+<h2 class="concrete">DiagramObjectGluePoint</h2>
+</a>
+<p class="comment">This is used for grouping diagram object points from different diagram objects that are considered to be glued together in a diagram even if they are not at the exact same coordinates.<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+</div>
+<div id="DiagramObjectPoint" class="group">
+<a href="#DiagramObjectPoint">
+<h2 class="concrete">DiagramObjectPoint</h2>
+</a>
+<p class="comment">A point in a given space defined by 3 coordinates and associated to a diagram object.  The coordinates may be positive or negative as the origin does not have to be in the corner of a diagram.  <br/></p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="DiagramObjectPoint.sequenceNumber">sequenceNumber  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Integer">Integer</a>
+</p>
+<td>
+<p class="comment">The sequence position of the point, used for defining the order of points for diagram objects acting as a polyline or polygon with more than one point.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObjectPoint.xPosition">xPosition  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The X coordinate of this point.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObjectPoint.yPosition">yPosition  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The Y coordinate of this point.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramObjectPoint.zPosition">zPosition  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+<td>
+<p class="comment">The Z coordinate of this point.<br/></p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DiagramObjectPoint.DiagramObjectGluePoint">DiagramObjectGluePoint</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..1]</p>
+</td>
+<td>
+<p><a href="#DiagramObjectGluePoint">DiagramObjectGluePoint</a></p>
+</td>
+<td>
+<p class="comment">A diagram object glue point is associated with 2 or more object points that are considered to be 'glued' together.</p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="DiagramObjectPoint.DiagramObject">DiagramObject</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[1..1]</p>
+</td>
+<td>
+<p><a href="#DiagramObject">DiagramObject</a></p>
+</td>
+<td>
+<p class="comment">The diagram object with which the points are associated.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DiagramObjectStyle" class="group">
+<a href="#DiagramObjectStyle">
+<h2 class="concrete">DiagramObjectStyle</h2>
+</a>
+<p class="comment">A reference to a style used by the originating system for a diagram object.  A diagram object style describes information such as line thickness, shape such as circle or rectangle etc, and color.<br/></p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="DiagramStyle" class="group">
+<a href="#DiagramStyle">
+<h2 class="concrete">DiagramStyle</h2>
+</a>
+<p class="comment">The diagram style refer to a style used by the originating system for a diagram.  A diagram style describes information such as schematic, geographic, bus-branch etc.</p>
+<p class="note">-The inherited IdentifiedObject.name shall have one of the following names: node-breaker, bus-branch, or geoschematic.</p>
+<h3>Native Members</h3>
+<table>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TextDiagramObject" class="group">
+<a href="#TextDiagramObject">
+<h2 class="concrete">TextDiagramObject</h2>
+</a>
+<p class="comment">A diagram object for placing free-text or text derived from an associated domain object.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="TextDiagramObject.text">text  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The text that is displayed by this text diagram object.<br/></p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->DiagramObject->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">drawingOrder </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Integer">Integer</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">isPolygon </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Boolean">Boolean</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">offsetX </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">offsetY </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Simple_Float">Simple_Float</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">rotation </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritrole" id="DiagramObject.IdentifiedObject">IdentifiedObject</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritrole" id="DiagramObject.DiagramObjectStyle">DiagramObjectStyle</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#DiagramObjectStyle">DiagramObjectStyle</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritrole" id="DiagramObject.Diagram">Diagram</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Diagram">Diagram</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#DiagramObject">DiagramObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="VisibilityLayer" class="group">
+<a href="#VisibilityLayer">
+<h2 class="concrete">VisibilityLayer</h2>
+</a>
+<p class="comment">Layers are typically used for grouping diagram objects according to themes and scales. Themes are used to display or hide certain information (e.g., lakes, borders), while scales are used for hiding or displaying information depending on the current zoom level (hide text when it is too small to be read, or when it exceeds the screen size). This is also called de-cluttering.<br/><br/>CIM based graphics exchange will support an m:n relationship between diagram objects and layers. It will be the task of the importing system to convert an m:n case into an appropriate 1:n representation if the importing system does not support m:n.<br/></p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="VisibilityLayer.drawingOrder">drawingOrder  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Integer">Integer</a>
+</p>
+<td>
+<p class="comment">The drawing order for this layer.  The higher the number, the later the layer and the objects within it are rendered.<br/></p>
+</td>
+</tr>
+<tr>
+<td class="type">
+<p class="type">
+<p class="role" id="VisibilityLayer.VisibleObjects">VisibleObjects</p>
+</p>
+</td>
+<td>
+<p class="cardinality">[0..*]</p>
+</td>
+<td>
+<p><a href="#DiagramObject">DiagramObject</a></p>
+</td>
+<td>
+<p class="comment">A visibility layer can contain one or more diagram objects.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<h4> Inheritance pass: ->IdentifiedObject</h4>
+<table>
+<tr>
+<th>
+<p class="inheritattribut">mRID </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="inheritattribut">name </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="DiagramLayoutVersion" class="group">
+<a href="#DiagramLayoutVersion">
+<h2 class="abstract">DiagramLayoutVersion (Entsoe) </h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DiagramLayoutProfile_DiagramLayoutProfile.png" target="_blanc">DiagramLayoutProfile </a></p>
+<p class="comment">Version details.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.baseUML">baseUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= iec61970cim16v28_iec61968cim12v08_iec62325cim03v01a <br/>
+<p class="comment">Base UML provided by CIM model manager.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.baseURI">baseURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/61970-453/DiagramLayout/3"><font color="#0000ff"><u>http://iec.ch/TC57/2013/61970-453/DiagramLayout/3</u></font></a> <br/>
+<p class="comment">Profile URI used in the Model Exchange header and defined in IEC standards.  It uniquely identifies the Profile and its version. It is given for information only and to identify the closest IEC profile to which this CGMES profile is based on.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.date">date  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Date">Date</a>
+</p>
+<td>
+ ConstantValue= 2014-08-07 <br/>
+<p class="comment">Profile creation date
+<br/>Form is YYYY-MM-DD for example for January 5, 2009 it is 2009-01-05.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.differenceModelURI">differenceModelURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/DifferenceModel/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/DifferenceModel/1#</u></font></a> <br/>
+<p class="comment">Difference model URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.entsoeUML">entsoeUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= entsoe_v2.4.15 <br/>
+<p class="comment">UML provided by ENTSO-E.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.entsoeURI">entsoeURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://entsoe.eu/CIM/DiagramLayout/3/1"><font color="#0000ff"><u>http://entsoe.eu/CIM/DiagramLayout/3/1</u></font></a> <br/>
+<p class="comment">Profile URI defined by ENTSO-E and used in the Model Exchange header.  It uniquely identifies the Profile and its version. The last two elements in the URI (http://entsoe.eu/CIM/DiagramLayout/yy/zzz) indicate major and minor versions where: 
+<br/>- yy - indicates a major version;
+<br/>- zzz - indicates a minor version. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.modelDescriptionURI">modelDescriptionURI  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/61970-552/ModelDescription/1#"><font color="#0000ff"><u>http://iec.ch/TC57/61970-552/ModelDescription/1#</u></font></a> <br/>
+<p class="comment">Model Description URI defined by IEC 61970-552. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.namespaceRDF">namespaceRDF  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><font color="#0000ff"><u>http://www.w3.org/1999/02/22-rdf-syntax-ns#</u></font></a> <br/>
+<p class="comment">RDF namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.namespaceUML">namespaceUML  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= <a href="http://iec.ch/TC57/2013/CIM-schema-cim16#"><font color="#0000ff"><u>http://iec.ch/TC57/2013/CIM-schema-cim16#</u></font></a> <br/>
+<p class="comment">CIM UML namespace. </p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="DiagramLayoutVersion.shortName">shortName  (Entsoe)  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+ ConstantValue= DL <br/>
+<p class="comment">The short name of the profile used in profile documentation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction</p>
+<p class="note">-IdentifiedObject.name is 32 characters maximum. It shall be consistent with the name of the object used in companies, in daily operation (e. g. in SCADA systems), in planning processes or in asset related systems and should allow inter-communicating of TSO, using general names.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.mRID">mRID  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context. Global uniqueness is easily achieved by using a UUID,  as specified in RFC 4122, for the mRID.  The use of UUID is strongly recommended.
+<br/>For CIMXML data files in RDF syntax conforming to IEC 61970-552 Edition 1, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="IdentifiedObject.name">name  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#String">String</a>
+</p>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.
+<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<div id="OrientationKind" class="group">
+<a href="#OrientationKind">
+<h2 class="enumerated">OrientationKind</h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">The orientation of the coordinate system with respect to top, left, and the coordinate number system.<br/></p>
+<table>
+<tr>
+<th>
+<p class="name">negative</p>
+</th>
+<td>
+<p class="comment">For 2D diagrams, a negative orientation gives the left-hand orientation (favoured by computer graphics displays) with X values increasing from left to right and Y values increasing from top to bottom.   This is also known as a left hand orientation.<br/><br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="UnitSymbol" class="group">
+<a href="#UnitSymbol">
+<h2 class="enumerated">UnitSymbol</h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">The units defined for usage in the CIM.</p>
+<table>
+<tr>
+<th>
+<p class="name">VA</p>
+</th>
+<td>
+<p class="comment">Apparent power in volt ampere.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">W</p>
+</th>
+<td>
+<p class="comment">Active power in watt.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VAr</p>
+</th>
+<td>
+<p class="comment">Reactive power in volt ampere reactive.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VAh</p>
+</th>
+<td>
+<p class="comment">Apparent energy in volt ampere hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Wh</p>
+</th>
+<td>
+<p class="comment">Real energy in what hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">VArh</p>
+</th>
+<td>
+<p class="comment">Reactive energy in volt ampere reactive hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">V</p>
+</th>
+<td>
+<p class="comment">Voltage in volt.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">ohm</p>
+</th>
+<td>
+<p class="comment">Resistance in ohm.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">A</p>
+</th>
+<td>
+<p class="comment">Current in ampere.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">F</p>
+</th>
+<td>
+<p class="comment">Capacitance in farad.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">H</p>
+</th>
+<td>
+<p class="comment">Inductance in henry.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">degC</p>
+</th>
+<td>
+<p class="comment">Relative temperature in degrees Celsius. In the SI unit system the symbol is ºC. Electric charge is measured in coulomb that has the unit symbol C. To distinguish degree Celsius form coulomb the symbol used in the UML is degC. Reason for not using ºC is the special character º is difficult to manage in software.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">s</p>
+</th>
+<td>
+<p class="comment">Time in seconds.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">min</p>
+</th>
+<td>
+<p class="comment">Time in minutes.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">h</p>
+</th>
+<td>
+<p class="comment">Time in hours.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">deg</p>
+</th>
+<td>
+<p class="comment">Plane angle in degrees.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">rad</p>
+</th>
+<td>
+<p class="comment">Plane angle in radians.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">J</p>
+</th>
+<td>
+<p class="comment">Energy in joule.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">N</p>
+</th>
+<td>
+<p class="comment">Force in newton.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">S</p>
+</th>
+<td>
+<p class="comment">Conductance in siemens.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">none</p>
+</th>
+<td>
+<p class="comment">Dimension less quantity, e.g. count, per unit, etc.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Hz</p>
+</th>
+<td>
+<p class="comment">Frequency in hertz.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">g</p>
+</th>
+<td>
+<p class="comment">Mass in gram.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Pa</p>
+</th>
+<td>
+<p class="comment">Pressure in pascal (n/m2).<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m</p>
+</th>
+<td>
+<p class="comment">Length in meter.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m2</p>
+</th>
+<td>
+<p class="comment">Area in square meters.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m3</p>
+</th>
+<td>
+<p class="comment">Volume in cubic meters.<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="UnitMultiplier" class="group">
+<a href="#UnitMultiplier">
+<h2 class="enumerated">UnitMultiplier</h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">The unit multipliers defined for the CIM.<br/></p>
+<table>
+<tr>
+<th>
+<p class="name">p</p>
+</th>
+<td>
+<p class="comment">Pico 10**-12.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">n</p>
+</th>
+<td>
+<p class="comment">Nano 10**-9.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">micro</p>
+</th>
+<td>
+<p class="comment">Micro 10**-6.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">m</p>
+</th>
+<td>
+<p class="comment">Milli 10**-3.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">c</p>
+</th>
+<td>
+<p class="comment">Centi 10**-2.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">d</p>
+</th>
+<td>
+<p class="comment">Deci 10**-1.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">k</p>
+</th>
+<td>
+<p class="comment">Kilo 10**3.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">M</p>
+</th>
+<td>
+<p class="comment">Mega 10**6.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">G</p>
+</th>
+<td>
+<p class="comment">Giga 10**9.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">T</p>
+</th>
+<td>
+<p class="comment">Tera 10**12.<br/></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">none</p>
+</th>
+<td>
+<p class="comment">No multiplier or equivalently multiply by 1.<br/></p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Compound types</h1>
+<h1>Datatypes</h1>
+<div id="Simple_Float" class="group">
+<a href="#Simple_Float">
+<h2 class="datatype">Simple_Float</h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">A floating point number. The range is unspecified and not limited.<br/></p>
+<p class="note">-In ENTSO-E profile, Simple_Float range is the IEEE754 simple precision floating point one. It correspond to xs:float datatype</p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="Simple_Float.value">value  </p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+<div id="AngleDegrees" class="group">
+<a href="#AngleDegrees">
+<h2 class="datatype">AngleDegrees</h2>
+</a>
+<p class="package"><a href="DiagramLayoutProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="comment">Measurement of angle in degrees.<br/></p>
+<p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
+<table>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.value">value  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Float">Float</a>
+</p>
+<td>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.unit">unit  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitSymbol">UnitSymbol</a>
+</p>
+<td>
+ ConstantValue= deg <br/>
+<p class="comment"></p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="attribut" id="AngleDegrees.multiplier">multiplier  </p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#UnitMultiplier">UnitMultiplier</a>
+</p>
+<td>
+ ConstantValue= none <br/>
+<p class="comment"></p>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

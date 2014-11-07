@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LoadDynamics</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA1455.png" usemap="#EA1455" border="0" />
+
+<MAP NAME="EA1455">
+<area shape="rect" coords="618,537,814,613" href="EA1464.htm" target="_self">
+<area shape="rect" coords="467,365,607,556" href="EA1458.htm" target="_self">
+<area shape="rect" coords="620,366,1003,529" href="EA1459.htm" target="_self">
+<area shape="rect" coords="22,356,180,421" href="../../EA5/EA1490.htm" target="_self">
+<area shape="rect" coords="247,360,386,401" href="EA1461.htm" target="_self">
+<area shape="rect" coords="235,114,513,173" href="../../EA2/EA763.htm" target="_self">
+<area shape="rect" coords="295,469,455,699" href="EA1463.htm" target="_self">
+<area shape="rect" coords="293,712,421,816" href="EA1465.htm" target="_self">
+<area shape="rect" coords="16,465,284,751" href="EA1462.htm" target="_self">
+<area shape="rect" coords="314,248,496,306" href="EA1460.htm" target="_self">
+<area shape="rect" coords="10,209,1007,824" href="../../EA3/EA805.htm" target="_self">
+<area shape="rect" coords="10,0,1006,198" href="../EA1/EA875.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">LoadDynamics : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">24-Feb-09 16:16:03</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">03-May-14 20:32:35</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">tsaxton</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{4F2567FF-471F-44be-94FA-3A40A4B212C4}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">This diagram shows static power system model classes and dynamics model classes related to modeling of load for dynamics.&#160; An association between the EnergyConsumerDynamics class and the EnergyConsumer class provides a means for relating the dynamics model to the static model.</div>
+
+</div>
+ 
+</body>
+</html>
