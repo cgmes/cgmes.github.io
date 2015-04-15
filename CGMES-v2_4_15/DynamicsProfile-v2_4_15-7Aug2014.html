@@ -88,7 +88,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AsynchronousMachineEquivalentCircuit">
 <h2 class="concrete">AsynchronousMachineEquivalentCircuit</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
 <p class="comment">The electrical equations of all variations of the asynchronous model are based on the AsynchronousEquivalentCircuit diagram for the direct and quadrature axes, with two equivalent rotor windings in each axis.  <br/><br/><b>Equations for conversion between Equivalent Circuit and Time Constant Reactance forms:</b><br/><b>Xs</b> = <b>Xm</b> + <b>Xl</b><br/><b>X'</b> = <b>Xl</b> + <b>Xm</b> * <b>Xlr1</b> / (<b>Xm</b> + <b>Xlr1</b>)<br/><b>X''</b> = <b>Xl</b> + <b>Xm</b> * <b>Xlr1</b>* <b>Xlr2</b> / (<b>Xm</b> * <b>Xlr1</b> + <b>Xm</b> * <b>Xlr2</b> + <b>Xlr1</b> * <b>Xlr2</b>)<br/><b>T'o</b> = (<b>Xm</b> + <b>Xlr1</b>) / (<b>omega</b><b><sub>0</sub></b> * <b>Rr1</b>)<br/><b>T''o</b> = (<b>Xm</b> * <b>Xlr1</b> + <b>Xm</b> * <b>Xlr2</b> + <b>Xlr1</b> * <b>Xlr2</b>) / (<b>omega</b><b><sub>0</sub></b> * <b>Rr2</b> * (<b>Xm </b>+ <b>Xlr1</b>)<br/><b><br/></b>Same equations using CIM attributes from AsynchronousMachineTimeConstantReactance class on left of = sign and AsynchronousMachineEquivalentCircuit class on right (except as noted):<br/>xs = xm + RotatingMachineDynamics.statorLeakageReactance<br/>xp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1 / (xm + xlr1)<br/>xpp = RotatingMachineDynamics.statorLeakageReactance + xm * xlr1* xlr2 / (xm * xlr1 + xm * xlr2 + xlr1 * xlr2)<br/>tpo = (xm + xlr1) / (2*pi*nominal frequency * rr1)<br/>tppo = (xm * xlr1 + xm * xlr2 + xlr1 * xlr2) / (2*pi*nominal frequency * rr2 * (xm + xlr1).</p>
 <h3>Native Members</h3>
 <table>
@@ -386,7 +386,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AsynchronousMachineTimeConstantReactance">
 <h2 class="concrete">AsynchronousMachineTimeConstantReactance</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
 <p class="comment"><b>Parameter Notes:</b><br/><ol><br/>	<li>If <b>X''</b> = <b>X'</b>, a single cage (one equivalent rotor winding per axis) is modelled.</li>	<li>The “p” in the attribute names is a substitution for a “prime” in the usual parameter notation, e.g. tpo refers to T'o.</li></ol>The parameters used for models expressed in time constant reactance form include:<ul>	<li>RotatingMachine.ratedS (MVAbase)</li>	<li>RotatingMachineDynamics.damping (D)</li>	<li>RotatingMachineDynamics.inertia (H)</li>	<li>RotatingMachineDynamics.saturationFactor (S1)</li>	<li>RotatingMachineDynamics.saturationFactor120 (S12)</li>	<li>RotatingMachineDynamics.statorLeakageReactance (Xl)</li>	<li>RotatingMachineDynamics.statorResistance (Rs)</li>	<li>.xs (Xs)</li>	<li>.xp (X')</li>	<li>.xpp (X'')</li>	<li>.tpo (T'o)</li>	<li>.tppo (T''o).</li></ul></p>
 <h3>Native Members</h3>
 <table>
@@ -684,7 +684,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AsynchronousMachineUserDefined">
 <h2 class="concrete">AsynchronousMachineUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Asynchronous machine whose dynamic behaviour is described by a user-defined model.</p>
 <h3>Native Members</h3>
 <table>
@@ -922,7 +922,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DiscExcContIEEEDEC1A">
 <h2 class="concrete">DiscExcContIEEEDEC1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
 <p class="comment">The class represents IEEE Type DEC1A discontinuous excitation control model that boosts generator excitation to a level higher than that demanded by the voltage regulator and stabilizer immediately following a system fault.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 12.2. </p>
 <h3>Native Members</h3>
 <table>
@@ -1301,7 +1301,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DiscExcContIEEEDEC2A">
 <h2 class="concrete">DiscExcContIEEEDEC2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
 <p class="comment">The class represents IEEE Type DEC2A model for the discontinuous excitation control. This system provides transient excitation boosting via an open-loop control as initiated by a trigger signal generated remotely.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 12.3. </p>
 <h3>Native Members</h3>
 <table>
@@ -1485,7 +1485,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DiscExcContIEEEDEC3A">
 <h2 class="concrete">DiscExcContIEEEDEC3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
 <p class="comment">The class represents IEEE Type DEC3A model. In some systems, the stabilizer output is disconnected from the regulator immediately following a severe fault to prevent the stabilizer from competing with action of voltage regulator during the first swing.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 12.4. </p>
 <h3>Native Members</h3>
 <table>
@@ -1624,7 +1624,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DiscontinuousExcitationControlUserDefined">
 <h2 class="concrete">DiscontinuousExcitationControlUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Discontinuous excitation control function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -1748,7 +1748,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC1A">
 <h2 class="concrete">ExcAC1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC1A alternator-supplied rectifier excitation system with different rate feedback source.</p>
 <h3>Native Members</h3>
 <table>
@@ -2187,7 +2187,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC2A">
 <h2 class="concrete">ExcAC2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC2A alternator-supplied rectifier excitation system with different field current limit.</p>
 <h3>Native Members</h3>
 <table>
@@ -2716,7 +2716,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC3A">
 <h2 class="concrete">ExcAC3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC3A alternator-supplied rectifier excitation system with different field current limit.</p>
 <h3>Native Members</h3>
 <table>
@@ -3215,7 +3215,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC4A">
 <h2 class="concrete">ExcAC4A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC4A alternator-supplied rectifier excitation system with different minimum controller output.</p>
 <h3>Native Members</h3>
 <table>
@@ -3459,7 +3459,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC5A">
 <h2 class="concrete">ExcAC5A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC5A alternator-supplied rectifier excitation system with different minimum controller output.</p>
 <h3>Native Members</h3>
 <table>
@@ -3838,7 +3838,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC6A">
 <h2 class="concrete">ExcAC6A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC6A alternator-supplied rectifier excitation system with speed input.</p>
 <h3>Native Members</h3>
 <table>
@@ -4292,7 +4292,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAC8B">
 <h2 class="concrete">ExcAC8B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE AC8B alternator-supplied rectifier excitation system with speed input and input limiter.</p>
 <h3>Native Members</h3>
 <table>
@@ -4806,7 +4806,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcANS">
 <h2 class="concrete">ExcANS</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Italian excitation system. It represents static field voltage or excitation current feedback excitation system.</p>
 <h3>Native Members</h3>
 <table>
@@ -5125,7 +5125,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR1">
 <h2 class="concrete">ExcAVR1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Italian excitation system corresponding to IEEE (1968) Type 1 Model. It represents exciter dynamo and electromechanical regulator.</p>
 <h3>Native Members</h3>
 <table>
@@ -5414,7 +5414,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR2">
 <h2 class="concrete">ExcAVR2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Italian excitation system corresponding to IEEE (1968) Type 2 Model. It represents alternator and rotating diodes and electromechanic voltage regulators.</p>
 <h3>Native Members</h3>
 <table>
@@ -5718,7 +5718,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR3">
 <h2 class="concrete">ExcAVR3</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Italian excitation system. It represents exciter dynamo and electric regulator. </p>
 <h3>Native Members</h3>
 <table>
@@ -6007,7 +6007,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR4">
 <h2 class="concrete">ExcAVR4</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Italian excitation system. It represents static exciter and electric voltage regulator.</p>
 <h3>Native Members</h3>
 <table>
@@ -6326,7 +6326,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR5">
 <h2 class="concrete">ExcAVR5</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Manual excitation control with field circuit resistance. This model can be used as a very simple representation of manual voltage control.</p>
 <h3>Native Members</h3>
 <table>
@@ -6480,7 +6480,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcAVR7">
 <h2 class="concrete">ExcAVR7</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">IVO excitation system.</p>
 <h3>Native Members</h3>
 <table>
@@ -6904,7 +6904,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcBBC">
 <h2 class="concrete">ExcBBC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Transformer fed static excitation system (static with ABB regulator). This model represents a static excitation system in which a gated thyristor bridge fed by a transformer at the main generator terminals feeds the main generator directly.</p>
 <h3>Native Members</h3>
 <table>
@@ -7178,7 +7178,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcCZ">
 <h2 class="concrete">ExcCZ</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Czech Proportion/Integral Exciter.</p>
 <h3>Native Members</h3>
 <table>
@@ -7437,7 +7437,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcDC1A">
 <h2 class="concrete">ExcDC1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE DC1A direct current commutator exciter with speed input and without underexcitation limiters (UEL) inputs.</p>
 <h3>Native Members</h3>
 <table>
@@ -7816,7 +7816,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcDC2A">
 <h2 class="concrete">ExcDC2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE DC2A direct current commutator exciters with speed input, one more leg block in feedback loop and without underexcitation limiters (UEL) inputs.  DC type 2 excitation system model with added speed multiplier, added lead-lag, and voltage-dependent limits.</p>
 <h3>Native Members</h3>
 <table>
@@ -8195,7 +8195,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcDC3A">
 <h2 class="concrete">ExcDC3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">This is modified IEEE DC3A direct current commutator exciters with speed input, and death band.  DC old type 4.</p>
 <h3>Native Members</h3>
 <table>
@@ -8544,7 +8544,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcDC3A1">
 <h2 class="concrete">ExcDC3A1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">This is modified old IEEE type 3 excitation system.</p>
 <h3>Native Members</h3>
 <table>
@@ -8863,7 +8863,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcELIN1">
 <h2 class="concrete">ExcELIN1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Static PI transformer fed excitation system: ELIN (VATECH) - simplified model.  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  A power system stabilizer with power input is included in the model.</p>
 <h3>Native Members</h3>
 <table>
@@ -9197,7 +9197,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcELIN2">
 <h2 class="concrete">ExcELIN2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Detailed Excitation System Model - ELIN (VATECH).  This model represents an all-static excitation system. A PI voltage controller establishes a desired field current set point for a proportional current controller. The integrator of the PI controller has a follow-up input to match its signal to the present field current.  Power system stabilizer models used in conjunction with this excitation system model: PssELIN2, PssIEEE2B, Pss2B.</p>
 <h3>Native Members</h3>
 <table>
@@ -9711,7 +9711,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcHU">
 <h2 class="concrete">ExcHU</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Hungarian Excitation System Model, with built-in voltage transducer.</p>
 <h3>Native Members</h3>
 <table>
@@ -10000,7 +10000,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC1A">
 <h2 class="concrete">ExcIEEEAC1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC1A model. The model represents the field-controlled alternator-rectifier excitation systems designated Type AC1A. These excitation systems consist of an alternator main exciter with non-controlled rectifiers.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.1.</p>
 <h3>Native Members</h3>
 <table>
@@ -10379,7 +10379,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC2A">
 <h2 class="concrete">ExcIEEEAC2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC2A model. The model represents a high initial response field-controlled alternator-rectifier excitation system. The alternator main exciter is used with non-controlled rectifiers. The Type AC2A model is similar to that of Type AC1A except for the inclusion of exciter time constant compensation and exciter field current limiting elements.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -10803,7 +10803,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC3A">
 <h2 class="concrete">ExcIEEEAC3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC3A model. The model represents the field-controlled alternator-rectifier excitation systems designated Type AC3A. These excitation systems include an alternator main exciter with non-controlled rectifiers. The exciter employs self-excitation, and the voltage regulator power is derived from the exciter output voltage.  Therefore, this system has an additional nonlinearity, simulated by the use of a multiplier<br/>whose inputs are the voltage regulator command signal, <b>Va</b>, and the exciter output voltage, <b>Efd</b>, times <b>K</b><b><sub>R</sub></b>.  This model is applicable to excitation systems employing static voltage regulators.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -11227,7 +11227,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC4A">
 <h2 class="concrete">ExcIEEEAC4A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC4A model. The model represents type AC4A alternator-supplied controlled-rectifier excitation system which is quite different from the other type ac systems. This high initial response excitation system utilizes a full thyristor bridge in the exciter output circuit.  The voltage regulator controls the firing of the thyristor bridges. The exciter alternator uses an independent voltage regulator to control its output voltage to a constant value. These effects are not modeled; however, transient loading effects on the exciter alternator are included.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.4.</p>
 <h3>Native Members</h3>
 <table>
@@ -11471,7 +11471,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC5A">
 <h2 class="concrete">ExcIEEEAC5A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC5A model. The model represents a simplified model for brushless excitation systems. The regulator is supplied from a source, such as a permanent magnet generator, which is not affected by system disturbances.  Unlike other ac models, this model uses loaded rather than open circuit exciter saturation data in the same way as it is used for the dc models.  Because the model has been widely implemented by the industry, it is sometimes used to represent other types of systems when either detailed data for them are not available or simplified models are required.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.5.</p>
 <h3>Native Members</h3>
 <table>
@@ -11790,7 +11790,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC6A">
 <h2 class="concrete">ExcIEEEAC6A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC6A model. The model represents field-controlled alternator-rectifier excitation systems with system-supplied electronic voltage regulators.  The maximum output of the regulator, <b><i>V</i></b><b><i><sub>R</sub></i></b>, is a function of terminal voltage, <b><i>V</i></b><b><i><sub>T</sub></i></b>. The field current limiter included in the original model AC6A remains in the 2005 update.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.6. <br/><br/></p>
 <h3>Native Members</h3>
 <table>
@@ -12229,7 +12229,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC7B">
 <h2 class="concrete">ExcIEEEAC7B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC7B model. The model represents excitation systems which consist of an ac alternator with either stationary or rotating rectifiers to produce the dc field requirements. It is an upgrade to earlier ac excitation systems, which replace only the controls but retain the ac alternator and diode rectifier bridge.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.7.<br/><br/><b>Note: </b>In the IEEE Standard 421.5 – 2005, the [1 / sT<sub>E</sub>] block is shown as [1 / (1 + sT<sub>E</sub>)], which is incorrect.</p>
 <h3>Native Members</h3>
 <table>
@@ -12728,7 +12728,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEAC8B">
 <h2 class="concrete">ExcIEEEAC8B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type AC8B model. This model represents a PID voltage regulator with either a brushless exciter or dc exciter. The AVR in this model consists of PID control, with separate constants for the proportional (<b>K</b><b><sub>PR</sub></b>), integral (<b>K</b><b><sub>IR</sub></b>), and derivative (<b>K</b><b><sub>DR</sub></b>) gains. The representation of the brushless exciter (<b>T</b><b><sub>E</sub></b>, <b>K</b><b><sub>E</sub></b>, <b>S</b><b><sub>E</sub></b>, <b>K</b><b><sub>C</sub></b>, <b>K</b><b><sub>D</sub></b>) is similar to the model Type AC2A. The Type AC8B model can be used to represent static voltage regulators applied to brushless excitation systems. Digitally based voltage regulators feeding dc rotating main exciters can be represented with the AC Type AC8B model with the parameters <b>K</b><b><sub>C</sub></b> and <b>K</b><b><sub>D</sub></b> set to 0.  For thyristor power stages fed from the generator terminals, the limits <b>V</b><b><sub>RMAX</sub></b> and <b>V</b><b><sub>RMIN</sub></b> should be a function of terminal voltage: <b>V</b><b><sub>T</sub></b> * <b>V</b><b><sub>RMAX</sub></b><sub> </sub>and <b>V</b><b><sub>T</sub></b> * <b>V</b><b><sub>RMIN</sub></b>.<br/>  <br/><br/>Reference: IEEE Standard 421.5-2005 Section 6.8. </p>
 <h3>Native Members</h3>
 <table>
@@ -13107,7 +13107,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEDC1A">
 <h2 class="concrete">ExcIEEEDC1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type DC1A model. This model represents field-controlled dc commutator exciters with continuously acting voltage regulators (especially the direct-acting rheostatic, rotating amplifier, and magnetic amplifier types).  Because this model has been widely implemented by the industry, it is sometimes used to represent other types of systems when detailed data for them are not available or when a simplified model is required.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 5.1. </p>
 <h3>Native Members</h3>
 <table>
@@ -13456,7 +13456,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEDC2A">
 <h2 class="concrete">ExcIEEEDC2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type DC2A model. This model represents represent field-controlled dc commutator exciters with continuously acting voltage regulators having supplies obtained from the generator or auxiliary bus.  It differs from the Type DC1A model only in the voltage regulator output limits, which are now proportional to terminal voltage <b>V</b><b><sub>T</sub></b>.<br/>It is representative of solid-state replacements for various forms of older mechanical and rotating amplifier regulating equipment connected to dc commutator exciters.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 5.2. </p>
 <h3>Native Members</h3>
 <table>
@@ -13805,7 +13805,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEDC3A">
 <h2 class="concrete">ExcIEEEDC3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type DC3A model. This model represents represent older systems, in particular those dc commutator exciters with non-continuously acting regulators that were commonly used before the development of the continuously acting varieties.  These systems respond at basically two different rates, depending upon the magnitude of voltage error. For small errors, adjustment is made periodically with a signal to a motor-operated rheostat. Larger errors cause resistors to be quickly shorted or inserted and a strong forcing signal applied to the exciter. Continuous motion of the motor-operated rheostat occurs for these larger error signals, even though it is bypassed by contactor action.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 5.3. </p>
 <h3>Native Members</h3>
 <table>
@@ -14079,7 +14079,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEDC4B">
 <h2 class="concrete">ExcIEEEDC4B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type DC4B model. These excitation systems utilize a field-controlled dc commutator exciter with a continuously acting voltage regulator having supplies obtained from the generator or auxiliary bus.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 5.4. </p>
 <h3>Native Members</h3>
 <table>
@@ -14473,7 +14473,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST1A">
 <h2 class="concrete">ExcIEEEST1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST1A model. This model represents systems in which excitation power is supplied through a transformer from the generator terminals (or the unit’s auxiliary bus) and is regulated by a controlled rectifier.  The maximum exciter voltage available from such systems is directly related to the generator terminal voltage.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.1. </p>
 <h3>Native Members</h3>
 <table>
@@ -14867,7 +14867,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST2A">
 <h2 class="concrete">ExcIEEEST2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST2A model. Some static systems utilize both current and voltage sources (generator terminal quantities) to comprise the power source.  The regulator controls the exciter output through controlled saturation of the power transformer components.  These compound-source rectifier excitation systems are designated Type ST2A and are represented by ExcIEEEST2A.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.2. </p>
 <h3>Native Members</h3>
 <table>
@@ -15171,7 +15171,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST3A">
 <h2 class="concrete">ExcIEEEST3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST3A model.  Some static systems utilize a field voltage control loop to linearize the exciter control characteristic. This also makes the output independent of supply source variations until supply limitations are reached.  These systems utilize a variety of controlled-rectifier designs: full thyristor complements or hybrid bridges<br/>in either series or shunt configurations. The power source may consist of only a potential source, either fed from the machine terminals or from internal windings. Some designs may have compound power sources utilizing both machine potential and current. These power sources are represented as phasor combinations of machine terminal current and voltage and are accommodated by suitable parameters in model Type ST3A which is represented by ExcIEEEST3A.<br/><br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.3. </p>
 <h3>Native Members</h3>
 <table>
@@ -15580,7 +15580,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST4B">
 <h2 class="concrete">ExcIEEEST4B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST4B model. This model is a variation of the Type ST3A model, with a proportional plus integral (PI) regulator block replacing the lag-lead regulator characteristic that is in the ST3A model. Both potential and compound source rectifier excitation systems are modeled.  The PI regulator blocks have non-windup limits that are represented. The voltage regulator of this model is typically implemented digitally.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.4. </p>
 <h3>Native Members</h3>
 <table>
@@ -15929,7 +15929,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST5B">
 <h2 class="concrete">ExcIEEEST5B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST5B model. The Type ST5B excitation system is a variation of the Type ST1A model, with alternative overexcitation and underexcitation inputs and additional limits.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.5. <br/><br/>Note: the block diagram in the IEEE 421.5 standard has input signal Vc and does not indicate the summation point with Vref. The implementation of the ExcIEEEST5B shall consider summation point with Vref.</p>
 <h3>Native Members</h3>
 <table>
@@ -16293,7 +16293,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST6B">
 <h2 class="concrete">ExcIEEEST6B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST6B model. This model consists of a PI voltage regulator with an inner loop field voltage regulator and pre-control. The field voltage regulator implements a proportional control. The pre-control and the delay in the feedback circuit increase the dynamic response.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.6. </p>
 <h3>Native Members</h3>
 <table>
@@ -16612,7 +16612,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST7B">
 <h2 class="concrete">ExcIEEEST7B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type ST7B model. This model is representative of static potential-source excitation systems. In this system, the AVR consists of a PI voltage regulator. A phase lead-lag filter in series allows introduction of a derivative function, typically used with brushless excitation systems. In that case, the regulator is of the PID type. In addition, the terminal voltage channel includes a phase lead-lag filter.  The AVR includes the appropriate inputs on its reference for overexcitation limiter (OEL1), underexcitation limiter (UEL), stator current limiter (SCL), and current compensator (DROOP). All these limitations, when they work at voltage reference level, keep the PSS (VS signal from Type PSS1A, PSS2A, or PSS2B) in operation. However, the UEL limitation can also be transferred to the high value (HV) gate acting on the output signal. In addition, the output signal passes through a low value (LV) gate for a ceiling overexcitation limiter (OEL2).<br/><br/>Reference: IEEE Standard 421.5-2005 Section 7.7. </p>
 <h3>Native Members</h3>
 <table>
@@ -16946,7 +16946,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcitationSystemUserDefined">
 <h2 class="concrete">ExcitationSystemUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Excitation system function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -17070,7 +17070,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcOEX3T">
 <h2 class="concrete">ExcOEX3T</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE Type ST1 Excitation System with semi-continuous and acting terminal voltage limiter.</p>
 <h3>Native Members</h3>
 <table>
@@ -17464,7 +17464,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcPIC">
 <h2 class="concrete">ExcPIC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Proportional/Integral Regulator Excitation System Model.  This model can be used to represent excitation systems with a proportional-integral (PI) voltage regulator controller. </p>
 <h3>Native Members</h3>
 <table>
@@ -17918,7 +17918,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcREXS">
 <h2 class="concrete">ExcREXS</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">General Purpose Rotating Excitation System Model.  This model can be used to represent a wide range of excitation systems whose DC power source is an AC or DC generator. It encompasses IEEE type AC1, AC2, DC1, and DC2 excitation system models. </p>
 <h3>Native Members</h3>
 <table>
@@ -18567,7 +18567,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcSCRX">
 <h2 class="concrete">ExcSCRX</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Simple excitation system model representing generic characteristics of many excitation systems; intended for use where negative field current may be a problem.</p>
 <h3>Native Members</h3>
 <table>
@@ -18796,7 +18796,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcSEXS">
 <h2 class="concrete">ExcSEXS</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Simplified Excitation System Model.</p>
 <h3>Native Members</h3>
 <table>
@@ -19055,7 +19055,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcSK">
 <h2 class="concrete">ExcSK</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Slovakian Excitation System Model.  UEL and secondary voltage control are included in this model. When this model is used, there cannot be a separate underexcitation limiter or VAr controller model.</p>
 <h3>Native Members</h3>
 <table>
@@ -19644,7 +19644,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST1A">
 <h2 class="concrete">ExcST1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modification of an old IEEE ST1A static excitation system without overexcitation limiter (OEL) and underexcitation limiter (UEL).</p>
 <h3>Native Members</h3>
 <table>
@@ -20023,7 +20023,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST2A">
 <h2 class="concrete">ExcST2A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE ST2A static excitation system - another lead-lag block added to match  the model defined by WECC.</p>
 <h3>Native Members</h3>
 <table>
@@ -20357,7 +20357,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST3A">
 <h2 class="concrete">ExcST3A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE ST3A static excitation system with added speed multiplier.</p>
 <h3>Native Members</h3>
 <table>
@@ -20766,7 +20766,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST4B">
 <h2 class="concrete">ExcST4B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE ST4B static excitation system with maximum inner loop feedback gain <b>Vgmax</b>.</p>
 <h3>Native Members</h3>
 <table>
@@ -21160,7 +21160,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST6B">
 <h2 class="concrete">ExcST6B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE ST6B static excitation system with PID controller and optional inner feedbacks loop.</p>
 <h3>Native Members</h3>
 <table>
@@ -21614,7 +21614,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST7B">
 <h2 class="concrete">ExcST7B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Modified IEEE ST7B static excitation system without stator current limiter (SCL) and current compensator (DROOP) inputs.</p>
 <h3>Native Members</h3>
 <table>
@@ -21963,7 +21963,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GenICompensationForGenJ">
 <h2 class="concrete">GenICompensationForGenJ</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
 <p class="comment">This class provides the resistive and reactive components of compensation for the generator associated with the IEEE Type 2 voltage compensator for current flow out of one of the other generators in the interconnection.</p>
 <h3>Native Members</h3>
 <table>
@@ -22096,7 +22096,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovCT1">
 <h2 class="concrete">GovCT1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">General model for any prime mover with a PID governor, used primarily for combustion turbine and combined cycle units.<br/>This model can be used to represent a variety of prime movers controlled by PID governors.  It is suitable, for example, for representation of <br/><ul>	<li>gas turbine and single shaft combined cycle turbines </li></ul><ul>	<li>diesel engines with modern electronic or digital governors  </li></ul><ul>	<li>steam turbines where steam is supplied from a large boiler drum or a large header whose pressure is substantially constant over the period under study </li>	<li>simple hydro turbines in dam configurations where the water column length is short and water inertia effects are minimal. </li></ul>Additional information on this model is available in the 2012 IEEE report, <i><u>Dynamic Models for Turbine-Governors in Power System Studies</u></i>, section 3.1.2.3 page 3-4 (GGOV1).</p>
 <h3>Native Members</h3>
 <table>
@@ -22749,7 +22749,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovCT2">
 <h2 class="concrete">GovCT2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">General governor model with frequency-dependent fuel flow limit.  This model is a modification of the GovCT1<b> </b>model in order to represent the frequency-dependent fuel flow limit of a specific gas turbine manufacturer.</p>
 <h3>Native Members</h3>
 <table>
@@ -23717,7 +23717,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGAST">
 <h2 class="concrete">GovGAST</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Single shaft gas turbine.</p>
 <h3>Native Members</h3>
 <table>
@@ -23995,7 +23995,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGAST1">
 <h2 class="concrete">GovGAST1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Modified single shaft gas turbine.</p>
 <h3>Native Members</h3>
 <table>
@@ -24633,7 +24633,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGAST2">
 <h2 class="concrete">GovGAST2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Gas turbine model.</p>
 <h3>Native Members</h3>
 <table>
@@ -25241,7 +25241,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGAST3">
 <h2 class="concrete">GovGAST3</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Generic turbogas with acceleration and temperature controller.</p>
 <h3>Native Members</h3>
 <table>
@@ -25684,7 +25684,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGAST4">
 <h2 class="concrete">GovGAST4</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Generic turbogas.</p>
 <h3>Native Members</h3>
 <table>
@@ -25977,7 +25977,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovGASTWD">
 <h2 class="concrete">GovGASTWD</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Woodward Gas turbine governor model. </p>
 <h3>Native Members</h3>
 <table>
@@ -26600,7 +26600,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydro1">
 <h2 class="concrete">GovHydro1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Basic Hydro turbine governor model.</p>
 <h3>Native Members</h3>
 <table>
@@ -26938,7 +26938,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydro2">
 <h2 class="concrete">GovHydro2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">IEEE hydro turbine governor model represents plants with straightforward penstock configurations and hydraulic-dashpot governors.</p>
 <h3>Native Members</h3>
 <table>
@@ -27501,7 +27501,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydro3">
 <h2 class="concrete">GovHydro3</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Modified IEEE Hydro Governor-Turbine Model.<br/><br/>This model differs from that defined in the IEEE modeling guideline paper in that the limits on gate position and velocity do not permit "wind up" of the upstream signals.</p>
 <h3>Native Members</h3>
 <table>
@@ -28169,7 +28169,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydro4">
 <h2 class="concrete">GovHydro4</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Hydro turbine and governor. Represents plants with straight-forward penstock configurations and hydraulic governors of traditional 'dashpot' type.  This model can be used to represent simple, Francis, Pelton or Kaplan turbines.</p>
 <h3>Native Members</h3>
 <table>
@@ -28867,7 +28867,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroDD">
 <h2 class="concrete">GovHydroDD</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Double derivative hydro governor and turbine.</p>
 <h3>Native Members</h3>
 <table>
@@ -29520,7 +29520,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroFrancis">
 <h2 class="concrete">GovHydroFrancis</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Detailed hydro unit - Francis model.  This model can be used to represent three types of governors.<br/>A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is provided in the DetailedHydroModelHydraulicSystem diagram.</p>
 <h3>Native Members</h3>
 <table>
@@ -30053,7 +30053,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroIEEE0">
 <h2 class="concrete">GovHydroIEEE0</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">IEEE Simplified Hydro Governor-Turbine Model.  Used for Mechanical-Hydraulic and Electro-Hydraulic turbine governors, with our without steam feedback. Typical values given are for Mechanical-Hydraulic.<br/><br/>Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Systems</font><br/><font color="#0f0f0f">November/December 1973, Volume PAS-92, Number 6</font><br/><font color="#0f0f0f"><i><u>Dynamic Models for Steam and Hydro Turbines in Power System Studies</u></i>, Page 1904.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -30301,7 +30301,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroIEEE2">
 <h2 class="concrete">GovHydroIEEE2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">IEEE hydro turbine governor model represents plants with straightforward penstock configurations and hydraulic-dashpot governors.<br/><br/>Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Systems</font><br/><font color="#0f0f0f">November/December 1973, Volume PAS-92, Number 6</font><br/><font color="#0f0f0f"><i><u>Dynamic Models for Steam and Hydro Turbines in Power System Studies</u></i>, Page 1904.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -30819,7 +30819,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroPelton">
 <h2 class="concrete">GovHydroPelton</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Detailed hydro unit - Pelton model.  This model can be used to represent the dynamic related to water tunnel and surge chamber.<br/>A schematic of the hydraulic system of detailed hydro unit models, like Francis and Pelton, is located under the GovHydroFrancis class.</p>
 <h3>Native Members</h3>
 <table>
@@ -31367,7 +31367,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroPID">
 <h2 class="concrete">GovHydroPID</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">PID governor and turbine.</p>
 <h3>Native Members</h3>
 <table>
@@ -31990,7 +31990,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroPID2">
 <h2 class="concrete">GovHydroPID2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Hydro turbine and governor. Represents plants with straight forward penstock configurations and "three term" electro-hydraulic governors (i.e. Woodard electronic).</p>
 <h3>Native Members</h3>
 <table>
@@ -32448,7 +32448,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroR">
 <h2 class="concrete">GovHydroR</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Fourth order lead-lag governor and hydro turbine. </p>
 <h3>Native Members</h3>
 <table>
@@ -33206,7 +33206,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroWEH">
 <h2 class="concrete">GovHydroWEH</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Woodward Electric Hydro Governor Model. </p>
 <h3>Native Members</h3>
 <table>
@@ -34099,7 +34099,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovHydroWPID">
 <h2 class="concrete">GovHydroWPID</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Woodward PID Hydro Governor.</p>
 <h3>Native Members</h3>
 <table>
@@ -34557,7 +34557,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteam0">
 <h2 class="concrete">GovSteam0</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">A simplified steam turbine governor model.</p>
 <h3>Native Members</h3>
 <table>
@@ -34805,7 +34805,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteam1">
 <h2 class="concrete">GovSteam1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Steam turbine governor model, based on the GovSteamIEEE1 model  (with optional deadband and nonlinear valve gain added). </p>
 <h3>Native Members</h3>
 <table>
@@ -35518,7 +35518,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteam2">
 <h2 class="concrete">GovSteam2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Simplified governor model.</p>
 <h3>Native Members</h3>
 <table>
@@ -35766,7 +35766,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamCC">
 <h2 class="concrete">GovSteamCC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Cross compound turbine governor model. </p>
 <h3>Native Members</h3>
 <table>
@@ -36149,7 +36149,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamEU">
 <h2 class="concrete">GovSteamEU</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Simplified model  of boiler and steam turbine with PID governor.</p>
 <h3>Native Members</h3>
 <table>
@@ -36802,7 +36802,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamFV2">
 <h2 class="concrete">GovSteamFV2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Steam turbine governor with reheat time constants and modeling of the effects of fast valve closing to reduce mechanical power.</p>
 <h3>Native Members</h3>
 <table>
@@ -37125,7 +37125,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamFV3">
 <h2 class="concrete">GovSteamFV3</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Simplified GovSteamIEEE1 Steam turbine governor model with Prmax limit and fast valving.</p>
 <h3>Native Members</h3>
 <table>
@@ -37538,7 +37538,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamFV4">
 <h2 class="concrete">GovSteamFV4</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Detailed electro-hydraulic governor for steam unit.</p>
 <h3>Native Members</h3>
 <table>
@@ -38431,7 +38431,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamIEEE1">
 <h2 class="concrete">GovSteamIEEE1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">IEEE steam turbine governor model.<br/><br/>Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Systems</font><br/><font color="#0f0f0f">November/December 1973, Volume PAS-92, Number 6</font><br/><font color="#0f0f0f"><i><u>Dynamic Models for Steam and Hydro Turbines in Power System Studies</u></i>, Page 1904.</font><br/><br/><b>Parameter Notes:</b><br/><ol><br/>	<li>Per unit parameters are on base of <b>MWbase</b>, which is normally the MW capability of the turbine.</li>	<li><b>T3</b> must be greater than zero.  All other time constants may be zero.</li>	<li>For a tandem-compound turbine the parameters <b>K2</b>, <b>K4</b>, <b>K6</b>, and <b>K8</b> are ignored. For a cross-compound turbine, two generators are connected to this turbine-governor model.</li>	<li>Each generator must be represented in the load flow by data on its own MVA base.  The values of <b>K1</b>, <b>K3</b>, <b>K5</b>, <b>K7</b> must be specified to describe the proportionate development of power on the first turbine shaft.  <b>K2</b>, <b>K4</b>, <b>K6</b>, <b>K8</b> must describe the second turbine shaft. Normally <b>K1</b> + <b>K3</b> + <b>K5</b> + <b>K7</b> = 1.0 and <b>K2</b> + <b>K4</b> + <b>K6</b> + <b>K8</b> = 1.0  (if second generator is present).</li>	<li>The division of power between the two shafts is in proportion to the values of MVA bases of the two generators.  The initial condition load flow should, therefore, have the two generators loaded to the same fraction of each one’s MVA base.</li></ol></p>
 <h3>Native Members</h3>
 <table>
@@ -38874,7 +38874,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GovSteamSGO">
 <h2 class="concrete">GovSteamSGO</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Simplified Steam turbine governor model.</p>
 <h3>Native Members</h3>
 <table>
@@ -39182,7 +39182,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadAggregate">
 <h2 class="concrete">LoadAggregate</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">Standard aggregate load model comprised of static and/or dynamic components.  A static load model represents the sensitivity of the real and reactive power consumed by the load to the amplitude and frequency of the bus voltage. A dynamic load model can used to represent the aggregate response of the motor components of the load.</p>
 <h3>Native Members</h3>
 <table>
@@ -39253,7 +39253,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadComposite">
 <h2 class="concrete">LoadComposite</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">This models combines static load and induction motor load effects.<br/>The dynamics of the motor are simplified by linearizing the induction machine equations.</p>
 <h3>Native Members</h3>
 <table>
@@ -39489,7 +39489,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadGenericNonLinear">
 <h2 class="concrete">LoadGenericNonLinear</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">These load models (known also as generic non-linear dynamic (GNLD) load models) can be used in mid-term and long-term voltage stability simulations (i.e., to study voltage collapse), as they can replace a more detailed representation of aggregate load, including induction motors, thermostatically controlled and static loads.</p>
 <h3>Native Members</h3>
 <table>
@@ -39695,7 +39695,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadMotor">
 <h2 class="concrete">LoadMotor</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">Aggregate induction motor load. This model  is used to represent a fraction of an ordinary load as "induction motor load".  It allows load that is treated as ordinary constant power in power flow analysis to be represented by an induction motor in dynamic simulation.  If <b>Lpp</b> = 0. or <b>Lpp</b> = <b>Lp</b>, or <b>Tppo</b> = 0.,  only one cage is represented. Magnetic saturation is not modelled. Either a "one-cage" or "two-cage" model of the induction machine can be modelled. Magnetic saturation is not modelled.<br/><br/>This model is intended for representation of aggregations of many motors dispersed through a load represented at a high voltage bus but where there is no information on the characteristics of individual motors.<br/><br/>This model treats a fraction of the constant power part of a load as a motor. During initialisation, the initial power drawn by the motor is set equal to <b>Pfrac</b> times the constant <b>P</b> part of the static load.  The remainder of the load is left as static load.<br/><br/>The reactive power demand of the motor is calculated during initialisation as a function of voltage at the load bus. This reactive power demand may be less than or greater than the constant <b>Q</b> component of the load.  If the motor's reactive demand is greater than the constant <b>Q</b> component of the load, the model inserts a shunt capacitor at the terminal of the motor to bring its reactive demand down to equal the constant <b>Q</b> reactive load.  <br/>If a motor model and a static load model are both present for a load, the motor <b>Pfrac</b> is assumed to be subtracted from the power flow constant <b>P</b> load before the static load model is applied.  The remainder of the load, if any, is then represented by the static load model.</p>
 <h3>Native Members</h3>
 <table>
@@ -39977,7 +39977,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadStatic">
 <h2 class="concrete">LoadStatic</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">General static load model representing the sensitivity of the real and reactive power consumed by the load to the amplitude and frequency of the bus voltage.</p>
 <h3>Native Members</h3>
 <table>
@@ -40319,7 +40319,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadUserDefined">
 <h2 class="concrete">LoadUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Load whose dynamic behaviour is described by a user-defined model.</p>
 <h3>Native Members</h3>
 <table>
@@ -40405,7 +40405,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#MechanicalLoadUserDefined">
 <h2 class="concrete">MechanicalLoadUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Mechanical load function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -40548,7 +40548,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#MechLoad1">
 <h2 class="concrete">MechLoad1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\MechanicalLoadDynamics_MechanicalLoadInterconnectionAndVariables.png" target="_blanc">MechanicalLoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/MechanicalLoadDynamics_MechanicalLoadInterconnectionAndVariables.png" target="_blanc">MechanicalLoadDynamics </a></p>
 <p class="comment">Mechanical load model type 1.</p>
 <h3>Native Members</h3>
 <table>
@@ -40736,7 +40736,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcitationLimiterUserDefined">
 <h2 class="concrete">OverexcitationLimiterUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Overexcitation limiter system function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -40860,7 +40860,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcLim2">
 <h2 class="concrete">OverexcLim2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
 <p class="comment">Different from LimIEEEOEL, LimOEL2 has a fixed pickup threshold and reduces the excitation set-point by mean of non-windup integral regulator.<br/>Irated is the rated machine excitation current (calculated from nameplate conditions: V<sub>nom</sub>, P<sub>nom</sub>, CosPhi<sub>nom</sub>).</p>
 <h3>Native Members</h3>
 <table>
@@ -41029,7 +41029,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcLimIEEE">
 <h2 class="concrete">OverexcLimIEEE</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
 <p class="comment">The over excitation limiter model is intended to represent the significant features of OELs necessary for some large-scale system studies. It is the result of a pragmatic approach to obtain a model that can be widely applied with attainable data from generator owners. An attempt to include all variations in the functionality of OELs and duplicate how they interact with the rest of the excitation systems would likely result in a level of application insufficient for the studies for which they are intended.<br/><br/>Reference: IEEE OEL 421.5-2005 Section 9. </p>
 <h3>Native Members</h3>
 <table>
@@ -41228,7 +41228,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcLimX1">
 <h2 class="concrete">OverexcLimX1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
 <p class="comment">Field voltage over excitation limiter.</p>
 <h3>Native Members</h3>
 <table>
@@ -41487,7 +41487,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcLimX2">
 <h2 class="concrete">OverexcLimX2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
 <p class="comment">Field Voltage or Current overexcitation limiter designed to protect the generator field of an AC machine with automatic excitation control from overheating due to prolonged overexcitation.</p>
 <h3>Native Members</h3>
 <table>
@@ -41761,7 +41761,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArControllerType1UserDefined">
 <h2 class="concrete">PFVArControllerType1UserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Power Factor or VAr controller Type I function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -41885,7 +41885,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArControllerType2UserDefined">
 <h2 class="concrete">PFVArControllerType2UserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Power Factor or VAr controller Type II function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -42009,7 +42009,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArType1IEEEPFController">
 <h2 class="concrete">PFVArType1IEEEPFController</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
 <p class="comment">The class represents IEEE PF Controller Type 1 which operates by moving the voltage reference directly.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 11.2. </p>
 <h3>Native Members</h3>
 <table>
@@ -42238,7 +42238,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArType1IEEEVArController">
 <h2 class="concrete">PFVArType1IEEEVArController</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
 <p class="comment">The class represents IEEE VAR Controller Type 1 which operates by moving the voltage reference directly.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 11.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -42437,7 +42437,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArType2Common1">
 <h2 class="concrete">PFVArType2Common1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
 <p class="comment">Power factor / Reactive power regulator. This model represents the power factor or reactive power controller such as the Basler SCP-250. The controller measures power factor or reactive power (PU on generator rated power) and compares it with the operator's set point.</p>
 <h3>Native Members</h3>
 <table>
@@ -42621,7 +42621,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArType2IEEEPFController">
 <h2 class="concrete">PFVArType2IEEEPFController</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
 <p class="comment">The class represents IEEE PF Controller Type 2 which is a summing point type controller and makes up the outside loop of a two-loop system. This controller is implemented as a slow PI type controller. The voltage regulator forms the inner loop and is implemented as a fast controller.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 11.4. </p>
 <h3>Native Members</h3>
 <table>
@@ -42835,7 +42835,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArType2IEEEVArController">
 <h2 class="concrete">PFVArType2IEEEVArController</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
 <p class="comment">The class represents IEEE VAR Controller Type 2 which is a summing point type controller. It makes up the outside loop of a two-loop system. This controller is implemented as a slow PI type controller, and the voltage regulator forms the inner loop and is implemented as a fast controller.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 11.5.</p>
 <h3>Native Members</h3>
 <table>
@@ -43049,7 +43049,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PowerSystemStabilizerUserDefined">
 <h2 class="concrete">PowerSystemStabilizerUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment"><font color="#0f0f0f">Power system stabilizer</font> function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -43173,7 +43173,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ProprietaryParameterDynamics">
 <h2 class="concrete">ProprietaryParameterDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Supports definition of one or more parameters of several different datatypes for use by proprietary user-defined models.  NOTE: This class does not inherit from IdentifiedObject since it is not intended that a single instance of it be referenced by more than one proprietary user-defined model instance.</p>
 <h3>Native Members</h3>
 <table>
@@ -43531,7 +43531,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Pss1">
 <h2 class="concrete">Pss1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Italian PSS - three input PSS (speed, frequency, power).</p>
 <h3>Native Members</h3>
 <table>
@@ -43865,7 +43865,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Pss1A">
 <h2 class="concrete">Pss1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Single input power system stabilizer. It is a modified version in order to allow representation of various vendors' implementations on PSS type 1A.</p>
 <h3>Native Members</h3>
 <table>
@@ -44304,7 +44304,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Pss2B">
 <h2 class="concrete">Pss2B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Modified IEEE PSS2B Model.  Extra lead/lag (or rate) block added at end (up to 4 lead/lags total).</p>
 <h3>Native Members</h3>
 <table>
@@ -44878,7 +44878,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Pss2ST">
 <h2 class="concrete">Pss2ST</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">PTI Microprocessor-Based Stabilizer type 1.</p>
 <h3>Native Members</h3>
 <table>
@@ -45257,7 +45257,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Pss5">
 <h2 class="concrete">Pss5</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Italian PSS - Detailed PSS.</p>
 <h3>Native Members</h3>
 <table>
@@ -45621,7 +45621,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssELIN2">
 <h2 class="concrete">PssELIN2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Power system stabilizer typically associated with ExcELIN2 (though PssIEEE2B or Pss2B can also be used).</p>
 <h3>Native Members</h3>
 <table>
@@ -45895,7 +45895,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssIEEE1A">
 <h2 class="concrete">PssIEEE1A</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type PSS1A power system stabilizer model. PSS1A is the generalized form of a PSS with a single input. Some common stabilizer input signals are speed, frequency, and power.<br/><br/>Reference: IEEE 1A 421.5-2005 Section 8.1. </p>
 <h3>Native Members</h3>
 <table>
@@ -46184,7 +46184,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssIEEE2B">
 <h2 class="concrete">PssIEEE2B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. This stabilizer model is designed to represent a variety of dual-input stabilizers, which normally use combinations of power and speed or frequency to derive the stabilizing signal.<br/><br/>Reference: IEEE 2B 421.5-2005 Section 8.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -46698,7 +46698,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssIEEE3B">
 <h2 class="concrete">PssIEEE3B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type PSS3B power system stabilizer model. The PSS model PSS3B has dual inputs of electrical power and rotor angular frequency deviation. The signals are used to derive an equivalent mechanical power signal.<br/><br/>Reference: IEEE 3B 421.5-2005 Section 8.3. <br/><br/></p>
 <h3>Native Members</h3>
 <table>
@@ -47092,7 +47092,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssIEEE4B">
 <h2 class="concrete">PssIEEE4B</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">The class represents IEEE Std 421.5-2005 type PSS2B power system stabilizer model. The PSS4B model represents a structure based on multiple working frequency bands. Three separate bands, respectively dedicated to the low-, intermediate- and high-frequency modes of oscillations, are used in this delta-omega (speed input) PSS.<br/><br/>Reference: IEEE 4B 421.5-2005 Section 8.4. </p>
 <h3>Native Members</h3>
 <table>
@@ -48206,7 +48206,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssPTIST1">
 <h2 class="concrete">PssPTIST1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">PTI Microprocessor-Based Stabilizer type 1.</p>
 <h3>Native Members</h3>
 <table>
@@ -48480,7 +48480,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssPTIST3">
 <h2 class="concrete">PssPTIST3</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">PTI Microprocessor-Based Stabilizer type 3.</p>
 <h3>Native Members</h3>
 <table>
@@ -49099,7 +49099,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssSB4">
 <h2 class="concrete">PssSB4</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Power sensitive stabilizer model.</p>
 <h3>Native Members</h3>
 <table>
@@ -49373,7 +49373,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssSH">
 <h2 class="concrete">PssSH</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Model for Siemens “H infinity” power system stabilizer with generator electrical power input.</p>
 <h3>Native Members</h3>
 <table>
@@ -49677,7 +49677,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssSK">
 <h2 class="concrete">PssSK</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">PSS Slovakian type – three inputs.</p>
 <h3>Native Members</h3>
 <table>
@@ -49951,7 +49951,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PssWECC">
 <h2 class="concrete">PssWECC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Dual input Power System Stabilizer, based on IEEE type 2, with modified output limiter defined by WECC (Western Electricity Coordinating Council, USA).</p>
 <h3>Native Members</h3>
 <table>
@@ -50330,7 +50330,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#RemoteInputSignal">
 <h2 class="concrete">RemoteInputSignal</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\StandardInterconnections_StandardInterconnectionSynchronousMachine.png" target="_blanc">StandardInterconnections </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/StandardInterconnections_StandardInterconnectionSynchronousMachine.png" target="_blanc">StandardInterconnections </a></p>
 <p class="comment">Supports connection to a terminal associated with a remote bus from which an input signal of a specific type is coming.</p>
 <h3>Native Members</h3>
 <table>
@@ -50512,7 +50512,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineEquivalentCircuit">
 <h2 class="concrete">SynchronousMachineEquivalentCircuit</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">The electrical equations for all variations of the synchronous models are based on the SynchronousEquivalentCircuit diagram for the direct and quadrature axes.<br/><br/><b>Equations for conversion between Equivalent Circuit and Time Constant Reactance forms:</b><br/><b>Xd</b> = <b>Xad</b> + <b>Xl</b><br/><b>X’d</b> = <b>Xl</b> + <b>Xad</b> * <b>Xfd</b> / (<b>Xad</b> + <b>Xfd</b>)<br/><b>X”d</b> = <b>Xl</b> + <b>Xad</b> * <b>Xfd </b>* <b>X1d</b> / (<b>Xad</b> * <b>Xfd</b> + <b>Xad</b> * <b>X1d</b> + <b>Xfd</b> * <b>X1d</b>)<br/><b>Xq</b> = <b>Xaq</b> + <b>Xl</b><br/><b>X’q</b> = <b>Xl</b> + <b>Xaq</b> * <b>X1q</b> / (<b>Xaq</b>+ <b>X1q</b>)<br/><b>X”q</b> = <b>Xl</b> + <b>Xaq</b> *<b> X1q</b>* <b>X2q</b> / (<b>Xaq</b> * <b>X1q</b> + <b>Xaq</b> * <b>X2q</b> + <b>X1q</b> * <b>X2q</b>)<br/><b>T’do</b> = (<b>Xad</b> + <b>Xfd</b>) / (<b>omega</b><b><sub>0</sub></b> * <b>Rfd</b>)<br/><b>T”do</b> = (<b>Xad</b> * <b>Xfd</b> + <b>Xad</b> * <b>X1d</b> + <b>Xfd</b> * <b>X1d</b>) / (<b>omega</b><b><sub>0</sub></b> * <b>R1d</b> * (<b>Xad</b> + <b>Xfd</b>)<br/><b>T’qo</b> = (<b>Xaq</b> + <b>X1q</b>) / (<b>omega</b><b><sub>0</sub></b> * <b>R1q</b>)<br/><b>T”qo</b> = (<b>Xaq</b> * <b>X1q</b> + <b>Xaq</b> * <b>X2q</b> + <b>X1q</b> * <b>X2q</b>)/ (<b>omega</b><b><sub>0</sub></b> * <b>R2q</b> * (<b>Xaq</b> + <b>X1q</b>)<br/><b><br/></b>Same equations using CIM attributes from SynchronousMachineTimeConstantReactance class on left of = sign and SynchronousMachineEquivalentCircuit class on right (except as noted):<br/>xDirectSync = xad + RotatingMachineDynamics.statorLeakageReactance<br/>xDirectTrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd / (xad + xfd)<br/>xDirectSubtrans = RotatingMachineDynamics.statorLeakageReactance + xad * xfd * x1d / (xad * xfd + xad * x1d + xfd * x1d)<br/>xQuadSync = xaq + RotatingMachineDynamics.statorLeakageReactance<br/>xQuadTrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q / (xaq+ x1q)<br/>xQuadSubtrans = RotatingMachineDynamics.statorLeakageReactance + xaq * x1q* x2q / (xaq * x1q + xaq * x2q + x1q * x2q) <br/>tpdo = (xad + xfd) / (2*pi*nominal frequency * rfd)<br/>tppdo = (xad * xfd + xad * x1d + xfd * x1d) / (2*pi*nominal frequency * r1d * (xad + xfd)<br/>tpqo = (xaq + x1q) / (2*pi*nominal frequency * r1q)<br/>tppqo = (xaq * x1q + xaq * x2q + x1q * x2q)/ (2*pi*nominal frequency * r2q * (xaq + x1q).<br/><br/>Are only valid for a simplified model where "Canay" reactance is zero.</p>
 <h3>Native Members</h3>
 <table>
@@ -50995,7 +50995,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineSimplified">
 <h2 class="concrete">SynchronousMachineSimplified</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">The simplified model represents a synchronous generator as a constant internal voltage behind an impedance (<b>Rs</b> + <b>jXp</b>) as shown in the Simplified diagram.<br/><br/>Since internal voltage is held constant, there is no <b>Efd</b> input and any excitation system model will be ignored.  There is also no <b>Ifd</b> output.<br/><br/>This model should not be used for representing a real generator except, perhaps, small generators whose response is insignificant.  <br/><br/>The parameters used for the Simplified model include:<br/><ul>	<li>RotatingMachineDynamics.damping (D)</li>	<li>RotatingMachineDynamics.inertia (H)</li>	<li>RotatingMachineDynamics.statorLeakageReactance (used to exchange jXp for SynchronousMachineSimplified)</li>	<li>RotatingMachineDynamics.statorResistance (Rs).</li></ul></p>
 <h3>Inherited Members</h3>
 <h4> Inheritance pass: ->SynchronousMachineDynamics->RotatingMachineDynamics->DynamicsFunctionBlock->IdentifiedObject</h4>
@@ -51215,7 +51215,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineTimeConstantReactance">
 <h2 class="concrete">SynchronousMachineTimeConstantReactance</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">Synchronous machine detailed modelling types are defined by the combination of the attributes SynchronousMachineTimeConstantReactance.modelType and SynchronousMachineTimeConstantReactance.rotorType.  <br/><b><br/></b><b>Parameter notes:</b><br/><ol><br/>	<li>The “p” in the time-related attribute names is a substitution for a “prime” in the usual parameter notation, e.g. tpdo refers to <b>T'do</b>.</li></ol><b></b>The parameters used for models expressed in time constant reactance form include:<ul>	<li>RotatingMachine.ratedS (MVAbase)</li>	<li>RotatingMachineDynamics.damping (D)</li>	<li>RotatingMachineDynamics.inertia (H)</li>	<li>RotatingMachineDynamics.saturationFactor (S1)</li>	<li>RotatingMachineDynamics.saturationFactor120 (S12)</li>	<li>RotatingMachineDynamics.statorLeakageReactance (Xl)</li>	<li>RotatingMachineDynamics.statorResistance (Rs)</li>	<li>SynchronousMachineTimeConstantReactance.ks (Ks)</li>	<li>SynchronousMachineDetailed.saturationFactorQAxis (S1q)</li>	<li>SynchronousMachineDetailed.saturationFactor120QAxis (S12q)</li>	<li>SynchronousMachineDetailed.efdBaseRatio</li>	<li>SynchronousMachineDetailed.ifdBaseType</li>	<li>SynchronousMachineDetailed.ifdBaseValue, if present</li>	<li>.xDirectSync (Xd)</li>	<li>.xDirectTrans (X'd)</li>	<li>.xDirectSubtrans (X''d)</li>	<li>.xQuadSync (Xq)</li>	<li>.xQuadTrans (X'q)</li>	<li>.xQuadSubtrans (X''q)</li>	<li>.tpdo (T'do)</li>	<li>.tppdo (T''do)</li>	<li>.tpqo (T'qo)</li>	<li>.tppqo (T''qo)</li>	<li>.tc.</li></ul></p>
 <h3>Native Members</h3>
 <table>
@@ -51743,7 +51743,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineUserDefined">
 <h2 class="concrete">SynchronousMachineUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Synchronous machine whose dynamic behaviour is described by a user-defined model.</p>
 <h3>Native Members</h3>
 <table>
@@ -51981,7 +51981,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#TurbineGovernorUserDefined">
 <h2 class="concrete">TurbineGovernorUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Turbine-governor function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -52124,7 +52124,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#TurbineLoadControllerUserDefined">
 <h2 class="concrete">TurbineLoadControllerUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Turbine load controller function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -52248,7 +52248,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#TurbLCFB1">
 <h2 class="concrete">TurbLCFB1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineLoadControllerDynamics_TurbineLoadControllerDynamics.png" target="_blanc">TurbineLoadControllerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineLoadControllerDynamics_TurbineLoadControllerDynamics.png" target="_blanc">TurbineLoadControllerDynamics </a></p>
 <p class="comment">Turbine Load Controller model developed in the WECC.  This model represents a supervisory turbine load controller that acts to maintain turbine power at a set value by continuous adjustment of the turbine governor speed-load reference. This model is intended to represent slow reset 'outer loop' controllers managing the action of the turbine governor.</p>
 <h3>Native Members</h3>
 <table>
@@ -52537,7 +52537,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcitationLimiterUserDefined">
 <h2 class="concrete">UnderexcitationLimiterUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Underexcitation limiter function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -52661,7 +52661,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcLim2Simplified">
 <h2 class="concrete">UnderexcLim2Simplified</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment">This model can be derived from UnderexcLimIEEE2.<br/>The limit characteristic (look –up table) is a single straight-line, the same as UnderexcLimIEEE2 (see Figure 10.4 (p 32), IEEE 421.5-2005 Section 10.2).</p>
 <h3>Native Members</h3>
 <table>
@@ -52875,7 +52875,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcLimIEEE1">
 <h2 class="concrete">UnderexcLimIEEE1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment">The class represents the Type UEL1 model which has a circular limit boundary when plotted in terms of machine reactive power vs. real power output.<br/><br/>Reference: IEEE UEL1 421.5-2005 Section 10.1. </p>
 <h3>Native Members</h3>
 <table>
@@ -53209,7 +53209,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcLimIEEE2">
 <h2 class="concrete">UnderexcLimIEEE2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment">The class represents the Type UEL2 which has either a straight-line or multi-segment characteristic when plotted in terms of machine reactive power output vs. real power output.<br/><br/>Reference: IEEE UEL2 421.5-2005 Section 10.2.  (Limit characteristic lookup table shown in Figure 10.4 (p 32) of the standard).</p>
 <h3>Native Members</h3>
 <table>
@@ -53918,7 +53918,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcLimX1">
 <h2 class="concrete">UnderexcLimX1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment"><font color="#0f0f0f">Allis-Chalmers minimum excitation limiter.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -54117,7 +54117,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcLimX2">
 <h2 class="concrete">UnderexcLimX2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment"><font color="#0f0f0f">Westinghouse minimum excitation limiter.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -54331,7 +54331,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VAdjIEEE">
 <h2 class="concrete">VAdjIEEE</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageAdjusterDynamics_VoltageAdjusterDynamics.png" target="_blanc">VoltageAdjusterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageAdjusterDynamics_VoltageAdjusterDynamics.png" target="_blanc">VoltageAdjusterDynamics </a></p>
 <p class="comment">The class represents IEEE Voltage Adjuster which is used to represent the voltage adjuster in either a power factor or var control system.<br/><br/>Reference: IEEE Standard 421.5-2005 Section 11.1.</p>
 <h3>Native Members</h3>
 <table>
@@ -54530,7 +54530,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VCompIEEEType1">
 <h2 class="concrete">VCompIEEEType1</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
 <p class="comment"><font color="#0f0f0f">The class represents the terminal voltage transducer and the load compensator as defined in the IEEE Std 421.5-2005, Section 4. This model is common to all excitation system models described in the IEEE Standard. </font><br/><br/>Reference: IEEE Standard 421.5-2005 Section 4. </p>
 <h3>Native Members</h3>
 <table>
@@ -54684,7 +54684,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VCompIEEEType2">
 <h2 class="concrete">VCompIEEEType2</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
 <p class="comment"><font color="#0f0f0f">The class represents the terminal voltage transducer and the load compensator as defined in the IEEE Std 421.5-2005, Section 4. This model is designed to cover the following types of compensation: </font><br/><ul>	<li><font color="#0f0f0f">reactive droop</font></li>	<li><font color="#0f0f0f">transformer-drop or line-drop compensation</font></li>	<li><font color="#0f0f0f">reactive differential compensation known also as cross-current compensation.</font></li></ul><font color="#0f0f0f"></font><font color="#0f0f0f">Reference: IEEE Standard 421.5-2005, Section 4.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -54808,7 +54808,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VoltageAdjusterUserDefined">
 <h2 class="concrete">VoltageAdjusterUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment"><font color="#0f0f0f">Voltage adjuster</font> function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -54932,7 +54932,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VoltageCompensatorUserDefined">
 <h2 class="concrete">VoltageCompensatorUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Voltage compensator function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -55056,7 +55056,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindAeroConstIEC">
 <h2 class="concrete">WindAeroConstIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">The constant aerodynamic torque model assumes that the aerodynamic torque is constant.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.1.1.</p>
 <h3>Native Members</h3>
 <table>
@@ -55127,7 +55127,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindAeroLinearIEC">
 <h2 class="concrete">WindAeroLinearIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">The linearised aerodynamic model.  <br/><br/>Reference: IEC Standard 614000-27-1 Section 6.6.1.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -55273,7 +55273,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContCurrLimIEC">
 <h2 class="concrete">WindContCurrLimIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Current limitation model.  The current limitation model combines the physical limits.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.7.</p>
 <h3>Native Members</h3>
 <table>
@@ -55419,7 +55419,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContPitchAngleIEC">
 <h2 class="concrete">WindContPitchAngleIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Pitch angle control model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.8.</p>
 <h3>Native Members</h3>
 <table>
@@ -55640,7 +55640,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContPType3IEC">
 <h2 class="concrete">WindContPType3IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">P control model Type 3.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -56026,7 +56026,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContPType4aIEC">
 <h2 class="concrete">WindContPType4aIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">P control model Type 4A.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.4.</p>
 <h3>Native Members</h3>
 <table>
@@ -56142,7 +56142,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContPType4bIEC">
 <h2 class="concrete">WindContPType4bIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">P control model Type 4B.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.5.</p>
 <h3>Native Members</h3>
 <table>
@@ -56273,7 +56273,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContQIEC">
 <h2 class="concrete">WindContQIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Q control model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.6.</p>
 <h3>Native Members</h3>
 <table>
@@ -56734,7 +56734,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindContRotorRIEC">
 <h2 class="concrete">WindContRotorRIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Rotor resistance control model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -56925,7 +56925,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindDynamicsLookupTable">
 <h2 class="concrete">WindDynamicsLookupTable</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">The class models a look up table for the purpose of wind standard models.</p>
 <h3>Native Members</h3>
 <table>
@@ -57120,7 +57120,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenTurbineType1IEC">
 <h2 class="concrete">WindGenTurbineType1IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Wind turbine IEC Type 1.<br/><br/>Reference: IEC Standard 61400-27-1, section 6.5.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -57302,7 +57302,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenTurbineType2IEC">
 <h2 class="concrete">WindGenTurbineType2IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Wind turbine IEC Type 2.<br/><br/>Reference: IEC Standard 61400-27-1, section 6.5.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -57500,7 +57500,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenTurbineType3aIEC">
 <h2 class="concrete">WindGenTurbineType3aIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">IEC Type 3A generator set model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.3.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -57863,7 +57863,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenTurbineType3bIEC">
 <h2 class="concrete">WindGenTurbineType3bIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">IEC Type 3B generator set model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.3.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -58256,7 +58256,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindMechIEC">
 <h2 class="concrete">WindMechIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Two mass model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.2.1.</p>
 <h3>Native Members</h3>
 <table>
@@ -58387,7 +58387,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPitchContEmulIEC">
 <h2 class="concrete">WindPitchContEmulIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Pitch control emulator model.<br/><br/>Reference: IEC Standard 61400-27-1 Section 6.6.5.1.</p>
 <h3>Native Members</h3>
 <table>
@@ -58608,7 +58608,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPlantFreqPcontrolIEC">
 <h2 class="concrete">WindPlantFreqPcontrolIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Frequency and active power controller model.<br/><br/>Reference: IEC Standard 61400-27-1 Annex E.</p>
 <h3>Native Members</h3>
 <table>
@@ -58829,7 +58829,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPlantIEC">
 <h2 class="concrete">WindPlantIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Simplified IEC type plant level model. <br/><br/>Reference: IEC 61400-27-1, AnnexE.</p>
 <h3>Native Members</h3>
 <table>
@@ -58970,7 +58970,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPlantReactiveControlIEC">
 <h2 class="concrete">WindPlantReactiveControlIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Simplified plant voltage and reactive power control model for use with type 3 and type 4 wind turbine models.<br/><br/>Reference: IEC Standard 61400-27-1 Annex E.</p>
 <h3>Native Members</h3>
 <table>
@@ -59236,7 +59236,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPlantUserDefined">
 <h2 class="concrete">WindPlantUserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Wind plant function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -59360,7 +59360,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindProtectionIEC">
 <h2 class="concrete">WindProtectionIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">The grid protection model includes protection against over and under voltage, and against over and under frequency.<br/><br/>Reference: IEC Standard 614000-27-1 Section 6.6.6.</p>
 <h3>Native Members</h3>
 <table>
@@ -59551,7 +59551,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType4aIEC">
 <h2 class="concrete">WindTurbineType4aIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Wind turbine IEC Type 4A.<br/><br/>Reference: IEC Standard 61400-27-1, section 6.5.5.2.</p>
 <h3>Native Members</h3>
 <table>
@@ -59847,7 +59847,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType4bIEC">
 <h2 class="concrete">WindTurbineType4bIEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Wind turbine IEC Type 4A.<br/><br/>Reference: IEC Standard 61400-27-1, section 6.5.5.3.</p>
 <h3>Native Members</h3>
 <table>
@@ -60159,7 +60159,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindType1or2UserDefined">
 <h2 class="concrete">WindType1or2UserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Wind Type 1 or Type 2 function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -60302,7 +60302,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindType3or4UserDefined">
 <h2 class="concrete">WindType3or4UserDefined</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UserDefinedModels_ProprietaryUserDefinedModels.png" target="_blanc">UserDefinedModels </a></p>
 <p class="comment">Wind Type 3 or Type 4 function block whose dynamic behaviour is described by <font color="#0f0f0f">a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -60465,7 +60465,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#EnergyConsumer">
 <h2 class="abstract">EnergyConsumer (Description) </h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">Generic user of energy - a  point of consumption on the power system model.</p>
 <h3>Native Members</h3>
 <table>
@@ -60724,7 +60724,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ACDCTerminal">
 <h2 class="abstract">ACDCTerminal</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">An electrical connection point (AC or DC) to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
 <h3>Inherited Members</h3>
 <h4> Inheritance pass: ->IdentifiedObject</h4>
@@ -60792,7 +60792,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AsynchronousMachine">
 <h2 class="abstract">AsynchronousMachine</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">A rotating machine whose shaft rotates asynchronously with the electrical field.  Also known as an induction machine with no external connection to the rotor windings, e.g squirrel-cage induction machine.</p>
 <h3>Native Members</h3>
 <table>
@@ -60863,7 +60863,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AsynchronousMachineDynamics">
 <h2 class="abstract">AsynchronousMachineDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/AsynchronousMachineDynamics_AsynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">AsynchronousMachineDynamics </a></p>
 <p class="comment">Asynchronous machine whose behaviour is described by reference to a standard model expressed in either time constant reactance form or equivalent circuit form <font color="#0f0f0f">or by definition of a user-defined model.</font>
 <br/>
 <br/><b>Parameter Notes:</b>
@@ -61088,7 +61088,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ConductingEquipment">
 <h2 class="abstract">ConductingEquipment</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">The parts of the AC power system that are designed to carry current or that are conductively connected through terminals.</p>
 <h3>Native Members</h3>
 <table>
@@ -61159,7 +61159,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DiscontinuousExcitationControlDynamics">
 <h2 class="abstract">DiscontinuousExcitationControlDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DiscontinuousExcitationControlDynamics_DiscontinuousExcitationControlDynamics.png" target="_blanc">DiscontinuousExcitationControlDynamics </a></p>
 <p class="comment">Discontinuous excitation control function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model</font>.</p>
 <h3>Native Members</h3>
 <table>
@@ -61352,7 +61352,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#EnergySource">
 <h2 class="abstract">EnergySource</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">A generic equivalent for an energy supplier on a transmission or distribution voltage level.</p>
 <h3>Native Members</h3>
 <table>
@@ -61423,7 +61423,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Equipment">
 <h2 class="abstract">Equipment</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">The parts of a power system that are physical devices, electronic or mechanical.</p>
 <h3>Inherited Members</h3>
 <h4> Inheritance pass: ->PowerSystemResource->IdentifiedObject</h4>
@@ -61491,7 +61491,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcitationSystemDynamics">
 <h2 class="abstract">ExcitationSystemDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Excitation system function block whose behavior is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -61597,7 +61597,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#IdentifiedObject">
 <h2 class="abstract">IdentifiedObject</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
 <p class="note"><b>OCL constraint:</b>R.4.10.11. Description length restriction (optional)</p>
 <p class="note"><b>OCL constraint:</b>R.4.10.11. Name length restriction</p>
@@ -61658,7 +61658,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#LoadDynamics">
 <h2 class="abstract">LoadDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">Load whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font>
 <br/>
 <br/>A standard feature of dynamic load behaviour modelling is the ability to associate the same behaviour to multiple energy consumers by means of a single aggregate load definition.  Aggregate loads are used to represent all or part of the real and reactive load from one or more loads in the static (power flow) data. This load is usually the aggregation of many individual load devices and the load model is approximate representation of the aggregate response of the load devices to system disturbances. The load model is always applied to individual bus loads (energy consumers) but a single set of load model parameters can used for all loads in the grouping.</p>
@@ -61728,7 +61728,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#MechanicalLoadDynamics">
 <h2 class="abstract">MechanicalLoadDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\MechanicalLoadDynamics_MechanicalLoadInterconnectionAndVariables.png" target="_blanc">MechanicalLoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/MechanicalLoadDynamics_MechanicalLoadInterconnectionAndVariables.png" target="_blanc">MechanicalLoadDynamics </a></p>
 <p class="comment">Mechanical load function block whose behavior is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -61850,7 +61850,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#OverexcitationLimiterDynamics">
 <h2 class="abstract">OverexcitationLimiterDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/OverexcitationLimiterDynamics_OverexcitationLimiterDynamics.png" target="_blanc">OverexcitationLimiterDynamics </a></p>
 <p class="comment"><font color="#0f0f0f">O</font>Overexcitation limiter function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -61956,7 +61956,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArControllerType1Dynamics">
 <h2 class="abstract">PFVArControllerType1Dynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType1Dynamics_PFVArControllerType1Dynamics.png" target="_blanc">PFVArControllerType1Dynamics </a></p>
 <p class="comment">Power Factor or VAr controller Type I function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -62062,7 +62062,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PFVArControllerType2Dynamics">
 <h2 class="abstract">PFVArControllerType2Dynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PFVArControllerType2Dynamics_PFVArControllerType2Dyanmics.png" target="_blanc">PFVArControllerType2Dynamics </a></p>
 <p class="comment">Power Factor or VAr controller Type II function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -62168,7 +62168,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PowerSystemResource">
 <h2 class="abstract">PowerSystemResource</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.
 <br/></p>
 <h3>Inherited Members</h3>
@@ -62237,7 +62237,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PowerSystemStabilizerDynamics">
 <h2 class="abstract">PowerSystemStabilizerDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Power system stabilizer function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -62343,7 +62343,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#RegulatingCondEq">
 <h2 class="abstract">RegulatingCondEq</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network. </p>
 <h3>Inherited Members</h3>
 <h4> Inheritance pass: ->ConductingEquipment->Equipment->PowerSystemResource->IdentifiedObject</h4>
@@ -62411,7 +62411,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#RotatingMachine">
 <h2 class="abstract">RotatingMachine</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">A rotating machine which may be used as a generator or motor.</p>
 <h3>Inherited Members</h3>
 <h4> Inheritance pass: ->RegulatingCondEq->ConductingEquipment->Equipment->PowerSystemResource->IdentifiedObject</h4>
@@ -62658,7 +62658,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachine">
 <h2 class="abstract">SynchronousMachine</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Wires_Wires.png" target="_blanc">Wires </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Wires_Wires.png" target="_blanc">Wires </a></p>
 <p class="comment">An electromechanical device that operates with shaft rotating synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.</p>
 <h3>Native Members</h3>
 <table>
@@ -62729,7 +62729,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineDetailed">
 <h2 class="abstract">SynchronousMachineDetailed</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">All synchronous machine detailed types use a subset of the same data parameters and input/output variables.  
 <br/>The several variations differ in the following ways:
 <br/><ul>
@@ -63036,7 +63036,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineDynamics">
 <h2 class="abstract">SynchronousMachineDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">Synchronous machine whose behaviour is described by reference to a standard model expressed in one of the following forms:
 <br/><ul>
 	<li>simplified (or classical), where a group of generators or motors is not modelled in detail</li>
@@ -63271,7 +63271,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Terminal">
 <h2 class="abstract">Terminal</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\Core_Core.png" target="_blanc">Core </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/Core_Core.png" target="_blanc">Core </a></p>
 <p class="comment">An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</p>
 <h3>Native Members</h3>
 <table>
@@ -63358,7 +63358,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#TurbineGovernorDynamics">
 <h2 class="abstract">TurbineGovernorDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Turbine-governor function block whose behavior is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <p class="note">-The vast majority of turbine-governor models have mwbase as a parameter. The parameter is specified explicitly in the turbine-governor models to support use of a different value by transient analysis tools, if needed. If this parameter is present it shall correspond to RotatingMachine.ratedPowerFactor * RotatingMachine.ratedS. In case mwbase is not provided or the value is set to 0 then the tools shall use RotatingMachine.ratedPowerFactor * RotatingMachine.ratedS.</p>
 <h3>Native Members</h3>
@@ -63481,7 +63481,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#TurbineLoadControllerDynamics">
 <h2 class="abstract">TurbineLoadControllerDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineLoadControllerDynamics_TurbineLoadControllerDynamics.png" target="_blanc">TurbineLoadControllerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineLoadControllerDynamics_TurbineLoadControllerDynamics.png" target="_blanc">TurbineLoadControllerDynamics </a></p>
 <p class="comment">Turbine load controller function block whose behavior is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -63587,7 +63587,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnderexcitationLimiterDynamics">
 <h2 class="abstract">UnderexcitationLimiterDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/UnderexcitationLimiterDynamics_UnderexcitationLimiterDynamics.png" target="_blanc">UnderexcitationLimiterDynamics </a></p>
 <p class="comment">Underexcitation limiter function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -63693,7 +63693,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VoltageAdjusterDynamics">
 <h2 class="abstract">VoltageAdjusterDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageAdjusterDynamics_VoltageAdjusterDynamics.png" target="_blanc">VoltageAdjusterDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageAdjusterDynamics_VoltageAdjusterDynamics.png" target="_blanc">VoltageAdjusterDynamics </a></p>
 <p class="comment">Voltage adjuster function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -63799,7 +63799,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VoltageCompensatorDynamics">
 <h2 class="abstract">VoltageCompensatorDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/VoltageCompensatorDynamics_VoltageCompensatorInterconnectionAndVariables.png" target="_blanc">VoltageCompensatorDynamics </a></p>
 <p class="comment">Voltage compensator function block whose behaviour is described by reference to a standard model <font color="#0f0f0f">or by definition of a user-defined model.</font></p>
 <h3>Native Members</h3>
 <table>
@@ -63905,7 +63905,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenTurbineType3IEC">
 <h2 class="abstract">WindGenTurbineType3IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Generator model for wind turbines of IEC type 3A and 3B.</p>
 <h3>Native Members</h3>
 <table>
@@ -64203,7 +64203,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindGenType4IEC">
 <h2 class="abstract">WindGenType4IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">IEC Type 4 generator set model.
 <br/>
 <br/>Reference: IEC Standard 61400-27-1 Section 6.6.3.4.</p>
@@ -64469,7 +64469,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindPlantDynamics">
 <h2 class="abstract">WindPlantDynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Parent class supporting relationships to wind turbines Type 3 and 4 and wind plant IEC and user defined wind plants including their control models.</p>
 <h3>Native Members</h3>
 <table>
@@ -64575,7 +64575,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType1or2Dynamics">
 <h2 class="abstract">WindTurbineType1or2Dynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Parent class supporting relationships to wind turbines Type 1 and 2 and their control models.</p>
 <h3>Native Members</h3>
 <table>
@@ -64697,7 +64697,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType1or2IEC">
 <h2 class="abstract">WindTurbineType1or2IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Generator model for wind turbine of IEC Type 1 or Type 2 is a standard asynchronous generator model.
 <br/>
 <br/>Reference: IEC Standard 614000-27-1 Section 6.6.3.1.</p>
@@ -64859,7 +64859,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType3or4Dynamics">
 <h2 class="abstract">WindTurbineType3or4Dynamics</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Parent class supporting relationships to wind turbines Type 3 and 4 and wind plant including their control models.</p>
 <p class="note">-The class WindGeneratorTupe3or4Dynamics is associated with EnergySource as these types use current source in the load flow representation.</p>
 <h3>Native Members</h3>
@@ -64998,7 +64998,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindTurbineType3or4IEC">
 <h2 class="abstract">WindTurbineType3or4IEC</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Parent class supporting relationships to IEC wind turbines Type 3 and 4 and wind plant including their control models.</p>
 <h3>Native Members</h3>
 <table>
@@ -65194,7 +65194,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnitSymbol">
 <h2 class="enumerated">UnitSymbol</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">The units defined for usage in the CIM.</p>
 <table>
 <tr>
@@ -65419,7 +65419,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#UnitMultiplier">
 <h2 class="enumerated">UnitMultiplier</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">The unit multipliers defined for the CIM.<br/></p>
 <table>
 <tr>
@@ -65516,7 +65516,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcIEEEST1AUELselectorKind">
 <h2 class="enumerated">ExcIEEEST1AUELselectorKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Type of connection for the UEL input used in ExcIEEEST1A.</p>
 <table>
 <tr>
@@ -65557,7 +65557,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST6BOELselectorKind">
 <h2 class="enumerated">ExcST6BOELselectorKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Type of connection for the OEL input used for static excitation systems type 6B.</p>
 <table>
 <tr>
@@ -65590,7 +65590,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST7BOELselectorKind">
 <h2 class="enumerated">ExcST7BOELselectorKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Type of connection for the OEL input used for static excitation systems type 7B.</p>
 <table>
 <tr>
@@ -65631,7 +65631,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcST7BUELselectorKind">
 <h2 class="enumerated">ExcST7BUELselectorKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Type of connection for the UEL input used for static excitation systems type 7B.</p>
 <table>
 <tr>
@@ -65672,7 +65672,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ExcREXSFeedbackSignalKind">
 <h2 class="enumerated">ExcREXSFeedbackSignalKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/ExcitationSystemDynamics_ExcitationSystemInterconnectionAndVariables.png" target="_blanc">ExcitationSystemDynamics </a></p>
 <p class="comment">Type of rate feedback signals. </p>
 <table>
 <tr>
@@ -65705,7 +65705,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#DroopSignalFeedbackKind">
 <h2 class="enumerated">DroopSignalFeedbackKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Governor droop signal feedback source.</p>
 <table>
 <tr>
@@ -65746,7 +65746,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#FrancisGovernorControlKind">
 <h2 class="enumerated">FrancisGovernorControlKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/TurbineGovernorDynamics_TurbineGovernorInterconnectionAndVariables.png" target="_blanc">TurbineGovernorDynamics </a></p>
 <p class="comment">Governor control flag for Francis hydro model.</p>
 <table>
 <tr>
@@ -65779,7 +65779,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#GenericNonLinearLoadModelKind">
 <h2 class="enumerated">GenericNonLinearLoadModelKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">Type of generic non-linear load model.</p>
 <table>
 <tr>
@@ -65804,7 +65804,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#StaticLoadModelKind">
 <h2 class="enumerated">StaticLoadModelKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/LoadDynamics_LoadInterconnectionAndVariables.png" target="_blanc">LoadDynamics </a></p>
 <p class="comment">Type of static load model.</p>
 <table>
 <tr>
@@ -65845,7 +65845,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#InputSignalKind">
 <h2 class="enumerated">InputSignalKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/PowerSystemStabilizerDynamics_PowerSystemStabilizerInterconnectionAndVariables.png" target="_blanc">PowerSystemStabilizerDynamics </a></p>
 <p class="comment">Input signal type.  In Dynamics modelling, commonly represented by j parameter.</p>
 <table>
 <tr>
@@ -65934,7 +65934,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#RemoteSignalKind">
 <h2 class="enumerated">RemoteSignalKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\StandardInterconnections_StandardInterconnectionSynchronousMachine.png" target="_blanc">StandardInterconnections </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/StandardInterconnections_StandardInterconnectionSynchronousMachine.png" target="_blanc">StandardInterconnections </a></p>
 <p class="comment">Type of input signal coming from remote bus.</p>
 <table>
 <tr>
@@ -66015,7 +66015,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#IfdBaseKind">
 <h2 class="enumerated">IfdBaseKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">Excitation base system mode.</p>
 <table>
 <tr>
@@ -66056,7 +66056,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#SynchronousMachineModelKind">
 <h2 class="enumerated">SynchronousMachineModelKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">Type of synchronous machine model used in Dynamic simulation applications.</p>
 <table>
 <tr>
@@ -66105,7 +66105,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#RotorKind">
 <h2 class="enumerated">RotorKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/SynchronousMachineDynamics_SynchronousGeneratorInterconnectionAndVariables.png" target="_blanc">SynchronousMachineDynamics </a></p>
 <p class="comment">Type of rotor on physical machine.</p>
 <table>
 <tr>
@@ -66130,7 +66130,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindLVRTQcontrolModesKind">
 <h2 class="enumerated">WindLVRTQcontrolModesKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">LVRT Q control modes <i>M</i><sub>qLVRT</sub>.</p>
 <table>
 <tr>
@@ -66163,7 +66163,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindQcontrolModesKind">
 <h2 class="enumerated">WindQcontrolModesKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">General wind turbine Q control modes <i>M</i><sub>qG</sub>.</p>
 <table>
 <tr>
@@ -66204,7 +66204,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#WindLookupTableFunctionKind">
 <h2 class="enumerated">WindLookupTableFunctionKind</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/WindDynamics_WindDynamicsType1or2.png" target="_blanc">WindDynamics </a></p>
 <p class="comment">Function of the lookup table.</p>
 <table>
 <tr>
@@ -66255,7 +66255,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#PU">
 <h2 class="datatype">PU</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Per Unit - a positive or negative value referred to a defined base. Values typically range from -10 to +10.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66312,7 +66312,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Seconds">
 <h2 class="datatype">Seconds</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Time, in seconds.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66369,7 +66369,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Simple_Float">
 <h2 class="datatype">Simple_Float</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">A floating point number. The range is unspecified and not limited.<br/></p>
 <p class="note">-In ENTSO-E profile, Simple_Float range is the IEEE754 simple precision floating point one. It correspond to xs:float datatype</p>
 <table>
@@ -66394,7 +66394,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#AngleDegrees">
 <h2 class="datatype">AngleDegrees</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Measurement of angle in degrees.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66451,7 +66451,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ApparentPower">
 <h2 class="datatype">ApparentPower</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Product of the RMS value of the voltage and the RMS value of the current.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66508,7 +66508,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#ActivePower">
 <h2 class="datatype">ActivePower</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Product of RMS value of the voltage and the RMS value of the in-phase component of the current.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66565,7 +66565,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Frequency">
 <h2 class="datatype">Frequency</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Cycles per second.</p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66622,7 +66622,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Temperature">
 <h2 class="datatype">Temperature</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Value of temperature in degrees Celsius.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66679,7 +66679,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Area">
 <h2 class="datatype">Area</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Area.</p>
 <table>
 <tr>
@@ -66734,7 +66734,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#Length">
 <h2 class="datatype">Length</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Unit of length. Never negative.<br/></p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
@@ -66791,7 +66791,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#VolumeFlowRate">
 <h2 class="datatype">VolumeFlowRate</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Volume per time.<br/></p>
 <table>
 <tr>
@@ -66879,7 +66879,7 @@ p.package { position: absolute; right: 10px; top: 0px}
 <a href="#CurrentFlow">
 <h2 class="datatype">CurrentFlow</h2>
 </a>
-<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images\DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
+<p class="package"><a href="DynamicsProfile-v2_4_15-7Aug2014_images/DomainProfile_PrimitiveDomainProfile.png" target="_blanc">DomainProfile </a></p>
 <p class="comment">Electrical current with sign convention: positive flow is out of the conducting equipment into the connectivity node. Can be both AC and DC.</p>
 <p class="note">-Value type is IEEE 754 simple precision floating point<br/></p>
 <table>
