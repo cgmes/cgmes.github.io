@@ -1,0 +1,214 @@
+package TC57CIM
+
+context IEC61970::Base::DC::ACDCConverter
+-- An ACDCConverter must be in a DCConveterUnit
+inv acDcConverterDCConverterUnit: (self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCConverterUnit))
+context IEC61970::Base::DC::DCGround
+-- A DCGround must be in a DCConverterUnit
+inv dcGroundConverterUnit: (self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCConverterUnit))
+context IEC61970::Base::DC::DCLineSegment
+-- A DCLineSegment must be contained in a DCLine
+inv dcLineSegmentContianer: (self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCLine))
+context IEC61970::Base::Meas::Measurement
+-- If a Terminal exists its ConductingEquipment must be the same as PSR
+inv terminalPSRMatch:
+	(self.Terminal = null) or
+	(self.Terminal.oclIsKindOf(IEC61970::Base::Core::Terminal) and self.Terminal.oclAsType(IEC61970::Base::Core::Terminal).ConductingEquipment = self.PowerSystemResource) or
+	(self.Terminal.oclIsKindOf(IEC61970::Base::DC::DCTerminal) and self.Terminal.oclAsType(IEC61970::Base::DC::DCTerminal).DCConductingEquipment = self.PowerSystemResource)
+-- measurementType is restricted to the values: ThreePhasePower, ThreePhaseActivePower, ThreePhaseReactivePower, LineCurrent, PhaseVoltage, LineToLineVoltage, Angle, TapPosition, SwitchPosition
+inv measurementTypeEnum:
+	(self.measurementType = 'ThreePhasePower') or
+	(self.measurementType = 'ThreePhaseActivePower') or
+	(self.measurementType = 'ThreePhaseReactivePower') or
+	(self.measurementType = 'LineCurrent') or
+	(self.measurementType = 'PhaseVoltage') or
+	(self.measurementType = 'LineToLineVoltage') or
+	(self.measurementType = 'Angle') or
+	(self.measurementType = 'TapPosition') or
+	(self.measurementType = 'SwitchPosition')
+-- unitSymbol is limited to W, deg, VA, none, A, VAr, V, Hz
+inv measurementUnitSymbol:
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::W) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::deg) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::VA) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::none) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::A) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::VAr) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::V) or
+	(self.unitSymbol = IEC61970::Base::Domain::UnitSymbol::Hz)
+context IEC61970::Base::Core::Equipment
+-- OCL on containment. Please refer to the Note linked to the Equipment class.
+inv equipmentContainmentRules: (
+                                (
+                                                self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::VoltageLevel) and
+                                                (not self.oclIsKindOf(IEC61970::Base::Wires::PowerTransformer)) and
+                                                (not self.oclIsKindOf(IEC61970::Base::Generation::Production::GeneratingUnit)) and
+                                                (not self.oclIsKindOf(IEC61970::Base::Generation::Production::HydroPump)) and
+                                                (not self.oclIsKindOf(IEC61970::Base::Wires::Conductor)) and
+                                                (not self.oclIsKindOf(IEC61970::Base::DC::DCConductingEquipment))
+                                ) or
+                                (self.oclIsKindOf(IEC61970::Base::Wires::Conductor) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Wires::Line)) or
+                                (self.oclIsKindOf(IEC61970::Base::Wires::PowerTransformer) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::Substation)) or
+                                (self.oclIsKindOf(IEC61970::Base::Wires::PowerTransformer) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCConverterUnit)) or
+                                (self.oclIsKindOf(IEC61970::Base::Generation::Production::GeneratingUnit) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::Substation)) or
+                                (self.oclIsKindOf(IEC61970::Base::Generation::Production::HydroPump) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::Substation)) or
+                                (self.oclIsKindOf(IEC61970::Base::DC::DCConductingEquipment) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCEquipmentContainer)) or
+                                (self.oclIsKindOf(IEC61970::Base::Wires::Switch) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::Bay)) or
+                                (self.oclIsKindOf(IEC61970::Base::Wires::Switch) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCConverterUnit)) or                        
+                                (self.oclIsKindOf(IEC61970::Base::Wires::SeriesCompensator) and self.EquipmentContainer.oclIsKindOf(IEC61970::Base::DC::DCConverterUnit))
+                )
+context IEC61970::Base::Core::BaseVoltage
+-- NominalVoltage must be positive
+inv positiveNominalVoltage: self.nominalVoltage > 0
+context IEC61970::Base::Core::ConductingEquipment
+-- The ConductingEquipment must either have a BaseVoltage association or be within a VoltageLevel.
+-- If both are set the VoltageLevel's BaseVoltage must equal that of the ConductingEquipment
+inv conductingEquipmentVoltage: (
+	(
+		(self.BaseVoltage =null) and
+		(self.EquipmentContainer <> null) and
+		(self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::VoltageLevel))
+	) or
+	(
+		(self.BaseVoltage <>null) and
+		(
+			(self.EquipmentContainer = null) or
+			(
+				(self.EquipmentContainer <> null) and
+				(self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::VoltageLevel)) and
+				(self.EquipmentContainer.oclAsType(IEC61970::Base::Core::VoltageLevel).BaseVoltage = self.BaseVoltage)
+			) or
+			(
+				(self.EquipmentContainer <> null) and
+				(not self.EquipmentContainer.oclIsKindOf(IEC61970::Base::Core::VoltageLevel))
+			)
+		)
+	)
+)
+context IEC61970::Base::Core::IdentifiedObject
+-- R.4.10.11. Description length restriction (optional)
+inv equipmentDescriptionLength: self.description = null or self.description->size() <= 256
+-- R.4.10.11. Energy Ident Code length restriction (optional)
+inv equipmentEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic->size() = 16
+-- R.4.10.11. Name length restriction
+inv equipmentNameLength: self.name->size() <= 32
+-- R.4.10.11. ShortName length restriction (optional)
+inv equipmentShortNameLength: self.shortName = null or self.shortName->size() <= 12
+context IEC61970::Base::Core::Terminal
+-- Sequence Number is required for EquivalentBranch and ACLineSegments with MutualCoupling
+inv terminalSequenceNumber:
+	(
+		(not self.ConductingEquipment.oclIsKindOf(IEC61970::Base::Equivalents::EquivalentBranch)) and
+		(not self.ConductingEquipment.oclIsKindOf(IEC61970::Base::Wires::ACLineSegment))
+	) or (
+		self.ConductingEquipment.oclIsKindOf(IEC61970::Base::Equivalents::EquivalentBranch) and self.sequenceNumber <> null	
+	) or (
+		(self.ConductingEquipment.oclIsKindOf(IEC61970::Base::Wires::ACLineSegment) and self.HasFirstMutualCoupling->isEmpty() and self.HasSecondMutualCoupling->isEmpty()) or
+		(
+			self.ConductingEquipment.oclIsKindOf(IEC61970::Base::Wires::ACLineSegment) and
+			(self.HasFirstMutualCoupling->notEmpty() or self.HasSecondMutualCoupling->notEmpty()) and
+			self.sequenceNumber <> null
+		)
+	)
+context IEC61970::Base::LoadModel::LoadResponseCharacteristic
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of reactive power modelled as constant current must be specified
+inv exponentFalseQConstantCurrent: (
+	(
+		(self.qConstantCurrent <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of reactive power modelled as constant impedance must be specified
+inv exponentFalseQConstantImpedance: (
+	(
+		(self.qConstantImpedance <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of reactive power modelled as constant power must be specified  
+inv exponentFalseQConstantPower: (
+	(
+		(self.qConstantPower <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of real power modelled as constant current must be specified
+inv exponentFalsePConstantCurrent: (
+	(
+		(self.pConstantCurrent <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of real power modelled as constant impedance must be specified
+inv exponentFalsePConstantImpedance: (
+	(
+		(self.pConstantImpedance <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is false, the portion of real power modelled as constant power must be specified    
+inv exponentFalsePConstantPower: (
+	(
+		(self.pConstantPower <> null) and
+		(self.exponentModel = false)
+	) or
+	(self.exponentModel = true)
+     )
+-- If LoadResponseCharacteristic.exponentModel is true the Exponent of per unit voltage effecting reactive power must be specified
+inv exponentTrueQVoltage: (
+	(
+		(self.qVoltageExponent <> null) and
+		(self.exponentModel = true)
+	) or
+	(self.exponentModel = false)
+     )
+-- If LoadResponseCharacteristic.exponentModel is true the Exponent of per unit voltage effecting real power must be specified
+inv exponentTruePVoltage: (
+	(
+		(self.pVoltageExponent <> null) and
+		(self.exponentModel = true)
+	) or
+	(self.exponentModel = false)
+     )
+context IEC61970::Base::Wires::MutualCoupling
+-- First terminal of a mutual coupling must have a sequence number set
+inv mutualCouplingFirstTerminalSequenceNumbers:
+	(self.First_Terminal <> null and self.First_Terminal.sequenceNumber <> null)    
+-- Second terminal that of a mutual coupling must have a sequence number set
+inv mutualCouplingSecondTerminalSequenceNumbers:
+	(self.Second_Terminal <> null and self.Second_Terminal.sequenceNumber <> null)     
+-- The starting terminal for the calculation of distances along the first branch of the mutual coupling. Normally MutualCoupling would only be used for terminals of AC line segments.
+-- The terminals of a mutual coupling should point to different segments
+inv mutualCouplingFirstTerminalUnique: (
+	(self.First_Terminal <>null) and
+	(self.Second_Terminal <> self.First_Terminal) and
+	(self.Second_Terminal.ConductingEquipment <> self.First_Terminal.ConductingEquipment) and
+	(self.First_Terminal.ConductingEquipment.oclIsKindOf(IEC61970::Base::Wires::ACLineSegment))
+     )
+-- The starting terminal for the calculation of distances along the second branch of the mutual coupling. This should point to an ACLineSegment
+inv mutualCouplingSecondTerminalUnique: (
+	(self.Second_Terminal <>null) and
+	(self.Second_Terminal.ConductingEquipment.oclIsKindOf(IEC61970::Base::Wires::ACLineSegment))
+     )
+context IEC61970::Base::Wires::ACLineSegment
+-- An ACLineSegment must have a BaseVoltage.
+inv acLineSegmentBaseVoltage: (self.BaseVoltage <> null)
+context IEC61970::Base::Wires::SynchronousMachine
+-- If a synchronous condenser is being modelled so that there is no capability for real power output, the SynchronousMachine is not required to be associated with a GeneratingUnit. In this case, the type and operatingMode attributes must both be set to "cond
+inv synchronousMachineAsCondenser: (
+		(self.GeneratingUnit <> null) or
+		(
+			(self.GeneratingUnit = null) and (self.operatingMode = IEC61970::Base::Wires::SynchronousMachineKind::condenser)
+		)
+	)
+context IEC61970::Base::Equivalents::EquivalentBranch
+-- If a device has more than one terminal it must have a sequenceNumber
+inv equivalentBranchTerminalSequenceNumberBranch:
+	(self.Terminals->select(sequenceNumber = null or sequenceNumber = 0)->isEmpty())
+
+endpackage

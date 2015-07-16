@@ -1,0 +1,35 @@
+package TC57CIM
+
+context IEC61970::Base::DiagramLayout::Diagram
+-- orientation must be set.
+-- Coordinate system orientation of the diagram.  
+inv Diagram_orientation: (self.orientation <> null)
+
+context IEC61970::Base::DiagramLayout::DiagramObject
+-- Diagram must be set.
+-- A diagram object is part of a diagram.
+inv DiagramObject_Diagram: (self.Diagram <> null)
+
+context IEC61970::Base::DiagramLayout::DiagramObjectPoint
+-- xPosition must be set.
+-- The X coordinate of this point.  
+inv DiagramObjectPoint_xPosition: (self.xPosition <> null)
+-- yPosition must be set.
+-- The Y coordinate of this point.  
+inv DiagramObjectPoint_yPosition: (self.yPosition <> null)
+-- DiagramObject must be set.
+-- The diagram object with which the points are associated.
+inv DiagramObjectPoint_DiagramObject: (self.DiagramObject <> null)
+
+context IEC61970::Base::DiagramLayout::TextDiagramObject
+-- text must be set.
+-- The text that is displayed by this text diagram object.  
+inv TextDiagramObject_text: (self.text <> null)
+
+context IEC61970::Base::Core::IdentifiedObject
+-- name must be set.
+-- The name is any free human readable and possibly non unique text naming the object.  
+inv IdentifiedObject_name3: (self.name <> null)
+
+
+endpackage

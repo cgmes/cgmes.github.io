@@ -1,0 +1,24 @@
+package TC57CIM
+
+context IEC61970::Base::Core::IdentifiedObject
+-- R.4.10.11. Name length restriction
+inv stateVariablesNameLength: self.name->size() <= 32
+context IEC61970::Base::StateVariables::SvPowerFlow
+-- The active power flow into the ConductingEquipment. If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.p should be zero.
+inv svPowerFlowDisconnectedPZero: (
+		(
+			(self.p = 0.0) and
+			(self.Terminal.connected = false)
+		) or
+		(self.Terminal.connected = true)
+     )
+-- The reactive power flow into the ConductingEquipment. If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.q should be zero.
+inv svPowerFlowDisconnectedQZero: (
+		(
+			(self.q = 0.0) and
+			(self.Terminal.connected = false)
+		) or
+		(self.Terminal.connected = true)
+     )
+
+endpackage

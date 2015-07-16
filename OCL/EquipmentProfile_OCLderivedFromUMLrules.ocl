@@ -1,0 +1,894 @@
+package TC57CIM
+
+context IEC61970::Base::DC::ACDCConverterDCTerminal
+-- DCConductingEquipment must be set.
+inv ACDCConverterDCTerminal_DCConductingEquipment: (self.DCConductingEquipment <> null)
+
+context IEC61970::Base::DC::DCConverterUnit
+-- operationMode must be set.
+inv DCConverterUnit_operationMode: (self.operationMode <> null)
+
+context IEC61970::Base::DC::DCNode
+-- DCEquipmentContainer must be set.
+inv DCNode_DCEquipmentContainer: (self.DCEquipmentContainer <> null)
+
+context IEC61970::Base::DC::DCSeriesDevice
+-- inductance must be set.
+-- Inductance of the device.
+inv DCSeriesDevice_inductance: (self.inductance <> null)
+-- ratedUdc must be set.
+-- Rated DC device voltage. Converter configuration data used in power flow.
+inv DCSeriesDevice_ratedUdc: (self.ratedUdc <> null)
+-- resistance must be set.
+-- Resistance of the DC device.
+inv DCSeriesDevice_resistance: (self.resistance <> null)
+
+context IEC61970::Base::DC::DCShunt
+-- capacitance must be set.
+-- Capacitance of the DC shunt.
+inv DCShunt_capacitance: (self.capacitance <> null)
+-- ratedUdc must be set.
+-- Rated DC device voltage. Converter configuration data used in power flow.
+inv DCShunt_ratedUdc: (self.ratedUdc <> null)
+-- resistance must be set.
+-- Resistance of the DC device.
+inv DCShunt_resistance: (self.resistance <> null)
+
+context IEC61970::Base::DC::DCTerminal
+-- DCConductingEquipment must be set.
+inv DCTerminal_DCConductingEquipment: (self.DCConductingEquipment <> null)
+
+context IEC61970::Base::Meas::AnalogValue
+-- value must be set.
+-- The value to supervise.
+inv AnalogValue_value: (self.value <> null)
+-- Analog must be set.
+-- Measurement to which this value is connected.
+inv AnalogValue_Analog: (self.Analog <> null)
+
+context IEC61970::Base::Meas::Command
+-- normalValue must be set.
+-- Normal value for Control.value e.g. used for percentage scaling.  
+inv Command_normalValue: (self.normalValue <> null)
+-- value must be set.
+-- The value representing the actuator output.  
+inv Command_value: (self.value <> null)
+-- DiscreteValue must be set.
+-- The MeasurementValue that is controlled.
+inv Command_DiscreteValue: (self.DiscreteValue <> null)
+
+context IEC61970::Base::Meas::Control
+-- controlType must be set.
+-- Specifies the type of Control, e.g. BreakerOn/Off, GeneratorVoltageSetPoint, TieLineFlow etc. The ControlType.name shall be unique among all specified types and describe the type.
+inv Control_controlType: (self.controlType <> null)
+
+context IEC61970::Base::Meas::DiscreteValue
+-- value must be set.
+-- The value to supervise.
+inv DiscreteValue_value: (self.value <> null)
+-- Discrete must be set.
+-- Measurement to which this value is connected.
+inv DiscreteValue_Discrete: (self.Discrete <> null)
+
+context IEC61970::Base::Meas::Measurement
+-- measurementType must be set.
+-- Specifies the type of measurement.  For example, this specifies if the measurement represents an indoor temperature, outdoor temperature, bus voltage, line flow, etc.    
+inv Measurement_measurementType: (self.measurementType <> null)
+-- unitMultiplier must be set.
+-- The unit multiplier of the measured quantity.
+inv Measurement_unitMultiplier: (self.unitMultiplier <> null)
+-- unitSymbol must be set.
+-- The unit of measure of the measured quantity.
+inv Measurement_unitSymbol: (self.unitSymbol <> null)
+-- PowerSystemResource must be set.
+-- The power system resource that contains the measurement.
+inv Measurement_PowerSystemResource: (self.PowerSystemResource <> null)
+
+context IEC61970::Base::Meas::AccumulatorLimit
+-- value must be set.
+-- The value to supervise against. The value is positive.
+inv AccumulatorLimit_value: (self.value <> null)
+-- LimitSet must be set.
+-- The set of limits.
+inv AccumulatorLimit_LimitSet: (self.LimitSet <> null)
+
+context IEC61970::Base::Meas::AccumulatorReset
+-- AccumulatorValue must be set.
+-- The accumulator value that is reset by the command.
+inv AccumulatorReset_AccumulatorValue: (self.AccumulatorValue <> null)
+
+context IEC61970::Base::Meas::AccumulatorValue
+-- value must be set.
+-- The value to supervise. The value is positive.
+inv AccumulatorValue_value: (self.value <> null)
+-- Accumulator must be set.
+-- Measurement to which this value is connected.
+inv AccumulatorValue_Accumulator: (self.Accumulator <> null)
+
+context IEC61970::Base::Meas::AnalogControl
+-- maxValue must be set.
+-- Normal value range maximum for any of the Control.value. Used for scaling, e.g. in bar graphs.
+inv AnalogControl_maxValue: (self.maxValue <> null)
+-- minValue must be set.
+-- Normal value range minimum for any of the Control.value. Used for scaling, e.g. in bar graphs.
+inv AnalogControl_minValue: (self.minValue <> null)
+-- AnalogValue must be set.
+-- The MeasurementValue that is controlled.
+inv AnalogControl_AnalogValue: (self.AnalogValue <> null)
+
+context IEC61970::Base::Meas::AnalogLimit
+-- value must be set.
+-- The value to supervise against.
+inv AnalogLimit_value: (self.value <> null)
+-- LimitSet must be set.
+-- The set of limits.
+inv AnalogLimit_LimitSet: (self.LimitSet <> null)
+
+context IEC61970::Base::Meas::MeasurementValue
+-- MeasurementValueSource must be set.
+-- A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301.
+inv MeasurementValue_MeasurementValueSource: (self.MeasurementValueSource <> null)
+
+context IEC61970::Base::Meas::MeasurementValueQuality
+-- MeasurementValue must be set.
+-- A MeasurementValue has a MeasurementValueQuality associated with it.
+inv MeasurementValueQuality_MeasurementValue: (self.MeasurementValue <> null)
+
+context IEC61970::Base::Meas::SetPoint
+-- normalValue must be set.
+-- Normal value for Control.value e.g. used for percentage scaling.  
+inv SetPoint_normalValue: (self.normalValue <> null)
+-- value must be set.
+-- The value representing the actuator output.  
+inv SetPoint_value: (self.value <> null)
+
+context IEC61970::Base::Meas::StringMeasurementValue
+-- value must be set.
+-- The value to supervise.
+inv StringMeasurementValue_value: (self.value <> null)
+-- StringMeasurement must be set.
+-- Measurement to which this value is connected.
+inv StringMeasurementValue_StringMeasurement: (self.StringMeasurement <> null)
+
+context IEC61970::Base::Meas::ValueToAlias
+-- value must be set.
+-- The value that is mapped.  
+inv ValueToAlias_value: (self.value <> null)
+-- ValueAliasSet must be set.
+-- The ValueAliasSet having the ValueToAlias mappings.
+inv ValueToAlias_ValueAliasSet: (self.ValueAliasSet <> null)
+
+context IEC61970::Base::Generation::Production::FossilFuel
+-- fossilFuelType must be set.
+-- The type of fossil fuel, such as coal, oil, or gas.
+inv FossilFuel_fossilFuelType: (self.fossilFuelType <> null)
+-- ThermalGeneratingUnit must be set.
+-- A thermal generating unit may have one or more fossil fuels.
+inv FossilFuel_ThermalGeneratingUnit: (self.ThermalGeneratingUnit <> null)
+
+context IEC61970::Base::Generation::Production::GeneratingUnit
+-- initialP must be set.
+-- Default initial active power  which is used to store a powerflow result for the initial active power for this unit in this network configuration.  
+inv GeneratingUnit_initialP: (self.initialP <> null)
+-- maxOperatingP must be set.
+-- This is the maximum operating active power limit the dispatcher can enter for this unit.  
+inv GeneratingUnit_maxOperatingP: (self.maxOperatingP <> null)
+-- minOperatingP must be set.
+-- This is the minimum operating active power limit the dispatcher can enter for this unit.
+inv GeneratingUnit_minOperatingP: (self.minOperatingP <> null)
+
+context IEC61970::Base::Generation::Production::GrossToNetActivePowerCurve
+-- GeneratingUnit must be set.
+-- A generating unit may have a gross active power to net active power curve, describing the losses and auxiliary power requirements of the unit.
+inv GrossToNetActivePowerCurve_GeneratingUnit: (self.GeneratingUnit <> null)
+
+context IEC61970::Base::Generation::Production::HydroPowerPlant
+-- hydroPlantStorageType must be set.
+-- The type of hydro power plant water storage.
+inv HydroPowerPlant_hydroPlantStorageType: (self.hydroPlantStorageType <> null)
+
+context IEC61970::Base::Generation::Production::HydroPump
+-- RotatingMachine must be set.
+-- The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating.
+inv HydroPump_RotatingMachine: (self.RotatingMachine <> null)
+
+context IEC61970::Base::Generation::Production::WindGeneratingUnit
+-- windGenUnitType must be set.
+-- The kind of wind generating unit
+inv WindGeneratingUnit_windGenUnitType: (self.windGenUnitType <> null)
+
+context IEC61970::Base::Core::ConnectivityNode
+-- ConnectivityNodeContainer must be set.
+-- Container of this connectivity node.
+inv ConnectivityNode_ConnectivityNodeContainer0: (self.ConnectivityNodeContainer <> null)
+
+context IEC61970::Base::Core::Curve
+-- curveStyle must be set.
+-- The style or shape of the curve.
+inv Curve_curveStyle: (self.curveStyle <> null)
+-- xUnit must be set.
+-- The X-axis units of measure.
+inv Curve_xUnit: (self.xUnit <> null)
+-- y1Unit must be set.
+-- The Y1-axis units of measure.
+inv Curve_y1Unit: (self.y1Unit <> null)
+
+context IEC61970::Base::Core::CurveData
+-- xvalue must be set.
+-- The data value of the X-axis variable,  depending on the X-axis units.  
+inv CurveData_xvalue: (self.xvalue <> null)
+-- y1value must be set.
+-- The data value of the  first Y-axis variable, depending on the Y-axis units.  
+inv CurveData_y1value: (self.y1value <> null)
+-- Curve must be set.
+-- The curve of  this curve data point.
+inv CurveData_Curve: (self.Curve <> null)
+
+context IEC61970::Base::Core::BaseVoltage
+-- nominalVoltage must be set.
+-- The power system resource's base voltage.  
+inv BaseVoltage_nominalVoltage0: (self.nominalVoltage <> null)
+
+context IEC61970::Base::Core::BasicIntervalSchedule
+-- startTime must be set.
+-- The time for the first time point.
+inv BasicIntervalSchedule_startTime: (self.startTime <> null)
+-- value1Unit must be set.
+-- Value1 units of measure.
+inv BasicIntervalSchedule_value1Unit: (self.value1Unit <> null)
+
+context IEC61970::Base::Core::Bay
+-- VoltageLevel must be set.
+-- The voltage level containing this bay.
+inv Bay_VoltageLevel: (self.VoltageLevel <> null)
+
+context IEC61970::Base::Core::IdentifiedObject
+-- name must be set.
+-- The name is any free human readable and possibly non unique text naming the object.  
+inv IdentifiedObject_name1: (self.name <> null)
+
+context IEC61970::Base::Core::RegularIntervalSchedule
+-- endTime must be set.
+-- The time for the last time point.
+inv RegularIntervalSchedule_endTime: (self.endTime <> null)
+-- timeStep must be set.
+-- The time between each pair of subsequent regular time points in sequence order.  
+inv RegularIntervalSchedule_timeStep: (self.timeStep <> null)
+
+context IEC61970::Base::Core::RegularTimePoint
+-- sequenceNumber must be set.
+-- The position of the regular time point in the sequence. Note that time points don't have to be sequential, i.e. time points may be omitted. The actual time for a RegularTimePoint is computed by multiplying the associated regular interval schedule's time step with the regular time point sequence number and adding the associated schedules start time.  
+inv RegularTimePoint_sequenceNumber: (self.sequenceNumber <> null)
+-- value1 must be set.
+-- The first value at the time. The meaning of the value is defined by the derived type of the associated schedule.  
+inv RegularTimePoint_value1: (self.value1 <> null)
+-- IntervalSchedule must be set.
+-- Regular interval schedule containing this time point.
+inv RegularTimePoint_IntervalSchedule: (self.IntervalSchedule <> null)
+
+context IEC61970::Base::Core::SubGeographicalRegion
+-- Region must be set.
+-- The geographical region to which this sub-geographical region is within.
+inv SubGeographicalRegion_Region0: (self.Region <> null)
+
+context IEC61970::Base::Core::Substation
+-- Region must be set.
+-- The SubGeographicalRegion containing the substation.
+inv Substation_Region: (self.Region <> null)
+
+context IEC61970::Base::Core::Terminal
+-- ConductingEquipment must be set.
+-- The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.
+inv Terminal_ConductingEquipment0: (self.ConductingEquipment <> null)
+-- ConnectivityNode must be set.
+-- The connectivity node to which this terminal connects with zero impedance.
+inv Terminal_ConnectivityNode: (self.ConnectivityNode <> null)
+
+context IEC61970::Base::Core::VoltageLevel
+-- BaseVoltage must be set.
+-- The base voltage used for all equipment within the voltage level.
+inv VoltageLevel_BaseVoltage: (self.BaseVoltage <> null)
+-- Substation must be set.
+-- The substation of the voltage level.
+inv VoltageLevel_Substation: (self.Substation <> null)
+
+context IEC61970::Base::OperationalLimits::ActivePowerLimit
+-- value must be set.
+-- Value of active power limit.
+inv ActivePowerLimit_value: (self.value <> null)
+
+context IEC61970::Base::OperationalLimits::ApparentPowerLimit
+-- value must be set.
+-- The apparent power limit.
+inv ApparentPowerLimit_value: (self.value <> null)
+
+context IEC61970::Base::OperationalLimits::CurrentLimit
+-- value must be set.
+-- Limit on current flow.
+inv CurrentLimit_value: (self.value <> null)
+
+context IEC61970::Base::OperationalLimits::OperationalLimit
+-- OperationalLimitType must be set.
+-- The limit type associated with this limit.
+inv OperationalLimit_OperationalLimitType: (self.OperationalLimitType <> null)
+-- OperationalLimitSet must be set.
+-- The limit set to which the limit values belong.
+inv OperationalLimit_OperationalLimitSet: (self.OperationalLimitSet <> null)
+
+context IEC61970::Base::OperationalLimits::OperationalLimitType
+-- limitType must be set.
+-- Types of limits defined in the ENTSO-E Operational Handbook Policy 3.
+inv OperationalLimitType_limitType: (self.limitType <> null)
+
+context IEC61970::Base::OperationalLimits::VoltageLimit
+-- value must be set.
+-- Limit on voltage. High or low limit nature of the limit depends upon the properties of the operational limit type.
+inv VoltageLimit_value: (self.value <> null)
+
+context IEC61970::Base::LoadModel::NonConformLoad
+-- LoadGroup must be set.
+-- Group of this ConformLoad.
+inv NonConformLoad_LoadGroup: (self.LoadGroup <> null)
+
+context IEC61970::Base::LoadModel::NonConformLoadSchedule
+-- NonConformLoadGroup must be set.
+-- The NonConformLoadGroup where the NonConformLoadSchedule belongs.
+inv NonConformLoadSchedule_NonConformLoadGroup: (self.NonConformLoadGroup <> null)
+
+context IEC61970::Base::LoadModel::Season
+-- endDate must be set.
+-- Date season ends.
+inv Season_endDate: (self.endDate <> null)
+-- startDate must be set.
+-- Date season starts.
+inv Season_startDate: (self.startDate <> null)
+
+context IEC61970::Base::LoadModel::SeasonDayTypeSchedule
+-- Season must be set.
+-- Season for the Schedule.
+inv SeasonDayTypeSchedule_Season: (self.Season <> null)
+-- DayType must be set.
+-- DayType for the Schedule.
+inv SeasonDayTypeSchedule_DayType: (self.DayType <> null)
+
+context IEC61970::Base::LoadModel::SubLoadArea
+-- LoadArea must be set.
+-- The LoadArea where the SubLoadArea belongs.
+inv SubLoadArea_LoadArea: (self.LoadArea <> null)
+
+context IEC61970::Base::LoadModel::ConformLoad
+-- LoadGroup must be set.
+-- Group of this ConformLoad.
+inv ConformLoad_LoadGroup: (self.LoadGroup <> null)
+
+context IEC61970::Base::LoadModel::ConformLoadSchedule
+-- ConformLoadGroup must be set.
+-- The ConformLoadGroup where the ConformLoadSchedule belongs.
+inv ConformLoadSchedule_ConformLoadGroup: (self.ConformLoadGroup <> null)
+
+context IEC61970::Base::LoadModel::LoadGroup
+-- SubLoadArea must be set.
+-- The SubLoadArea where the Loadgroup belongs.
+inv LoadGroup_SubLoadArea: (self.SubLoadArea <> null)
+
+context IEC61970::Base::LoadModel::LoadResponseCharacteristic
+-- exponentModel must be set.
+-- Indicates the exponential voltage dependency model is to be used.   If false, the coefficient model is to be used.  The exponential voltage dependency model consist of the attributes  - pVoltageExponent  - qVoltageExponent.  The coefficient model consist of the attributes  - pConstantImpedance  - pConstantCurrent  - pConstantPower  - qConstantImpedance  - qConstantCurrent  - qConstantPower.  The sum of pConstantImpedance, pConstantCurrent and pConstantPower shall equal 1.  The sum of qConstantImpedance, qConstantCurrent and qConstantPower shall equal 1.
+inv LoadResponseCharacteristic_exponentModel: (self.exponentModel <> null)
+
+context IEC61970::Base::Wires::AsynchronousMachine
+-- converterFedDrive must be set.
+-- Indicates whether the machine is a converter fed drive. Used for short circuit data exchange according to IEC 60909
+inv AsynchronousMachine_converterFedDrive: (self.converterFedDrive <> null)
+-- efficiency must be set.
+-- Efficiency of the asynchronous machine at nominal operation in percent. Indicator for converter drive motors. Used for short circuit data exchange according to IEC 60909
+inv AsynchronousMachine_efficiency: (self.efficiency <> null)
+-- iaIrRatio must be set.
+-- Ratio of locked-rotor current to the rated current of the motor (Ia/Ir). Used for short circuit data exchange according to IEC 60909
+inv AsynchronousMachine_iaIrRatio: (self.iaIrRatio <> null)
+-- polePairNumber must be set.
+-- Number of pole pairs of stator. Used for short circuit data exchange according to IEC 60909
+inv AsynchronousMachine_polePairNumber: (self.polePairNumber <> null)
+-- ratedMechanicalPower must be set.
+-- Rated mechanical power (Pr in the IEC 60909-0). Used for short circuit data exchange according to IEC 60909.
+inv AsynchronousMachine_ratedMechanicalPower: (self.ratedMechanicalPower <> null)
+-- reversible must be set.
+-- Indicates for converter drive motors if the power can be reversible. Used for short circuit data exchange according to IEC 60909
+inv AsynchronousMachine_reversible: (self.reversible <> null)
+
+context IEC61970::Base::Wires::ExternalNetworkInjection
+-- governorSCD must be set.
+-- Power Frequency Bias. This is the change in power injection divided by the change in frequency and negated.  A positive value of the power frequency bias provides additional power injection upon a drop in frequency.
+inv ExternalNetworkInjection_governorSCD: (self.governorSCD <> null)
+-- maxInitialSymShCCurrent must be set.
+--   Maximum initial symmetrical short-circuit currents (Ik" max) in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_maxInitialSymShCCurrent: (self.maxInitialSymShCCurrent <> null)
+-- maxP must be set.
+-- Maximum active power of the injection.
+inv ExternalNetworkInjection_maxP: (self.maxP <> null)
+-- maxQ must be set.
+-- Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used   
+inv ExternalNetworkInjection_maxQ: (self.maxQ <> null)
+-- maxR0ToX0Ratio must be set.
+-- Maximum ratio of zero sequence resistance of Network Feeder to its zero sequence reactance (R(0)/X(0) max). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_maxR0ToX0Ratio: (self.maxR0ToX0Ratio <> null)
+-- maxR1ToX1Ratio must be set.
+-- Maximum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) max). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_maxR1ToX1Ratio: (self.maxR1ToX1Ratio <> null)
+-- maxZ0ToZ1Ratio must be set.
+-- Maximum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) max). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_maxZ0ToZ1Ratio: (self.maxZ0ToZ1Ratio <> null)
+-- minInitialSymShCCurrent must be set.
+-- Minimum initial symmetrical short-circuit currents (Ik" min) in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_minInitialSymShCCurrent: (self.minInitialSymShCCurrent <> null)
+-- minP must be set.
+-- Minimum active power of the injection.
+inv ExternalNetworkInjection_minP: (self.minP <> null)
+-- minQ must be set.
+-- Not for short circuit modelling; It is used for modelling of infeed for load flow exchange. If maxQ and minQ are not used ReactiveCapabilityCurve can be used  
+inv ExternalNetworkInjection_minQ: (self.minQ <> null)
+-- minR0ToX0Ratio must be set.
+-- Indicates whether initial symmetrical short-circuit current and power have been calculated according to IEC (Ik"). Used for short circuit data exchange according to IEC 6090  
+inv ExternalNetworkInjection_minR0ToX0Ratio: (self.minR0ToX0Ratio <> null)
+-- minR1ToX1Ratio must be set.
+-- Minimum ratio of positive sequence resistance of Network Feeder to its positive sequence reactance (R(1)/X(1) min). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_minR1ToX1Ratio: (self.minR1ToX1Ratio <> null)
+-- minZ0ToZ1Ratio must be set.
+-- Minimum ratio of zero sequence impedance to its positive sequence impedance (Z(0)/Z(1) min). Used for short circuit data exchange according to IEC 60909  
+inv ExternalNetworkInjection_minZ0ToZ1Ratio: (self.minZ0ToZ1Ratio <> null)
+
+context IEC61970::Base::Wires::GroundingImpedance
+-- x must be set.
+-- Reactance of device.
+inv GroundingImpedance_x: (self.x <> null)
+
+context IEC61970::Base::Wires::LinearShuntCompensator
+-- b0PerSection must be set.
+-- Zero sequence shunt (charging) susceptance per section
+inv LinearShuntCompensator_b0PerSection: (self.b0PerSection <> null)
+-- bPerSection must be set.
+-- Positive sequence shunt (charging) susceptance per section
+inv LinearShuntCompensator_bPerSection: (self.bPerSection <> null)
+-- g0PerSection must be set.
+-- Zero sequence shunt (charging) conductance per section
+inv LinearShuntCompensator_g0PerSection: (self.g0PerSection <> null)
+-- gPerSection must be set.
+-- Positive sequence shunt (charging) conductance per section
+inv LinearShuntCompensator_gPerSection: (self.gPerSection <> null)
+
+context IEC61970::Base::Wires::MutualCoupling
+-- b0ch must be set.
+-- Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section.
+inv MutualCoupling_b0ch: (self.b0ch <> null)
+-- distance11 must be set.
+-- Distance to the start of the coupled region from the first line's terminal having sequence number equal to 1.  
+inv MutualCoupling_distance11: (self.distance11 <> null)
+-- distance12 must be set.
+-- Distance to the end of the coupled region from the first line's terminal with sequence number equal to 1.  
+inv MutualCoupling_distance12: (self.distance12 <> null)
+-- distance21 must be set.
+-- Distance to the start of coupled region from the second line's terminal with sequence number equal to 1.  
+inv MutualCoupling_distance21: (self.distance21 <> null)
+-- distance22 must be set.
+-- Distance to the end of coupled region from the second line's terminal with sequence number equal to 1.
+inv MutualCoupling_distance22: (self.distance22 <> null)
+-- g0ch must be set.
+-- Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section.
+inv MutualCoupling_g0ch: (self.g0ch <> null)
+-- r0 must be set.
+-- Zero sequence branch-to-branch mutual impedance coupling, resistance.  
+inv MutualCoupling_r0: (self.r0 <> null)
+-- x0 must be set.
+-- Zero sequence branch-to-branch mutual impedance coupling, reactance.  
+inv MutualCoupling_x0: (self.x0 <> null)
+-- First_Terminal must be set.
+-- The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments.
+inv MutualCoupling_First_Terminal: (self.First_Terminal <> null)
+-- Second_Terminal must be set.
+-- The starting terminal for the calculation of distances along the second branch of the mutual coupling.
+inv MutualCoupling_Second_Terminal: (self.Second_Terminal <> null)
+
+context IEC61970::Base::Wires::NonlinearShuntCompensatorPoint
+-- b must be set.
+-- Positive sequence shunt (charging) susceptance per section
+inv NonlinearShuntCompensatorPoint_b: (self.b <> null)
+-- b0 must be set.
+-- Zero sequence shunt (charging) susceptance per section
+inv NonlinearShuntCompensatorPoint_b0: (self.b0 <> null)
+-- g must be set.
+-- Positive sequence shunt (charging) conductance per section
+inv NonlinearShuntCompensatorPoint_g: (self.g <> null)
+-- g0 must be set.
+-- Zero sequence shunt (charging) conductance per section
+inv NonlinearShuntCompensatorPoint_g0: (self.g0 <> null)
+-- sectionNumber must be set.
+-- The number of the section.
+inv NonlinearShuntCompensatorPoint_sectionNumber: (self.sectionNumber <> null)
+-- NonlinearShuntCompensator must be set.
+-- Non-linear shunt compensator owning this point.
+inv NonlinearShuntCompensatorPoint_NonlinearShuntCompensator: (self.NonlinearShuntCompensator <> null)
+
+context IEC61970::Base::Wires::PetersenCoil
+-- mode must be set.
+-- The mode of operation of the Petersen coil.
+inv PetersenCoil_mode: (self.mode <> null)
+-- nominalU must be set.
+-- The nominal voltage for which the coil is designed.
+inv PetersenCoil_nominalU: (self.nominalU <> null)
+-- xGroundMax must be set.
+-- The maximum reactance. 
+inv PetersenCoil_xGroundMax: (self.xGroundMax <> null)
+-- xGroundMin must be set.
+-- The minimum reactance.
+inv PetersenCoil_xGroundMin: (self.xGroundMin <> null)
+-- xGroundNominal must be set.
+-- The nominal reactance.  This is the operating point (normally over compensation) that is defined based on the resonance point in the healthy network condition.  The impedance is calculated based on nominal voltage divided by position current.
+inv PetersenCoil_xGroundNominal: (self.xGroundNominal <> null)
+
+context IEC61970::Base::Wires::PhaseTapChanger
+-- TransformerEnd must be set.
+-- Transformer end to which this phase tap changer belongs.
+inv PhaseTapChanger_TransformerEnd: (self.TransformerEnd <> null)
+
+context IEC61970::Base::Wires::PhaseTapChangerAsymmetrical
+-- windingConnectionAngle must be set.
+-- The phase angle between the in-phase winding and the out-of -phase winding used for creating phase shift. The out-of-phase winding produces what is known as the difference voltage.  Setting this angle to 90 degrees is not the same as a symmemtrical transformer.  
+inv PhaseTapChangerAsymmetrical_windingConnectionAngle: (self.windingConnectionAngle <> null)
+
+context IEC61970::Base::Wires::PhaseTapChangerLinear
+-- stepPhaseShiftIncrement must be set.
+-- Phase shift per step position. A positive value indicates a positive phase shift from the winding where the tap is located to the other winding (for a two-winding transformer).  The actual phase shift increment might be more accurately computed from the symmetrical or asymmetrical models or a tap step table lookup if those are available.
+inv PhaseTapChangerLinear_stepPhaseShiftIncrement: (self.stepPhaseShiftIncrement <> null)
+-- xMax must be set.
+-- The reactance depend on the tap position according to a "u" shaped curve. The maximum reactance (xMax) appear at the low and high tap positions.
+inv PhaseTapChangerLinear_xMax: (self.xMax <> null)
+-- xMin must be set.
+-- The reactance depend on the tap position according to a "u" shaped curve. The minimum reactance (xMin) appear at the mid tap position.
+inv PhaseTapChangerLinear_xMin: (self.xMin <> null)
+
+context IEC61970::Base::Wires::PhaseTapChangerNonLinear
+-- voltageStepIncrement must be set.
+-- The voltage step increment on the out of phase winding specified in percent of nominal voltage of the transformer end.  
+inv PhaseTapChangerNonLinear_voltageStepIncrement: (self.voltageStepIncrement <> null)
+-- xMax must be set.
+-- The reactance depend on the tap position according to a "u" shaped curve. The maximum reactance (xMax) appear at the low and high tap positions.
+inv PhaseTapChangerNonLinear_xMax: (self.xMax <> null)
+-- xMin must be set.
+-- The reactance depend on the tap position according to a "u" shaped curve. The minimum reactance (xMin) appear at the mid tap position.
+inv PhaseTapChangerNonLinear_xMin: (self.xMin <> null)
+
+context IEC61970::Base::Wires::PhaseTapChangerTablePoint
+-- angle must be set.
+-- The angle difference in degrees.  
+inv PhaseTapChangerTablePoint_angle: (self.angle <> null)
+-- PhaseTapChangerTable must be set.
+-- The table of this point.
+inv PhaseTapChangerTablePoint_PhaseTapChangerTable: (self.PhaseTapChangerTable <> null)
+
+context IEC61970::Base::Wires::ACLineSegment
+-- b0ch must be set.
+-- Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.
+inv ACLineSegment_b0ch: (self.b0ch <> null)
+-- bch must be set.
+-- Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.  This value represents the full charging over the full length of the line.
+inv ACLineSegment_bch: (self.bch <> null)
+-- g0ch must be set.
+-- Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section.
+inv ACLineSegment_g0ch: (self.g0ch <> null)
+-- r must be set.
+-- Positive sequence series resistance of the entire line section.
+inv ACLineSegment_r: (self.r <> null)
+-- r0 must be set.
+-- Zero sequence series resistance of the entire line section.
+inv ACLineSegment_r0: (self.r0 <> null)
+-- shortCircuitEndTemperature must be set.
+-- Maximum permitted temperature at the end of SC for the calculation of minimum short-circuit currents. Used for short circuit data exchange according to IEC 60909
+inv ACLineSegment_shortCircuitEndTemperature: (self.shortCircuitEndTemperature <> null)
+-- x must be set.
+-- Positive sequence series reactance of the entire line section.
+inv ACLineSegment_x: (self.x <> null)
+-- x0 must be set.
+-- Zero sequence series reactance of the entire line section.
+inv ACLineSegment_x0: (self.x0 <> null)
+
+context IEC61970::Base::Wires::PowerTransformer
+-- isPartOfGeneratorUnit must be set.
+-- Indicates whether the machine is part of a power station unit. Used for short circuit data exchange according to IEC 60909
+inv PowerTransformer_isPartOfGeneratorUnit: (self.isPartOfGeneratorUnit <> null)
+
+context IEC61970::Base::Wires::PowerTransformerEnd
+-- b must be set.
+-- Magnetizing branch susceptance (B mag).  The value can be positive or negative.  
+inv PowerTransformerEnd_b: (self.b <> null)
+-- b0 must be set.
+-- Zero sequence magnetizing branch susceptance.  
+inv PowerTransformerEnd_b0: (self.b0 <> null)
+-- g0 must be set.
+-- Zero sequence magnetizing branch conductance (star-model).  
+inv PowerTransformerEnd_g0: (self.g0 <> null)
+-- phaseAngleClock must be set.
+-- Terminal voltage phase angle displacement where 360 degrees are represented with clock hours. The valid values are 0 to 11. For example, for the secondary side end of a transformer with vector group code of 'Dyn11', specify the connection kind as wye with neutral and specify the phase angle of the clock as 11.  The clock value of the transformer end number specified as 1, is assumed to be zero.  Note the transformer end number is not assumed to be the same as the terminal sequence number.  
+inv PowerTransformerEnd_phaseAngleClock: (self.phaseAngleClock <> null)
+-- r must be set.
+-- Resistance (star-model) of the transformer end.  The attribute shall be equal or greater than zero for non-equivalent transformers.
+inv PowerTransformerEnd_r: (self.r <> null)
+-- r0 must be set.
+-- Zero sequence series resistance (star-model) of the transformer end.  
+inv PowerTransformerEnd_r0: (self.r0 <> null)
+-- ratedU must be set.
+-- Rated voltage: phase-phase for three-phase windings, and either phase-phase or phase-neutral for single-phase windings.  A high voltage side, as given by TransformerEnd.endNumber, shall have a ratedU that is greater or equal than ratedU for the lower voltage sides.
+inv PowerTransformerEnd_ratedU: (self.ratedU <> null)
+-- x must be set.
+-- Positive sequence series reactance (star-model) of the transformer end.  
+inv PowerTransformerEnd_x: (self.x <> null)
+-- x0 must be set.
+-- Zero sequence series reactance of the transformer end.  
+inv PowerTransformerEnd_x0: (self.x0 <> null)
+-- PowerTransformer must be set.
+-- The power transformer of this power transformer end.
+inv PowerTransformerEnd_PowerTransformer: (self.PowerTransformer <> null)
+
+context IEC61970::Base::Wires::RatioTapChanger
+-- stepVoltageIncrement must be set.
+-- Tap step increment, in per cent of nominal voltage, per step position.  
+inv RatioTapChanger_stepVoltageIncrement: (self.stepVoltageIncrement <> null)
+-- tculControlMode must be set.
+-- Specifies the regulation control mode (voltage or reactive) of the RatioTapChanger.
+inv RatioTapChanger_tculControlMode: (self.tculControlMode <> null)
+-- TransformerEnd must be set.
+-- Transformer end to which this ratio tap changer belongs.
+inv RatioTapChanger_TransformerEnd: (self.TransformerEnd <> null)
+
+context IEC61970::Base::Wires::RatioTapChangerTablePoint
+-- RatioTapChangerTable must be set.
+-- Table of this point.
+inv RatioTapChangerTablePoint_RatioTapChangerTable: (self.RatioTapChangerTable <> null)
+
+context IEC61970::Base::Wires::RegulatingControl
+-- mode must be set.
+-- The regulating control mode presently available.  This specification allows for determining the kind of regulation without need for obtaining the units from a schedule.
+inv RegulatingControl_mode: (self.mode <> null)
+-- Terminal must be set.
+-- The terminal associated with this regulating control.  The terminal is associated instead of a node, since the terminal could connect into either a topological node (bus in bus-branch model) or a connectivity node (detailed switch model).  Sometimes it is useful to model regulation at a terminal of a bus bar object since the bus bar can be present in both a bus-branch model or a model with switch detail.
+inv RegulatingControl_Terminal: (self.Terminal <> null)
+
+context IEC61970::Base::Wires::RegulationSchedule
+-- RegulatingControl must be set.
+-- Regulating controls that have this Schedule.
+inv RegulationSchedule_RegulatingControl: (self.RegulatingControl <> null)
+
+context IEC61970::Base::Wires::SeriesCompensator
+-- r must be set.
+-- Positive sequence resistance.
+inv SeriesCompensator_r: (self.r <> null)
+-- r0 must be set.
+-- Zero sequence resistance.  
+inv SeriesCompensator_r0: (self.r0 <> null)
+-- varistorPresent must be set.
+-- Describe if a metal oxide varistor (mov) for over voltage protection is configured at the series compensator.
+inv SeriesCompensator_varistorPresent: (self.varistorPresent <> null)
+-- varistorRatedCurrent must be set.
+-- The maximum current the varistor is designed to handle at specified duration.
+inv SeriesCompensator_varistorRatedCurrent: (self.varistorRatedCurrent <> null)
+-- varistorVoltageThreshold must be set.
+-- The dc voltage at which the varistor start conducting.
+inv SeriesCompensator_varistorVoltageThreshold: (self.varistorVoltageThreshold <> null)
+-- x must be set.
+-- Positive sequence reactance.
+inv SeriesCompensator_x: (self.x <> null)
+-- x0 must be set.
+-- Zero sequence reactance.  
+inv SeriesCompensator_x0: (self.x0 <> null)
+
+context IEC61970::Base::Wires::ShuntCompensator
+-- maximumSections must be set.
+-- The maximum number of sections that may be switched in.   
+inv ShuntCompensator_maximumSections: (self.maximumSections <> null)
+-- nomU must be set.
+-- The voltage at which the nominal reactive power may be calculated. This should normally be within 10% of the voltage at which the capacitor is connected to the network.  
+inv ShuntCompensator_nomU: (self.nomU <> null)
+-- normalSections must be set.
+-- The normal number of sections switched in.  
+inv ShuntCompensator_normalSections: (self.normalSections <> null)
+
+context IEC61970::Base::Wires::StaticVarCompensator
+-- capacitiveRating must be set.
+-- Maximum available capacitive reactance.  
+inv StaticVarCompensator_capacitiveRating: (self.capacitiveRating <> null)
+-- inductiveRating must be set.
+-- Maximum available inductive reactance.  
+inv StaticVarCompensator_inductiveRating: (self.inductiveRating <> null)
+-- slope must be set.
+-- The characteristics slope of an SVC defines how the reactive power output changes in proportion to the difference between the regulated bus voltage and the voltage setpoint.
+inv StaticVarCompensator_slope: (self.slope <> null)
+-- sVCControlMode must be set.
+-- SVC control mode.
+inv StaticVarCompensator_sVCControlMode: (self.sVCControlMode <> null)
+-- voltageSetPoint must be set.
+-- The reactive power output of the SVC is proportional to the difference between the voltage at the regulated bus and the voltage setpoint.  When the regulated bus voltage is equal to the voltage setpoint, the reactive power output is zero.
+inv StaticVarCompensator_voltageSetPoint: (self.voltageSetPoint <> null)
+
+context IEC61970::Base::Wires::Switch
+-- normalOpen must be set.
+-- The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.
+inv Switch_normalOpen: (self.normalOpen <> null)
+-- retained must be set.
+-- Branch is retained in a bus branch model.  The flow through retained switches will normally be calculated in power flow.
+inv Switch_retained: (self.retained <> null)
+
+context IEC61970::Base::Wires::SwitchSchedule
+-- Switch must be set.
+-- A SwitchSchedule is associated with a Switch.
+inv SwitchSchedule_Switch: (self.Switch <> null)
+
+context IEC61970::Base::Wires::SynchronousMachine
+-- earthing must be set.
+-- Indicates whether or not the generator is earthed. Used for short circuit data exchange according to IEC 60909
+inv SynchronousMachine_earthing: (self.earthing <> null)
+-- r must be set.
+-- Equivalent resistance (RG) of generator. RG is considered for the calculation of all currents, except for the calculation of the peak current ip. Used for short circuit data exchange according to IEC 60909
+inv SynchronousMachine_r: (self.r <> null)
+-- r0 must be set.
+-- Zero sequence resistance of the synchronous machine.
+inv SynchronousMachine_r0: (self.r0 <> null)
+-- r2 must be set.
+-- Negative sequence resistance.
+inv SynchronousMachine_r2: (self.r2 <> null)
+-- satDirectSubtransX must be set.
+-- Direct-axis subtransient reactance saturated, also known as Xd"sat.
+inv SynchronousMachine_satDirectSubtransX: (self.satDirectSubtransX <> null)
+-- type must be set.
+-- Modes that this synchronous machine can operate in.
+inv SynchronousMachine_type: (self.type <> null)
+-- x0 must be set.
+-- Zero sequence reactance of the synchronous machine.
+inv SynchronousMachine_x0: (self.x0 <> null)
+-- x2 must be set.
+-- Negative sequence reactance.
+inv SynchronousMachine_x2: (self.x2 <> null)
+
+context IEC61970::Base::Wires::TapChanger
+-- highStep must be set.
+-- Highest possible tap step position, advance from neutral.  The attribute shall be greater than lowStep.
+inv TapChanger_highStep: (self.highStep <> null)
+-- lowStep must be set.
+-- Lowest possible tap step position, retard from neutral
+inv TapChanger_lowStep: (self.lowStep <> null)
+-- ltcFlag must be set.
+-- Specifies whether or not a TapChanger has load tap changing capabilities.
+inv TapChanger_ltcFlag: (self.ltcFlag <> null)
+-- neutralStep must be set.
+-- The neutral tap step position for this winding.  The attribute shall be equal or greater than lowStep and equal or less than highStep.
+inv TapChanger_neutralStep: (self.neutralStep <> null)
+-- neutralU must be set.
+-- Voltage at which the winding operates at the neutral tap setting.
+inv TapChanger_neutralU: (self.neutralU <> null)
+-- normalStep must be set.
+-- The tap step position used in "normal" network operation for this winding. For a "Fixed" tap changer indicates the current physical tap setting.  The attribute shall be equal or greater than lowStep and equal or less than highStep.
+inv TapChanger_normalStep: (self.normalStep <> null)
+
+context IEC61970::Base::Wires::TapChangerTablePoint
+-- step must be set.
+-- The tap step.  
+inv TapChangerTablePoint_step: (self.step <> null)
+
+context IEC61970::Base::Wires::TapSchedule
+-- TapChanger must be set.
+-- A TapSchedule is associated with a TapChanger.
+inv TapSchedule_TapChanger: (self.TapChanger <> null)
+
+context IEC61970::Base::Wires::TransformerEnd
+-- endNumber must be set.
+-- Number for this transformer end, corresponding to the end's order in the power transformer vector group or phase angle clock number.  Highest voltage winding should be 1.  Each end within a power transformer should have a unique subsequent end number.   Note the transformer end number need not match the terminal sequence number.  
+inv TransformerEnd_endNumber: (self.endNumber <> null)
+-- grounded must be set.
+-- (for Yn and Zn connections) True if the neutral is solidly grounded.
+inv TransformerEnd_grounded: (self.grounded <> null)
+-- Terminal must be set.
+-- Terminal of the power transformer to which this transformer end belongs.
+inv TransformerEnd_Terminal: (self.Terminal <> null)
+-- BaseVoltage must be set.
+-- Base voltage of the transformer end.  This is essential for PU calculation.
+inv TransformerEnd_BaseVoltage: (self.BaseVoltage <> null)
+
+context IEC61970::Base::Equivalents::EquivalentBranch
+-- negativeR12 must be set.
+-- Negative sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909  EquivalentBranch is a result of network reduction prior to the data exchange 
+inv EquivalentBranch_negativeR12: (self.negativeR12 <> null)
+-- negativeR21 must be set.
+-- Negative sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909  EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_negativeR21: (self.negativeR21 <> null)
+-- negativeX12 must be set.
+-- Negative sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_negativeX12: (self.negativeX12 <> null)
+-- negativeX21 must be set.
+-- Negative sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909.  Usage: EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_negativeX21: (self.negativeX21 <> null)
+-- positiveR12 must be set.
+-- Positive sequence series resistance from terminal sequence  1 to terminal sequence 2 . Used for short circuit data exchange according to IEC 60909.   EquivalentBranch is a result of network reduction prior to the data exchange. 
+inv EquivalentBranch_positiveR12: (self.positiveR12 <> null)
+-- positiveR21 must be set.
+-- Positive sequence series resistance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909  EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_positiveR21: (self.positiveR21 <> null)
+-- positiveX12 must be set.
+-- Positive sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_positiveX12: (self.positiveX12 <> null)
+-- positiveX21 must be set.
+-- Positive sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_positiveX21: (self.positiveX21 <> null)
+-- r must be set.
+-- Positive sequence series resistance of the reduced branch.
+inv EquivalentBranch_r: (self.r <> null)
+-- x must be set.
+-- Positive sequence series reactance of the reduced branch.
+inv EquivalentBranch_x: (self.x <> null)
+-- zeroR12 must be set.
+-- Zero sequence series resistance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909  EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_zeroR12: (self.zeroR12 <> null)
+-- zeroR21 must be set.
+-- Zero sequence series resistance from terminal sequence  2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_zeroR21: (self.zeroR21 <> null)
+-- zeroX12 must be set.
+-- Zero sequence series reactance from terminal sequence  1 to terminal sequence 2. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_zeroX12: (self.zeroX12 <> null)
+-- zeroX21 must be set.
+-- Zero sequence series reactance from terminal sequence 2 to terminal sequence 1. Used for short circuit data exchange according to IEC 60909  Usage : EquivalentBranch is a result of network reduction prior to the data exchange
+inv EquivalentBranch_zeroX21: (self.zeroX21 <> null)
+
+context IEC61970::Base::Equivalents::EquivalentInjection
+-- r must be set.
+-- Positive sequence resistance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_r: (self.r <> null)
+-- r0 must be set.
+-- Zero sequence resistance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_r0: (self.r0 <> null)
+-- r2 must be set.
+-- Negative sequence resistance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_r2: (self.r2 <> null)
+-- regulationCapability must be set.
+-- Specifies whether or not the EquivalentInjection has the capability to regulate the local voltage.
+inv EquivalentInjection_regulationCapability: (self.regulationCapability <> null)
+-- x must be set.
+-- Positive sequence reactance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_x: (self.x <> null)
+-- x0 must be set.
+-- Zero sequence reactance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_x0: (self.x0 <> null)
+-- x2 must be set.
+-- Negative sequence reactance. Used to represent Extended-Ward (IEC 60909).  Usage : Extended-Ward is a result of network reduction prior to the data exchange. 
+inv EquivalentInjection_x2: (self.x2 <> null)
+
+context IEC61970::Base::Equivalents::EquivalentShunt
+-- b must be set.
+-- Positive sequence shunt susceptance.
+inv EquivalentShunt_b: (self.b <> null)
+-- g must be set.
+-- Positive sequence shunt conductance.
+inv EquivalentShunt_g: (self.g <> null)
+
+context IEC61970::Base::ControlArea::ControlArea
+-- type must be set.
+-- The primary type of control area definition used to determine if this is used for automatic generation control, for planning interchange control, or other purposes.   A control area specified with primary type of automatic generation control could still be forecast and used as an interchange area in power flow analysis.
+inv ControlArea_type: (self.type <> null)
+
+context IEC61970::Base::ControlArea::ControlAreaGeneratingUnit
+-- ControlArea must be set.
+-- The parent control area for the generating unit specifications.
+inv ControlAreaGeneratingUnit_ControlArea: (self.ControlArea <> null)
+-- GeneratingUnit must be set.
+-- The generating unit specified for this control area.  Note that a control area should include a GeneratingUnit only once.
+inv ControlAreaGeneratingUnit_GeneratingUnit: (self.GeneratingUnit <> null)
+
+context IEC61970::Base::ControlArea::TieFlow
+-- positiveFlowIn must be set.
+-- True if the flow into the terminal (load convention) is also flow into the control area.  For example, this attribute should be true if using the tie line terminal further away from the control area. For example to represent a tie to a shunt component (like a load or generator) in another area, this is the near end of a branch and this attribute would be specified as false.
+inv TieFlow_positiveFlowIn: (self.positiveFlowIn <> null)
+-- ControlArea must be set.
+-- The control area of the tie flows.
+inv TieFlow_ControlArea: (self.ControlArea <> null)
+-- Terminal must be set.
+-- The terminal to which this tie flow belongs.
+inv TieFlow_Terminal: (self.Terminal <> null)
+
+
+endpackage

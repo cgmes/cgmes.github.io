@@ -1,0 +1,9 @@
+package TC57CIM
+
+context IEC61970::Base::Core::IdentifiedObject
+-- R.4.10.11. Description length restriction (optional)
+inv dynamicsDescriptionLength: self.description = null or self.description->size() <= 256
+-- R.4.10.11. Name length restriction
+inv diagramNameLength: self.name->size() <= 32
+
+endpackage

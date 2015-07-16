@@ -1,0 +1,169 @@
+package TC57CIM
+
+context IEC61970::Base::Core::ACDCTerminal
+-- connected must be set.
+-- The connected status is related to a bus-branch model and the topological node to terminal relation.  True implies the terminal is connected to the related topological node and false implies it is not.   In a bus-branch model, the connected status is used to tell if equipment is disconnected without having to change the connectivity described by the topological node to terminal relation. A valid case is that conducting equipment can be connected in one end and open in the other. In particular for an AC line segment, where the reactive line charging can be significant, this is a relevant case.  
+inv ACDCTerminal_connected: (self.connected <> null)
+
+context IEC61970::Base::ControlArea::ControlArea
+-- netInterchange must be set.
+-- The specified positive net interchange into the control area, i.e. positive sign means flow in to the area.
+inv ControlArea_netInterchange: (self.netInterchange <> null)
+
+context IEC61970::Base::DC::ACDCConverter
+-- p must be set.
+-- Active power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for a steady state solution in the case a simplified power flow model is used.
+inv ACDCConverter_p: (self.p <> null)
+-- q must be set.
+-- Reactive power at the point of common coupling. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for a steady state solution in the case a simplified power flow model is used.
+inv ACDCConverter_q: (self.q <> null)
+-- targetPpcc must be set.
+-- Real power injection target in AC grid, at point of common coupling.
+inv ACDCConverter_targetPpcc: (self.targetPpcc <> null)
+-- targetUdc must be set.
+-- Target value for DC voltage magnitude.
+inv ACDCConverter_targetUdc: (self.targetUdc <> null)
+
+context IEC61970::Base::DC::CsConverter
+-- operatingMode must be set.
+-- Indicates whether the DC pole is operating as an inverter or as a rectifier. CSC control variable used in power flow.
+inv CsConverter_operatingMode: (self.operatingMode <> null)
+-- pPccControl must be set.
+inv CsConverter_pPccControl: (self.pPccControl <> null)
+-- targetAlpha must be set.
+-- Target firing angle. CSC control variable used in power flow.
+inv CsConverter_targetAlpha: (self.targetAlpha <> null)
+-- targetGamma must be set.
+-- Target extinction angle. CSC  control variable used in power flow.
+inv CsConverter_targetGamma: (self.targetGamma <> null)
+-- targetIdc must be set.
+-- DC current target value. CSC control variable used in power flow.
+inv CsConverter_targetIdc: (self.targetIdc <> null)
+
+context IEC61970::Base::DC::VsConverter
+-- droop must be set.
+-- Droop constant; pu value is obtained as D [kV^2 / MW] x Sb / Ubdc^2.
+inv VsConverter_droop: (self.droop <> null)
+-- droopCompensation must be set.
+-- Compensation (resistance) constant. Used to compensate for voltage drop when controlling voltage at a distant bus.
+inv VsConverter_droopCompensation: (self.droopCompensation <> null)
+-- pPccControl must be set.
+-- Kind of control of real power and/or DC voltage.
+inv VsConverter_pPccControl: (self.pPccControl <> null)
+-- qPccControl must be set.
+inv VsConverter_qPccControl: (self.qPccControl <> null)
+-- qShare must be set.
+-- Reactive power sharing factor among parallel converters on Uac control.
+inv VsConverter_qShare: (self.qShare <> null)
+-- targetQpcc must be set.
+-- Reactive power injection target in AC grid, at point of common coupling.
+inv VsConverter_targetQpcc: (self.targetQpcc <> null)
+-- targetUpcc must be set.
+-- Voltage target in AC grid, at point of common coupling.
+inv VsConverter_targetUpcc: (self.targetUpcc <> null)
+
+context IEC61970::Base::Equivalents::EquivalentInjection
+-- p must be set.
+-- Equivalent active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv EquivalentInjection_p: (self.p <> null)
+-- q must be set.
+-- Equivalent reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv EquivalentInjection_q: (self.q <> null)
+
+context IEC61970::Base::Generation::Production::GeneratingUnit
+-- normalPF must be set.
+-- Generating unit economic participation factor.  
+inv GeneratingUnit_normalPF: (self.normalPF <> null)
+
+context IEC61970::Base::Wires::AsynchronousMachine
+-- asynchronousMachineType must be set.
+-- Indicates the type of Asynchronous Machine (motor or generator).
+inv AsynchronousMachine_asynchronousMachineType: (self.asynchronousMachineType <> null)
+
+context IEC61970::Base::Wires::EnergyConsumer
+-- p must be set.
+-- Active power of the load. Load sign convention is used, i.e. positive sign means flow out from a node.  For voltage dependent loads the value is at rated voltage.  Starting value for a steady state solution.
+inv EnergyConsumer_p: (self.p <> null)
+-- q must be set.
+-- Reactive power of the load. Load sign convention is used, i.e. positive sign means flow out from a node.  For voltage dependent loads the value is at rated voltage.  Starting value for a steady state solution.
+inv EnergyConsumer_q: (self.q <> null)
+
+context IEC61970::Base::Wires::EnergySource
+-- activePower must be set.
+-- High voltage source active injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv EnergySource_activePower: (self.activePower <> null)
+-- reactivePower must be set.
+-- High voltage source reactive injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv EnergySource_reactivePower: (self.reactivePower <> null)
+
+context IEC61970::Base::Wires::ExternalNetworkInjection
+-- p must be set.
+-- Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv ExternalNetworkInjection_p: (self.p <> null)
+-- q must be set.
+-- Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for steady state solutions.
+inv ExternalNetworkInjection_q: (self.q <> null)
+-- referencePriority must be set.
+-- Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on.  
+inv ExternalNetworkInjection_referencePriority: (self.referencePriority <> null)
+
+context IEC61970::Base::Wires::RegulatingCondEq
+-- controlEnabled must be set.
+-- Specifies the regulation status of the equipment.  True is regulating, false is not regulating.
+inv RegulatingCondEq_controlEnabled: (self.controlEnabled <> null)
+
+context IEC61970::Base::Wires::RotatingMachine
+-- p must be set.
+-- Active power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for a steady state solution.
+inv RotatingMachine_p: (self.p <> null)
+-- q must be set.
+-- Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for a steady state solution.
+inv RotatingMachine_q: (self.q <> null)
+
+context IEC61970::Base::Wires::StaticVarCompensator
+-- q must be set.
+-- Reactive power injection. Load sign convention is used, i.e. positive sign means flow out from a node.  Starting value for a steady state solution.
+inv StaticVarCompensator_q: (self.q <> null)
+
+context IEC61970::Base::Wires::Switch
+-- open must be set.
+-- The attribute tells if the switch is considered open when used as input to topology processing.
+inv Switch_open: (self.open <> null)
+
+context IEC61970::Base::Wires::SynchronousMachine
+-- operatingMode must be set.
+-- Current mode of operation.
+inv SynchronousMachine_operatingMode: (self.operatingMode <> null)
+-- referencePriority must be set.
+-- Priority of unit for use as powerflow voltage phase angle reference bus selection. 0 = don t care (default) 1 = highest priority. 2 is less than 1 and so on.  
+inv SynchronousMachine_referencePriority: (self.referencePriority <> null)
+
+context IEC61970::Base::Wires::RegulatingControl
+-- discrete must be set.
+-- The regulation is performed in a discrete mode. This applies to equipment with discrete controls, e.g. tap changers and shunt compensators.
+inv RegulatingControl_discrete: (self.discrete <> null)
+-- enabled must be set.
+-- The flag tells if regulation is enabled.
+inv RegulatingControl_enabled: (self.enabled <> null)
+-- targetValue must be set.
+-- The target value specified for case input.   This value can be used for the target value without the use of schedules. The value has the units appropriate to the mode attribute.
+inv RegulatingControl_targetValue: (self.targetValue <> null)
+-- targetValueUnitMultiplier must be set.
+-- Specify the multiplier for used for the targetValue.
+inv RegulatingControl_targetValueUnitMultiplier: (self.targetValueUnitMultiplier <> null)
+
+context IEC61970::Base::Wires::ShuntCompensator
+-- sections must be set.
+-- Shunt compensator sections in use.  Starting value for steady state solution. Non integer values are allowed to support continuous variables. The reasons for continuous value are to support study cases where no discrete shunt compensators has yet been designed, a solutions where a narrow voltage band force the sections to oscillate or accommodate for a continuous solution as input.
+inv ShuntCompensator_sections: (self.sections <> null)
+
+context IEC61970::Base::Wires::TapChanger
+-- controlEnabled must be set.
+-- Specifies the regulation status of the equipment.  True is regulating, false is not regulating.
+inv TapChanger_controlEnabled: (self.controlEnabled <> null)
+-- step must be set.
+-- Tap changer position.  Starting step for a steady state solution. Non integer values are allowed to support continuous tap variables. The reasons for continuous value are to support study cases where no discrete tap changers has yet been designed, a solutions where a narrow voltage band force the tap step to oscillate or accommodate for a continuous solution as input.  The attribute shall be equal or greater than lowStep and equal or less than highStep.
+inv TapChanger_step: (self.step <> null)
+
+
+endpackage

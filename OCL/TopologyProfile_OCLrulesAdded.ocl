@@ -1,0 +1,15 @@
+package TC57CIM
+
+context IEC61970::Base::Core::IdentifiedObject
+-- R.4.10.11. Description length restriction (optional).
+inv topologyDescriptionLength: self.description = null or self.description->size() <= 256
+-- R.4.10.11. Energy Ident Code length restriction (optional).
+inv topologyEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic->size() = 16
+-- R.4.10.11. Name length restriction.
+inv topologyNameLength: self.name->size() <= 32 or name = null
+-- R.4.10.11. ShortName length restriction (optional).
+inv topologyShortNameLength: self.shortName = null or self.shortName->size() <= 12
+-- R.4.10.13. Name is required for all classes excepted ACDCTerminal.
+inv tpNameRequirement: if (not self.oclIsKindOf(IEC61970::Base::Core::ACDCTerminal)) then (self.name <> null) else (self.name = null or self.name <> null) endif
+
+endpackage

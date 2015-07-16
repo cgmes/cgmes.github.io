@@ -1,0 +1,7 @@
+package TC57CIM
+
+context IEC61970::Base::Core::IdentifiedObject
+-- R.4.10.11. Name length restriction (optional)
+inv sshNameLength: self.name = null or self.name->size() <= 32
+
+endpackage

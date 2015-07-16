@@ -1,0 +1,105 @@
+package TC57CIM
+
+context IEC61970::Base::Core::IdentifiedObject
+-- name must be set.
+-- The name is any free human readable and possibly non unique text naming the object.  
+inv IdentifiedObject_name2: (self.name <> null)
+
+context IEC61970::Base::DC::ACDCConverter
+-- idc must be set.
+-- Converter DC current, also called Id. Converter state variable, result from power flow.
+inv ACDCConverter_idc: (self.idc <> null)
+-- poleLossP must be set.
+-- The active power loss at a DC Pole   = idleLoss + switchingLoss*|Idc| + resitiveLoss*Idc^2  For lossless operation Pdc=Pac  For rectifier operation with losses Pdc=Pac-lossP  For inverter operation with losses Pdc=Pac+lossP  Converter state variable used in power flow.
+inv ACDCConverter_poleLossP: (self.poleLossP <> null)
+-- uc must be set.
+-- Converter voltage, the voltage at the AC side of the bridge. Converter state variable, result from power flow.
+inv ACDCConverter_uc: (self.uc <> null)
+-- udc must be set.
+-- Converter voltage at the DC side, also called Ud. Converter state variable, result from power flow.
+inv ACDCConverter_udc: (self.udc <> null)
+
+context IEC61970::Base::DC::CsConverter
+-- alpha must be set.
+-- Firing angle, typical value between 10 and 18 degrees for a rectifier. CSC state variable, result from power flow.
+inv CsConverter_alpha: (self.alpha <> null)
+-- gamma must be set.
+-- Extinction angle. CSC state variable, result from power flow.
+inv CsConverter_gamma: (self.gamma <> null)
+
+context IEC61970::Base::DC::DCTopologicalIsland
+-- DCTopologicalNodes must be set.
+inv DCTopologicalIsland_DCTopologicalNodes: (self.DCTopologicalNodes->size() > 0)
+
+context IEC61970::Base::DC::VsConverter
+-- delta must be set.
+-- Angle between uf and uc. Converter state variable used in power flow.
+inv VsConverter_delta: (self.delta <> null)
+-- uf must be set.
+-- Filter bus voltage. Converter state variable, result from power flow.
+inv VsConverter_uf: (self.uf <> null)
+
+context IEC61970::Base::StateVariables::SvStatus
+-- inService must be set.
+-- The in service status as a result of topology processing.
+inv SvStatus_inService: (self.inService <> null)
+-- ConductingEquipment must be set.
+-- The conducting equipment associated with the status state variable.
+inv SvStatus_ConductingEquipment: (self.ConductingEquipment <> null)
+
+context IEC61970::Base::StateVariables::SvInjection
+-- pInjection must be set.
+-- The active power injected into the bus in addition to injections from equipment terminals.  Positive sign means injection into the TopologicalNode (bus).
+inv SvInjection_pInjection: (self.pInjection <> null)
+-- TopologicalNode must be set.
+-- The topological node associated with the flow injection state variable.
+inv SvInjection_TopologicalNode: (self.TopologicalNode <> null)
+
+context IEC61970::Base::StateVariables::SvPowerFlow
+-- p must be set.
+-- The active power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.
+inv SvPowerFlow_p: (self.p <> null)
+-- q must be set.
+-- The reactive power flow. Load sign convention is used, i.e. positive sign means flow out from a TopologicalNode (bus) into the conducting equipment.
+inv SvPowerFlow_q: (self.q <> null)
+-- Terminal must be set.
+-- The terminal associated with the power flow state variable.
+inv SvPowerFlow_Terminal: (self.Terminal <> null)
+
+context IEC61970::Base::StateVariables::SvShuntCompensatorSections
+-- sections must be set.
+-- The number of sections in service as a continous variable. To get integer value scale with ShuntCompensator.bPerSection.  
+inv SvShuntCompensatorSections_sections: (self.sections <> null)
+-- ShuntCompensator must be set.
+-- The shunt compensator for which the state applies.
+inv SvShuntCompensatorSections_ShuntCompensator: (self.ShuntCompensator <> null)
+
+context IEC61970::Base::StateVariables::SvTapStep
+-- position must be set.
+-- The floating point tap position.   This is not the tap ratio, but rather the tap step position as defined by the related tap changer model and normally is constrained to be within the range of minimum and maximum tap positions.
+inv SvTapStep_position: (self.position <> null)
+-- TapChanger must be set.
+-- The tap changer associated with the tap step state.
+inv SvTapStep_TapChanger: (self.TapChanger <> null)
+
+context IEC61970::Base::StateVariables::SvVoltage
+-- angle must be set.
+-- The voltage angle of the topological node complex voltage with respect to system reference.  
+inv SvVoltage_angle: (self.angle <> null)
+-- v must be set.
+-- The voltage magnitude of the topological node.
+inv SvVoltage_v: (self.v <> null)
+-- TopologicalNode must be set.
+-- The topological node associated with the voltage state.
+inv SvVoltage_TopologicalNode: (self.TopologicalNode <> null)
+
+context IEC61970::Base::Topology::TopologicalIsland
+-- AngleRefTopologicalNode must be set.
+-- The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is typically optional.
+inv TopologicalIsland_AngleRefTopologicalNode: (self.AngleRefTopologicalNode <> null)
+-- TopologicalNodes must be set.
+-- A topological node belongs to a topological island.
+inv TopologicalIsland_TopologicalNodes: (self.TopologicalNodes->size() > 0)
+
+
+endpackage

@@ -1,0 +1,56 @@
+package TC57CIM
+
+context IEC61970::Base::Core::ConnectivityNode
+-- boundaryPoint must be set.
+-- Identifies if a node is a BoundaryPoint. If boundaryPoint=true the ConnectivityNode or the TopologicalNode represents a BoundaryPoint. 
+inv ConnectivityNode_boundaryPoint: (self.boundaryPoint <> null)
+-- fromEndIsoCode must be set.
+-- The attribute is used for an exchange of the ISO code of the region to which the “From” side of the Boundary point belongs to or it is connected to.  The ISO code is two characters country code as defined by ISO 3166 (<a href="{???????????')"><font color="#0000ff"><u>http://www.iso.org/iso/country_codes</u></font></a>). The length of the string is 2 characters maximum.  The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.
+inv ConnectivityNode_fromEndIsoCode: (self.fromEndIsoCode <> null)
+-- fromEndName must be set.
+-- The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  <ul>  	<li>if the Boundary point is <b>placed on a tie-line</b> the attribute is used for exchange of the geographical name of the <b>substation</b> to which the “From” side of the tie-line is connected to.</li>  	<li>if the Boundary point is <b>placed in a substation</b> the attribute is used for exchange of the name of the <b>element</b> (e.g. PowerTransformer, ACLineSegment, Switch, etc) to which the “From” side of the Boundary point is connected to.</li>  </ul>  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.
+inv ConnectivityNode_fromEndName: (self.fromEndName <> null)
+-- fromEndNameTso must be set.
+-- The attribute is used for an exchange of the name of the TSO to which the “From” side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum.  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. 
+inv ConnectivityNode_fromEndNameTso: (self.fromEndNameTso <> null)
+-- toEndIsoCode must be set.
+-- The attribute is used for an exchange of the ISO code of the region to which the “To” side of the Boundary point belongs to or it is connected to.  The ISO code is two characters country code as defined by ISO 3166 (<a href="{???????????')"><font color="#0000ff"><u>http://www.iso.org/iso/country_codes</u></font></a>). The length of the string is 2 characters maximum.  The attribute is a required for the Boundary Model Authority Set where this attribute is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.
+inv ConnectivityNode_toEndIsoCode: (self.toEndIsoCode <> null)
+-- toEndName must be set.
+-- The attribute is used for an exchange of a human readable name with length of the string 32 characters maximum. The attribute covers two cases:  <ul>  	<li>if the Boundary point is <b>placed on a tie-line</b> the attribute is used for exchange of the geographical name of the <b>substation</b> to which the “To” side of the tie-line is connected to.</li>  	<li>if the Boundary point is <b>placed in a substation</b> the attribute is used for exchange of the name of the <b>element</b> (e.g. PowerTransformer, ACLineSegment, Switch, etc) to which the “To” side of the Boundary point is connected to.</li>  </ul>  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile.
+inv ConnectivityNode_toEndName: (self.toEndName <> null)
+-- toEndNameTso must be set.
+-- The attribute is used for an exchange of the name of the TSO to which the “To” side of the Boundary point belongs to or it is connected to. The length of the string is 32 characters maximum.  The attribute is required for the Boundary Model Authority Set where it is used only for the TopologicalNode in the Boundary Topology profile and ConnectivityNode in the Boundary Equipment profile. 
+inv ConnectivityNode_toEndNameTso: (self.toEndNameTso <> null)
+-- ConnectivityNodeContainer must be set.
+-- Container of this connectivity node.
+inv ConnectivityNode_ConnectivityNodeContainer: (self.ConnectivityNodeContainer <> null)
+
+context IEC61970::Base::Core::Terminal
+-- ConductingEquipment must be set.
+-- The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.
+inv Terminal_ConductingEquipment: (self.ConductingEquipment <> null)
+
+context IEC61970::Base::Core::BaseVoltage
+-- nominalVoltage must be set.
+-- The power system resource's base voltage.  
+inv BaseVoltage_nominalVoltage: (self.nominalVoltage <> null)
+
+context IEC61970::Base::Core::IdentifiedObject
+-- description must be set.
+-- The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.
+inv IdentifiedObject_description: (self.description <> null)
+-- name must be set.
+-- The name is any free human readable and possibly non unique text naming the object.  
+inv IdentifiedObject_name: (self.name <> null)
+-- shortName must be set.
+-- The attribute is used for an exchange of a human readable short name with length of the string 12 characters maximum.
+inv IdentifiedObject_shortName: (self.shortName <> null)
+
+context IEC61970::Base::Core::SubGeographicalRegion
+-- Region must be set.
+-- The geographical region to which this sub-geographical region is within.
+inv SubGeographicalRegion_Region: (self.Region <> null)
+
+
+endpackage

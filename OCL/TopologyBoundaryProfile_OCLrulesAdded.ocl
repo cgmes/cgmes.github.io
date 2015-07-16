@@ -1,0 +1,46 @@
+package TC57CIM
+
+context IEC61970::Base::Topology::TopologicalNode
+-- R.4.10.11. Description length restriction
+inv topologyBoundaryDescriptionLength: self.description->size() <= 256
+-- R.4.10.11. Energy Ident Code length restriction (optional)
+inv topologyBoundaryEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic->size() = 16
+-- R.4.10.11. From End ISO Code length restriction
+inv topologyBoundaryFromEndIsoCodeLength: self.fromEndIsoCode->size() = 2
+-- R.4.10.11. From End Name length restriction
+inv topologyBoundaryFromEndNameLength: self.fromEndName->size() <= 32
+-- R.4.10.11. From End Name TSO length restriction
+inv topologyBoundaryFromEndNameTsoLength: self.fromEndNameTso->size() <= 32
+-- R.4.10.11. Name length restriction
+inv topologyBoundaryNameLength: self.name->size() <= 32
+-- R.4.10.11. ShortName length restriction
+inv topologyBoundaryShortNameLength: self.shortName->size() <= 12
+-- R.4.10.11. To End ISO Code length restriction
+inv topologyBoundaryToEndIsoCodeLength: self.toEndIsoCode->size() = 2
+-- R.4.10.11. To End Name length restriction
+inv topologyBoundaryToEndNameLength: self.toEndName->size() <= 32
+-- R.4.10.11. To End Name TSO length restriction
+inv topologyBoundaryToEndNameTsoLength: self.toEndNameTso->size() <= 32
+context IEC61970::Base::Core::ConnectivityNode
+-- R.4.10.11. Description length restriction
+inv connectivityBoundaryDescriptionLength: self.description->size() <= 256
+-- R.4.10.11. Energy Ident Code length restriction (optional)
+inv connectivityBoundaryEnergyIdentCodeEicLength: self.energyIdentCodeEic = null or self.energyIdentCodeEic->size() = 16
+-- R.4.10.11. From End ISO Code length restriction
+inv connectivityBoundaryFromEndIsoCodeLength: self.fromEndIsoCode->size() = 2
+-- R.4.10.11. From End Name length restriction
+inv connectivityBoundaryFromEndNameLength: self.fromEndName->size() <= 32
+-- R.4.10.11. From End Name TSO length restriction
+inv connectivityBoundaryFromEndNameTsoLength: self.fromEndNameTso->size() <= 32
+-- R.4.10.11. Name length restriction
+inv connectivityBoundaryNameLength: self.name->size() <= 32
+-- R.4.10.11. ShortName length restriction
+inv connectivityBoundaryShortNameLength: self.shortName->size() <= 12
+-- R.4.10.11. To End ISO Code length restriction
+inv connectivityBoundaryToEndIsoCodeLength: self.toEndIsoCode->size() = 2
+-- R.4.10.11. To End Name length restriction
+inv connectivityBoundaryToEndNameLength: self.toEndName->size() <= 32
+-- R.4.10.11. To End Name TSO length restriction
+inv connectivityBoundaryToEndNameTsoLength: self.toEndNameTso->size() <= 32
+
+endpackage
