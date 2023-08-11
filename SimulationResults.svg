@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="27.78cm"
+   height="15.37cm"
+   viewBox="0 0 1050 581"
+   version="1.1"
+   id="svg34696">
+  <metadata
+     id="metadata34702">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs34700" />
+  <desc
+     id="desc33884">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g33892">
+    <path
+       d="M 6 6 L 6 575 L 1044 575 L 1044 6 L 6 6"
+       shape-rendering="auto"
+       id="path33890" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     id="g33896">
+    <polygon
+       points="6 24 164 24 177 10 177 6 6 6 6 24"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;fill:none"
+       id="polygon33894" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g33900">
+    <text
+       x="11.00"
+       y="18.00"
+       textLength="151"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 11.00 18.00)"
+       id="text33898">class SimulationResultsProfile</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#E8FDE3;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34410">
+    <rect
+       x="875"
+       y="40"
+       width="125"
+       height="80"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34408" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34416">
+    <text
+       x="902.00"
+       y="55.00"
+       textLength="70"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 902.00 55.00)"
+       id="text34412">«enumeration»</text>
+    <text
+       x="910.00"
+       y="66.00"
+       textLength="54"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 910.00 66.00)"
+       id="text34414">CurveStyle</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34420">
+    <path
+       d="M 875 73 L 999 73"
+       shape-rendering="auto"
+       id="path34418" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34432">
+    <text
+       x="923.00"
+       y="86.00"
+       textLength="29"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 923.00 86.00)"
+       id="text34422">literals</text>
+    <text
+       x="880.00"
+       y="97.00"
+       textLength="3"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 880.00 97.00)"
+       id="text34424"> </text>
+    <text
+       x="897.00"
+       y="97.00"
+       textLength="74"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 897.00 97.00)"
+       id="text34426">constantYValue</text>
+    <text
+       x="880.00"
+       y="108.00"
+       textLength="3"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 880.00 108.00)"
+       id="text34428"> </text>
+    <text
+       x="897.00"
+       y="108.00"
+       textLength="93"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 897.00 108.00)"
+       id="text34430">straightLineYValues</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34436">
+    <rect
+       x="705"
+       y="290"
+       width="124"
+       height="93"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34434" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34440">
+    <text
+       x="741.00"
+       y="308.00"
+       textLength="51"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 741.00 308.00)"
+       id="text34438">CurveData</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34444">
+    <path
+       d="M 705 315 L 828 315"
+       shape-rendering="auto"
+       id="path34442" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34462">
+    <text
+       x="710.00"
+       y="328.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 710.00 328.00)"
+       id="text34446">+ </text>
+    <text
+       x="727.00"
+       y="328.00"
+       textLength="59"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 727.00 328.00)"
+       id="text34448">xvalue: Float</text>
+    <text
+       x="710.00"
+       y="339.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 710.00 339.00)"
+       id="text34450">+ </text>
+    <text
+       x="727.00"
+       y="339.00"
+       textLength="65"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 727.00 339.00)"
+       id="text34452">y1value: Float</text>
+    <text
+       x="710.00"
+       y="350.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 710.00 350.00)"
+       id="text34454">+ </text>
+    <text
+       x="727.00"
+       y="350.00"
+       textLength="92"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 727.00 350.00)"
+       id="text34456">y2value: Float [0..1]</text>
+    <text
+       x="710.00"
+       y="361.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 710.00 361.00)"
+       id="text34458">+ </text>
+    <text
+       x="727.00"
+       y="361.00"
+       textLength="92"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 727.00 361.00)"
+       id="text34460">y3value: Float [0..1]</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34466">
+    <rect
+       x="675"
+       y="40"
+       width="188"
+       height="174"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34464" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34472">
+    <text
+       x="787.00"
+       y="52.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 787.00 52.00)"
+       id="text34468">IdentifiedObject</text>
+    <text
+       x="754.00"
+       y="66.00"
+       textLength="29"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 754.00 66.00)"
+       id="text34470">Curve</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34476">
+    <path
+       d="M 675 73 L 862 73"
+       shape-rendering="auto"
+       id="path34474" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34514">
+    <text
+       x="680.00"
+       y="86.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 86.00)"
+       id="text34478">+ </text>
+    <text
+       x="697.00"
+       y="86.00"
+       textLength="131"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 86.00)"
+       id="text34480">curveStyle: CurveStyle [0..1]</text>
+    <text
+       x="680.00"
+       y="97.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 97.00)"
+       id="text34482">+ </text>
+    <text
+       x="697.00"
+       y="97.00"
+       textLength="136"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 97.00)"
+       id="text34484">xMultiplier: UnitMultiplier [0..1]</text>
+    <text
+       x="680.00"
+       y="108.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 108.00)"
+       id="text34486">+ </text>
+    <text
+       x="697.00"
+       y="108.00"
+       textLength="108"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 108.00)"
+       id="text34488">xUnit: UnitSymbol [0..1]</text>
+    <text
+       x="680.00"
+       y="119.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 119.00)"
+       id="text34490">+ </text>
+    <text
+       x="697.00"
+       y="119.00"
+       textLength="142"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 119.00)"
+       id="text34492">y1Multiplier: UnitMultiplier [0..1]</text>
+    <text
+       x="680.00"
+       y="130.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 130.00)"
+       id="text34494">+ </text>
+    <text
+       x="697.00"
+       y="130.00"
+       textLength="114"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 130.00)"
+       id="text34496">y1Unit: UnitSymbol [0..1]</text>
+    <text
+       x="680.00"
+       y="141.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 141.00)"
+       id="text34498">+ </text>
+    <text
+       x="697.00"
+       y="141.00"
+       textLength="142"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 141.00)"
+       id="text34500">y2Multiplier: UnitMultiplier [0..1]</text>
+    <text
+       x="680.00"
+       y="152.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 152.00)"
+       id="text34502">+ </text>
+    <text
+       x="697.00"
+       y="152.00"
+       textLength="114"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 152.00)"
+       id="text34504">y2Unit: UnitSymbol [0..1]</text>
+    <text
+       x="680.00"
+       y="163.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 163.00)"
+       id="text34506">+ </text>
+    <text
+       x="697.00"
+       y="163.00"
+       textLength="142"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 163.00)"
+       id="text34508">y3Multiplier: UnitMultiplier [0..1]</text>
+    <text
+       x="680.00"
+       y="174.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 680.00 174.00)"
+       id="text34510">+ </text>
+    <text
+       x="697.00"
+       y="174.00"
+       textLength="114"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 697.00 174.00)"
+       id="text34512">y3Unit: UnitSymbol [0..1]</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34518">
+    <rect
+       x="35"
+       y="40"
+       width="590"
+       height="60"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34516" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34522">
+    <text
+       x="254.00"
+       y="58.00"
+       textLength="152"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 254.00 58.00)"
+       id="text34520">SimulationResultCharacteristic</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34526">
+    <path
+       d="M 35 65 L 624 65"
+       shape-rendering="auto"
+       id="path34524" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34532">
+    <text
+       x="40.00"
+       y="78.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 40.00 78.00)"
+       id="text34528">+ </text>
+    <text
+       x="57.00"
+       y="78.00"
+       textLength="119"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 57.00 78.00)"
+       id="text34530">resultReference: IRI [0..1]</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34536">
+    <rect
+       x="405"
+       y="450"
+       width="100"
+       height="50"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34534" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34542">
+    <text
+       x="429.00"
+       y="462.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 429.00 462.00)"
+       id="text34538">IdentifiedObject</text>
+    <text
+       x="412.00"
+       y="476.00"
+       textLength="86"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 412.00 476.00)"
+       id="text34540">SimulationEvents</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34546">
+    <rect
+       x="35"
+       y="190"
+       width="320"
+       height="46"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34544" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34552">
+    <text
+       x="279.00"
+       y="202.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 279.00 202.00)"
+       id="text34548">IdentifiedObject</text>
+    <text
+       x="157.00"
+       y="216.00"
+       textLength="76"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 157.00 216.00)"
+       id="text34550">SignalRecorder</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34556">
+    <rect
+       x="45"
+       y="450"
+       width="124"
+       height="50"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34554" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34562">
+    <text
+       x="93.00"
+       y="462.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 93.00 462.00)"
+       id="text34558">IdentifiedObject</text>
+    <text
+       x="59.00"
+       y="476.00"
+       textLength="96"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 59.00 476.00)"
+       id="text34560">SignalConfiguration</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34566">
+    <rect
+       x="205"
+       y="450"
+       width="168"
+       height="50"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34564" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34572">
+    <text
+       x="297.00"
+       y="462.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 297.00 462.00)"
+       id="text34568">IdentifiedObject</text>
+    <text
+       x="243.00"
+       y="476.00"
+       textLength="92"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 243.00 476.00)"
+       id="text34570">SimulationSettings</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FDFAF7;fill-opacity:1.00; stroke:#9A8484; stroke-opacity:1.00"
+     id="g34576">
+    <rect
+       x="145"
+       y="300"
+       width="310"
+       height="40"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect34574" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34582">
+    <text
+       x="379.00"
+       y="312.00"
+       textLength="73"
+       style="font-family:ARIAL; font-weight:0; font-style:italic; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 379.00 312.00)"
+       id="text34578">IdentifiedObject</text>
+    <text
+       x="258.00"
+       y="326.00"
+       textLength="83"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 258.00 326.00)"
+       id="text34580">SimulationResult</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g34602">
+    <path
+       d="M 297 340 L 297 450"
+       shape-rendering="auto"
+       id="path34588" />
+    <path
+       d="M 291 435 L 297 450 L 303 435"
+       shape-rendering="auto"
+       id="path34590" />
+    <path
+       d="M 436 340 L 436 450"
+       shape-rendering="auto"
+       id="path34592" />
+    <path
+       d="M 430 435 L 436 450 L 442 435"
+       shape-rendering="auto"
+       id="path34594" />
+    <path
+       d="M 162 340 L 162 450"
+       shape-rendering="auto"
+       id="path34596" />
+    <path
+       d="M 156 435 L 162 450 L 168 435"
+       shape-rendering="auto"
+       id="path34598" />
+    <path
+       d="M 625 71 L 675 71"
+       shape-rendering="auto"
+       id="path34600" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g34606">
+    <polygon
+       points="659 77 659 65 675 71"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon34604" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g34628">
+    <path
+       d="M 420 100 L 420 300"
+       shape-rendering="auto"
+       id="path34608" />
+    <path
+       d="M 414 285 L 420 300 L 426 285"
+       shape-rendering="auto"
+       id="path34610" />
+    <path
+       d="M 311 100 L 311 190"
+       shape-rendering="auto"
+       id="path34612" />
+    <path
+       d="M 305 175 L 311 190 L 317 175"
+       shape-rendering="auto"
+       id="path34614" />
+    <path
+       d="M 111 100 L 111 190"
+       shape-rendering="auto"
+       id="path34616" />
+    <path
+       d="M 105 175 L 111 190 L 117 175"
+       shape-rendering="auto"
+       id="path34618" />
+    <path
+       d="M 206 100 L 206 190"
+       shape-rendering="auto"
+       id="path34620" />
+    <path
+       d="M 200 175 L 206 190 L 212 175"
+       shape-rendering="auto"
+       id="path34622" />
+    <path
+       d="M 767 290 L 768 214"
+       shape-rendering="auto"
+       id="path34624" />
+    <path
+       d="M 774 229 L 768 214 L 762 229"
+       shape-rendering="auto"
+       id="path34626" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g34694">
+    <text
+       x="36.00"
+       y="139.00"
+       textLength="122"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 36.00 139.00)"
+       id="text34630">+SimulationCharacteristic1</text>
+    <text
+       x="119.00"
+       y="114.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 119.00 114.00)"
+       id="text34632">0..1</text>
+    <text
+       x="41.00"
+       y="166.00"
+       textLength="71"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 41.00 166.00)"
+       id="text34634">+y1valueSignal</text>
+    <text
+       x="119.00"
+       y="183.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 119.00 183.00)"
+       id="text34636">1</text>
+    <text
+       x="71.00"
+       y="354.00"
+       textLength="83"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 71.00 354.00)"
+       id="text34638">+SimulationResult</text>
+    <text
+       x="170.00"
+       y="354.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 170.00 354.00)"
+       id="text34640">0..*</text>
+    <text
+       x="90.00"
+       y="424.00"
+       textLength="97"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 90.00 424.00)"
+       id="text34642">+SignalConfiguration</text>
+    <text
+       x="170.00"
+       y="443.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 170.00 443.00)"
+       id="text34644">1</text>
+    <text
+       x="704.00"
+       y="284.00"
+       textLength="60"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 704.00 284.00)"
+       id="text34646">+CurveDatas</text>
+    <text
+       x="770.00"
+       y="284.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 770.00 284.00)"
+       id="text34648">0..*</text>
+    <text
+       x="727.00"
+       y="228.00"
+       textLength="33"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 727.00 228.00)"
+       id="text34650">+Curve</text>
+    <text
+       x="780.00"
+       y="228.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 780.00 228.00)"
+       id="text34652">1</text>
+    <text
+       x="410.00"
+       y="128.00"
+       textLength="145"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 410.00 128.00)"
+       id="text34654">+SimulationResultCharacteristic</text>
+    <text
+       x="428.00"
+       y="114.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 428.00 114.00)"
+       id="text34656">0..*</text>
+    <text
+       x="328.00"
+       y="282.00"
+       textLength="83"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 328.00 282.00)"
+       id="text34658">+SimulationResult</text>
+    <text
+       x="435.00"
+       y="289.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 435.00 289.00)"
+       id="text34660">1</text>
+    <text
+       x="206.00"
+       y="354.00"
+       textLength="83"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 206.00 354.00)"
+       id="text34662">+SimulationResult</text>
+    <text
+       x="305.00"
+       y="354.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 305.00 354.00)"
+       id="text34664">0..*</text>
+    <text
+       x="225.00"
+       y="424.00"
+       textLength="92"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 225.00 424.00)"
+       id="text34666">+SimulationSettings</text>
+    <text
+       x="305.00"
+       y="443.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 305.00 443.00)"
+       id="text34668">1</text>
+    <text
+       x="345.00"
+       y="354.00"
+       textLength="83"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 345.00 354.00)"
+       id="text34670">+SimulationResult</text>
+    <text
+       x="444.00"
+       y="354.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 444.00 354.00)"
+       id="text34672">0..*</text>
+    <text
+       x="374.00"
+       y="423.00"
+       textLength="86"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 374.00 423.00)"
+       id="text34674">+SimulationEvents</text>
+    <text
+       x="444.00"
+       y="443.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 444.00 443.00)"
+       id="text34676">0..1</text>
+    <text
+       x="162.00"
+       y="125.00"
+       textLength="113"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 162.00 125.00)"
+       id="text34678">+SimulationChacteristic2</text>
+    <text
+       x="214.00"
+       y="114.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 214.00 114.00)"
+       id="text34680">0..1</text>
+    <text
+       x="163.00"
+       y="167.00"
+       textLength="71"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 163.00 167.00)"
+       id="text34682">+y2valueSignal</text>
+    <text
+       x="214.00"
+       y="183.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 214.00 183.00)"
+       id="text34684">0..1</text>
+    <text
+       x="262.00"
+       y="136.00"
+       textLength="122"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 262.00 136.00)"
+       id="text34686">+SimulationCharacteristic3</text>
+    <text
+       x="319.00"
+       y="114.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 319.00 114.00)"
+       id="text34688">0..1</text>
+    <text
+       x="285.00"
+       y="167.00"
+       textLength="71"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 285.00 167.00)"
+       id="text34690">+y3valueSignal</text>
+    <text
+       x="319.00"
+       y="183.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 319.00 183.00)"
+       id="text34692">0..1</text>
+  </g>
+</svg>

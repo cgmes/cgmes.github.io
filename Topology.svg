@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="28.47cm"
+   height="16.99cm"
+   viewBox="0 0 1076 642"
+   version="1.1"
+   id="svg73103">
+  <metadata
+     id="metadata73109">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs73107" />
+  <desc
+     id="desc72221">Created with Enterprise Architect (Build: 1627) 1</desc>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72229">
+    <path
+       d="M 6 6 L 6 636 L 1070 636 L 1070 6 L 6 6"
+       shape-rendering="auto"
+       id="path72227" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     id="g72233">
+    <polygon
+       points="6 24 120 24 133 10 133 6 6 6 6 24"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;fill:none"
+       id="polygon72231" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72237">
+    <text
+       x="11.00"
+       y="18.00"
+       textLength="107"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 11.00 18.00)"
+       id="text72235">class TopologyProfile</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72775">
+    <rect
+       x="276"
+       y="422"
+       width="146"
+       height="62"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72773" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72779">
+    <text
+       x="308.00"
+       y="440.00"
+       textLength="82"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 308.00 440.00)"
+       id="text72777">TopologicalNode</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72783">
+    <rect
+       x="525"
+       y="312"
+       width="110"
+       height="54"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72781" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72789">
+    <text
+       x="548.00"
+       y="327.00"
+       textLength="63"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 548.00 327.00)"
+       id="text72785">«Description»</text>
+    <text
+       x="558.00"
+       y="338.00"
+       textLength="43"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 558.00 338.00)"
+       id="text72787">Terminal</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72793">
+    <rect
+       x="36"
+       y="418"
+       width="82"
+       height="52"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72791" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72797">
+    <text
+       x="46.00"
+       y="436.00"
+       textLength="62"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 46.00 436.00)"
+       id="text72795">BaseVoltage</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72801">
+    <rect
+       x="266"
+       y="553"
+       width="167"
+       height="53"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72799" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72805">
+    <text
+       x="283.00"
+       y="571.00"
+       textLength="133"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 283.00 571.00)"
+       id="text72803">ConnectivityNodeContainer</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72809">
+    <rect
+       x="252"
+       y="40"
+       width="190"
+       height="125"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72807" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72813">
+    <text
+       x="308.00"
+       y="58.00"
+       textLength="77"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 308.00 58.00)"
+       id="text72811">IdentifiedObject</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72817">
+    <path
+       d="M 252 65 L 441 65"
+       shape-rendering="auto"
+       id="path72815" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72831">
+    <text
+       x="257.00"
+       y="78.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 78.00)"
+       id="text72819">+ </text>
+    <text
+       x="274.00"
+       y="78.00"
+       textLength="110"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 274.00 78.00)"
+       id="text72821">description: String [0..1]</text>
+    <text
+       x="257.00"
+       y="89.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 89.00)"
+       id="text72823">+ </text>
+    <text
+       x="274.00"
+       y="89.00"
+       textLength="58"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 274.00 89.00)"
+       id="text72825">mRID: String</text>
+    <text
+       x="257.00"
+       y="100.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 100.00)"
+       id="text72827">+ </text>
+    <text
+       x="274.00"
+       y="100.00"
+       textLength="86"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 274.00 100.00)"
+       id="text72829">name: String [0..1]</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72835">
+    <text
+       x="265.00"
+       y="115.00"
+       textLength="117"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 265.00 115.00)"
+       id="text72833">«European, deprecated»</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72845">
+    <text
+       x="257.00"
+       y="126.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 126.00)"
+       id="text72837">+ </text>
+    <text
+       x="274.00"
+       y="126.00"
+       textLength="155"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 274.00 126.00)"
+       id="text72839">energyIdentCodeEic: String [0..1]</text>
+    <text
+       x="257.00"
+       y="137.00"
+       textLength="9"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 137.00)"
+       id="text72841">+ </text>
+    <text
+       x="274.00"
+       y="137.00"
+       textLength="110"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#66413F;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 274.00 137.00)"
+       id="text72843">shortName: String [0..1]</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72849">
+    <rect
+       x="46"
+       y="260"
+       width="144"
+       height="41"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72847" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72855">
+    <text
+       x="86.00"
+       y="275.00"
+       textLength="63"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 86.00 275.00)"
+       id="text72851">«Description»</text>
+    <text
+       x="75.00"
+       y="286.00"
+       textLength="86"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 75.00 286.00)"
+       id="text72853">ConnectivityNode</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72859">
+    <rect
+       x="343"
+       y="215"
+       width="99"
+       height="29"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72857" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72863">
+    <text
+       x="354.00"
+       y="233.00"
+       textLength="77"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 354.00 233.00)"
+       id="text72861">ReportingGroup</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72867">
+    <rect
+       x="518"
+       y="215"
+       width="124"
+       height="37"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72865" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72871">
+    <text
+       x="544.00"
+       y="233.00"
+       textLength="71"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 544.00 233.00)"
+       id="text72869">ACDCTerminal</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72875">
+    <rect
+       x="623"
+       y="422"
+       width="176"
+       height="37"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72873" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72881">
+    <text
+       x="679.00"
+       y="437.00"
+       textLength="63"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 679.00 437.00)"
+       id="text72877">«Description»</text>
+    <text
+       x="644.00"
+       y="448.00"
+       textLength="133"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 644.00 448.00)"
+       id="text72879">ACDCConverterDCTerminal</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72885">
+    <rect
+       x="834"
+       y="422"
+       width="131"
+       height="37"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72883" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72891">
+    <text
+       x="868.00"
+       y="437.00"
+       textLength="63"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 868.00 437.00)"
+       id="text72887">«Description»</text>
+    <text
+       x="871.00"
+       y="448.00"
+       textLength="57"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 871.00 448.00)"
+       id="text72889">DCTerminal</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72895">
+    <rect
+       x="834"
+       y="201"
+       width="139"
+       height="43"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72893" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72899">
+    <text
+       x="847.00"
+       y="219.00"
+       textLength="113"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 847.00 219.00)"
+       id="text72897">DCEquipmentContainer</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72903">
+    <rect
+       x="687"
+       y="195"
+       width="90"
+       height="35"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72901" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72909">
+    <text
+       x="700.00"
+       y="210.00"
+       textLength="63"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 700.00 210.00)"
+       id="text72905">«Description»</text>
+    <text
+       x="712.00"
+       y="221.00"
+       textLength="39"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 712.00 221.00)"
+       id="text72907">DCNode</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FCF2E3;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72913">
+    <rect
+       x="701"
+       y="61"
+       width="119"
+       height="45"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72911" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72917">
+    <text
+       x="712.00"
+       y="79.00"
+       textLength="96"
+       style="font-family:ARIAL; font-weight:700; font-style:normal; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 712.00 79.00)"
+       id="text72915">DCTopologicalNode</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FFFFE0;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72921">
+    <rect
+       x="745"
+       y="328"
+       width="100"
+       height="44"
+       rx="0.00"
+       shape-rendering="auto"
+       id="rect72919" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g72925">
+    <text
+       x="754.00"
+       y="346.00"
+       textLength="82"
+       style="font-family:ARIAL; font-weight:700; font-style:italic; font-size:10px; fill:#000000;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 754.00 346.00)"
+       id="text72923">DCBaseTerminal</text>
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72929">
+    <path
+       d="M 754 328 L 614 252"
+       shape-rendering="auto"
+       id="path72927" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72933">
+    <polygon
+       points="631 254 625 265 614 252"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72931" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72937">
+    <path
+       d="M 701 85 L 442 85"
+       shape-rendering="auto"
+       id="path72935" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72941">
+    <polygon
+       points="458 79 458 91 442 85"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72939" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72957">
+    <path
+       d="M 725 106 L 725 195"
+       shape-rendering="auto"
+       id="path72943" />
+    <path
+       d="M 719 121 L 725 106 L 731 121"
+       shape-rendering="auto"
+       id="path72945" />
+    <path
+       d="M 820 86 L 935 201"
+       shape-rendering="auto"
+       id="path72947" />
+    <path
+       d="M 920 195 L 935 201 L 929 186"
+       shape-rendering="auto"
+       id="path72949" />
+    <path
+       d="M 791 106 L 791 328"
+       shape-rendering="auto"
+       id="path72951" />
+    <path
+       d="M 785 121 L 791 106 L 797 121"
+       shape-rendering="auto"
+       id="path72953" />
+    <path
+       d="M 687 199 L 442 129"
+       shape-rendering="auto"
+       id="path72955" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72961">
+    <polygon
+       points="459 128 456 139 442 129"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72959" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72965">
+    <path
+       d="M 878 422 L 819 372"
+       shape-rendering="auto"
+       id="path72963" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72969">
+    <polygon
+       points="835 378 827 387 819 372"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72967" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72973">
+    <path
+       d="M 727 422 L 774 372"
+       shape-rendering="auto"
+       id="path72971" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72977">
+    <polygon
+       points="767 388 759 380 774 372"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72975" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72981">
+    <path
+       d="M 557 215 L 442 149"
+       shape-rendering="auto"
+       id="path72979" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g72985">
+    <polygon
+       points="459 152 453 162 442 149"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72983" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72989">
+    <path
+       d="M 395 215 L 395 165"
+       shape-rendering="auto"
+       id="path72987" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72993">
+    <polygon
+       points="401 181 389 181 395 165"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon72991" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g72999">
+    <path
+       d="M 396 244 L 396 422"
+       shape-rendering="auto"
+       id="path72995" />
+    <path
+       d="M 390 259 L 396 244 L 402 259"
+       shape-rendering="auto"
+       id="path72997" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g73003">
+    <path
+       d="M 580 312 L 580 252"
+       shape-rendering="auto"
+       id="path73001" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#69738C; stroke-opacity:1.00"
+     id="g73007">
+    <polygon
+       points="586 268 574 268 580 252"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon73005" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g73011">
+    <path
+       d="M 333 422 L 333 165"
+       shape-rendering="auto"
+       id="path73009" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#FAF1EC;fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00"
+     id="g73015">
+    <polygon
+       points="339 181 327 181 333 165"
+       shape-rendering="auto"
+       style="fill-rule:evenodd;"
+       id="polygon73013" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#000000;fill-opacity:0.00; stroke:#000000; stroke-opacity:1.00"
+     id="g73033">
+    <path
+       d="M 422 465 L 572 366"
+       shape-rendering="auto"
+       id="path73017" />
+    <path
+       d="M 438 462 L 422 465 L 431 452"
+       shape-rendering="auto"
+       id="path73019" />
+    <path
+       d="M 343 484 L 343 553"
+       shape-rendering="auto"
+       id="path73021" />
+    <path
+       d="M 337 538 L 343 553 L 349 538"
+       shape-rendering="auto"
+       id="path73023" />
+    <path
+       d="M 276 430 L 70 301"
+       shape-rendering="auto"
+       id="path73025" />
+    <path
+       d="M 266 417 L 276 430 L 260 427"
+       shape-rendering="auto"
+       id="path73027" />
+    <path
+       d="M 276 446 L 118 446"
+       shape-rendering="auto"
+       id="path73029" />
+    <path
+       d="M 133 440 L 118 446 L 133 452"
+       shape-rendering="auto"
+       id="path73031" />
+  </g>
+  <g
+     style="stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00"
+     id="g73101">
+    <text
+       x="282.00"
+       y="304.00"
+       textLength="102"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 282.00 304.00)"
+       id="text73035">{isSubstitutable=false}</text>
+    <text
+       x="654.00"
+       y="139.00"
+       textLength="98"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 654.00 139.00)"
+       id="text73037">+DCTopologicalNode</text>
+    <text
+       x="734.00"
+       y="125.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 734.00 125.00)"
+       id="text73039">1</text>
+    <text
+       x="693.00"
+       y="173.00"
+       textLength="50"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 693.00 173.00)"
+       id="text73041">+DCNodes</text>
+    <text
+       x="733.00"
+       y="188.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 733.00 188.00)"
+       id="text73043">0..*</text>
+    <text
+       x="178.00"
+       y="399.00"
+       textLength="84"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 178.00 399.00)"
+       id="text73045">+TopologicalNode</text>
+    <text
+       x="278.00"
+       y="409.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 278.00 409.00)"
+       id="text73047">1</text>
+    <text
+       x="30.00"
+       y="330.00"
+       textLength="92"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 30.00 330.00)"
+       id="text73049">+ConnectivityNodes</text>
+    <text
+       x="96.00"
+       y="313.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 96.00 313.00)"
+       id="text73051">0..*</text>
+    <text
+       x="772.00"
+       y="143.00"
+       textLength="98"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 772.00 143.00)"
+       id="text73053">+DCTopologicalNode</text>
+    <text
+       x="815.00"
+       y="122.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 815.00 122.00)"
+       id="text73055">1</text>
+    <text
+       x="775.00"
+       y="305.00"
+       textLength="64"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 775.00 305.00)"
+       id="text73057">+DCTerminals</text>
+    <text
+       x="799.00"
+       y="321.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 799.00 321.00)"
+       id="text73059">0..*</text>
+    <text
+       x="445.00"
+       y="472.00"
+       textLength="84"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 445.00 472.00)"
+       id="text73061">+TopologicalNode</text>
+    <text
+       x="450.00"
+       y="481.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 450.00 481.00)"
+       id="text73063">0..1</text>
+    <text
+       x="519.00"
+       y="380.00"
+       textLength="45"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 519.00 380.00)"
+       id="text73065">+Terminal</text>
+    <text
+       x="584.00"
+       y="380.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 584.00 380.00)"
+       id="text73067">1..*</text>
+    <text
+       x="188.00"
+       y="481.00"
+       textLength="84"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 188.00 481.00)"
+       id="text73069">+TopologicalNode</text>
+    <text
+       x="257.00"
+       y="460.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 257.00 460.00)"
+       id="text73071">0..*</text>
+    <text
+       x="128.00"
+       y="436.00"
+       textLength="66"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 128.00 436.00)"
+       id="text73073">+BaseVoltage</text>
+    <text
+       x="121.00"
+       y="460.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 121.00 460.00)"
+       id="text73075">1..1</text>
+    <text
+       x="363.00"
+       y="283.00"
+       textLength="80"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 363.00 283.00)"
+       id="text73077">+ReportingGroup</text>
+    <text
+       x="404.00"
+       y="258.00"
+       textLength="18"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 404.00 258.00)"
+       id="text73079">0..1</text>
+    <text
+       x="376.00"
+       y="399.00"
+       textLength="84"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 376.00 399.00)"
+       id="text73081">+TopologicalNode</text>
+    <text
+       x="376.00"
+       y="414.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 376.00 414.00)"
+       id="text73083">0..*</text>
+    <text
+       x="255.00"
+       y="507.00"
+       textLength="84"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 255.00 507.00)"
+       id="text73085">+TopologicalNode</text>
+    <text
+       x="351.00"
+       y="498.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 351.00 498.00)"
+       id="text73087">0..*</text>
+    <text
+       x="202.00"
+       y="533.00"
+       textLength="132"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 202.00 533.00)"
+       id="text73089">+ConnectivityNodeContainer</text>
+    <text
+       x="351.00"
+       y="546.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 351.00 546.00)"
+       id="text73091">1</text>
+    <text
+       x="823.00"
+       y="79.00"
+       textLength="98"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 823.00 79.00)"
+       id="text73093">+DCTopologicalNode</text>
+    <text
+       x="823.00"
+       y="100.00"
+       textLength="16"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 823.00 100.00)"
+       id="text73095">0..*</text>
+    <text
+       x="911.00"
+       y="180.00"
+       textLength="115"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 911.00 180.00)"
+       id="text73097">+DCEquipmentContainer</text>
+    <text
+       x="943.00"
+       y="194.00"
+       textLength="6"
+       style="font-family:ARIAL; font-weight:0; font-style:normal; font-size:10px; fill:#595959;fill-opacity:1.00; stroke:#000000; stroke-opacity:0.00 stroke-width:0; white-space: pre;"
+       xml:space="preserve"
+       transform="rotate(-0.00 943.00 194.00)"
+       id="text73099">1</text>
+  </g>
+</svg>

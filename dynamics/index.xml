@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Common Grid Model Exchange Specification</title>
+    <link>https://cgmes.github.io/</link>
+    <description>Recent content on Common Grid Model Exchange Specification</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://cgmes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamics</title>
+      <link>https://cgmes.github.io/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cgmes.github.io/introduction/</guid>
+      <description>Dynamics Common Grid Model Exchange Specification (CGMES) Dynamics profile.
+The dynamics profile reflects the most common IEEE or, in the case of wind models, IEC, representations of models as well as models included in some of the transient stability software widely used by utilities.
+These dynamic models are intended to ensure interoperability between different vendors’ software products currently in use by electric utility energy companies, utilities, Transmission System Operators (TSOs), Regional Transmission Organizations (RTOs), and Independent System Operators (ISOs).</description>
+    </item>
+    
+    <item>
+      <title>Dynamics</title>
+      <link>https://cgmes.github.io/dynamics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cgmes.github.io/dynamics/</guid>
+      <description>ACDCConverter @base &amp;lt;http://iec.ch/TC57/2013/CIM-schema-cim16#&amp;gt; . @prefix rdf: &amp;lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&amp;gt; . @prefix rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt; . @prefix xsd: &amp;lt;http://www.w3.org/2001/XMLSchema#&amp;gt; . &amp;lt;ACDCConverter&amp;gt; &amp;lt;rdf:type&amp;gt; &amp;lt;rdfs:Class&amp;gt; ; &amp;lt;rdfs:label&amp;gt; &amp;#34;ACDCConverter&amp;#34;@en ; &amp;lt;rdfs:subClassOf&amp;gt; &amp;lt;ConductingEquipment&amp;gt; . &amp;lt;http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter&amp;gt; &amp;lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&amp;gt; &amp;lt;http://www.w3.org/2000/01/rdf-schema#Class&amp;gt; . &amp;lt;http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter&amp;gt; &amp;lt;http://www.w3.org/2000/01/rdf-schema#label&amp;gt; &amp;#34;ACDCConverter&amp;#34;@en . &amp;lt;http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCConverter&amp;gt; &amp;lt;http://www.w3.org/2000/01/rdf-schema#subClassOf&amp;gt; &amp;lt;http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment&amp;gt; . Sub-Class Of: ConductingEquipment » Equipment » PowerSystemResource » IdentifiedObject
+A unit with valves for three phases, together with unit control equipment, essential protective and switching devices, DC storage capacitors, phase reactors and auxiliaries, if any, used for conversion.</description>
+    </item>
+    
+  </channel>
+</rss>
